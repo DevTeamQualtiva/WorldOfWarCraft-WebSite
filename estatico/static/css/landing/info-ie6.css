@@ -1,0 +1,43 @@
+
+/* digital purchase */
+#digital-purchase .cell-title { left: -15px; top: 15px;  }
+#digital-purchase .calendar { left: -100px }
+
+/* digital presale */
+.digital-presale .bottom { border-bottom: 1px solid #888; }
+.digital-presale .top { border-top: 1px solid #e4e3e1; }
+
+.presale-faq .answer { margin-bottom: expression(this.nextSibling==null?'0':'2.25em'); }
+
+/* what is battle.net */
+.landing-bnet { background: #000; }
+#what-is-bnet .cell-col { margin: 25px; }
+#what-is-bnet #intro { background: url("../../images/landings/what-is-bnet/bg-intro.jpg") 50% 100% no-repeat; }
+#what-is-bnet #info-community { height: 275px; background: url("../../images/landings/what-is-bnet/bg-community.jpg") 0 0 no-repeat; }
+#what-is-bnet #info-match { height: 200px; background: url("../../images/landings/what-is-bnet/bg-match.jpg") 0 -15px no-repeat; }
+#what-is-bnet #info-play { height: 215px; background: url("../../images/landings/what-is-bnet/bg-play.jpg") 110% 0 no-repeat; }
+#what-is-bnet #info-compete { height: 275px; background: url("../../images/landings/what-is-bnet/bg-compete.jpg") 0 -15px no-repeat; }
+#what-is-bnet #info-cloud { height: 285px; background: url("../../images/landings/what-is-bnet/bg-cloud.jpg") 105% -25px no-repeat; }
+#what-is-bnet #info-media { height: 265px; background: url("../../images/landings/what-is-bnet/bg-media.jpg") 0 -15px no-repeat; }
+#what-is-bnet #info-modding { height: 285px; background: url("../../images/landings/what-is-bnet/bg-modding.jpg") 105% -25px no-repeat; }
+#what-is-bnet #info-connect { height: 265px; background: url("../../images/landings/what-is-bnet/bg-connect.jpg") 0 0 no-repeat; }
+#what-is-bnet #info-parental { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/landings/what-is-bnet/bg-parental.png', sizingMethod='crop'); }
+#what-is-bnet #info-contests { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/landings/what-is-bnet/bg-contests.png', sizingMethod='crop'); }
+#what-is-bnet #info-more { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/images/landings/what-is-bnet/bg-more.png', sizingMethod='crop'); }
+
+/* account merge */
+.merge-links { height: 230px; }
+
+/* Real-ID */
+#realid #real-names { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/real-id/real_names.png', sizingMethod='crop'); }
+#realid #cross-game-chat { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/real-id/cross_game_chat.png', sizingMethod='crop'); }
+#realid #rich-presence { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/real-id/rich_presence.png', sizingMethod='crop'); }
+#realid #broadcasts { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/real-id/broadcasts.png', sizingMethod='crop'); }
+#realid #all-chars { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/real-id/all_chars.png', sizingMethod='crop'); }
+#realid .realid-features .odd,
+#realid .realid-features .even { width: 500px; padding: 15px 0 15px 250px; margin: 50px 0; }
+
+
+.primary.cmt-tw { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader (src='/static/images/landings/wow-product/wow-c.png', sizingMethod='image');}
+.cmt-tw .box-left.float-right { top:0; left:20px }
+.cmt-tw .box-left .top-box .point-wrapper { height:540px }

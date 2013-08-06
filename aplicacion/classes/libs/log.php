@@ -30,7 +30,7 @@ Class WoW_Log implements Log_Interface {
     public static function Initialize($is_enabled, $log_level) {
         self::$is_enabled = $is_enabled;
         self::$log_level = $log_level;
-        self::$file = WEBROOT_DIR . '_debug' . DS . 'tmp.dbg';
+        self::$file = ESTATICO_DIR . '_debug' . DS . 'tmp.dbg';
         return true;
     }
     

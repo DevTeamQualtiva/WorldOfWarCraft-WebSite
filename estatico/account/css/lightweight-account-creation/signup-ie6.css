@@ -1,0 +1,29 @@
+html{height:100%;background:#000 url(../../images/lightweight-account-creation/background-ie6.jpg) 50% 0 no-repeat}
+#blackout{ position: absolute; background: none; }
+div.messageBox div.background ul{zoom:1}
+
+.accountInfo tr.invalid div.validField{background-image:url(../../images/lightweight-account-creation/field-invalid.gif)}
+.accountInfo .checkboxBorder{border-color:#f9e4a3}
+.messageBox{background-image:none;background-color:#ffedc1;border:2px solid #b56e09}
+.messageBox .background{background-image:none;top:8px}
+.messageBox .arrowLeft{background-image:url(../../images/lightweight-account-creation/message-box/arrow.gif);left:-8px; }
+#regionSelection{bottom:62px}
+#formValidation.messageBox{top:0;left:0;position:absolute;zoom:1}
+.telmexLogo{ background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/account/images/lightweight-account-creation/telmex/infinitum-logo.png'); margin: 26px 95px -26px 0; }
+
+#parchment-container { left: -35px; }
+#parchment-container .wrapper-parchment-bottom { background-image: url(../../images/lightweight-account-creation/parchment/parchment-bottom-ie6.jpg); background-position: 18px 100%;}
+#parchment-container .parchment-top { background: url(../../images/lightweight-account-creation/parchment/parchment-top-ie6.jpg) 0 0 no-repeat; position: relative;}
+#parchment-container .parchment-bottom-edge { background-image: url(../../images/lightweight-account-creation/parchment/parchment-bottom-bottom.jpg); bottom: -24px; left: 20px;}
+#parchment-container .parchment-top-smoothener { background-image: url(../../images/lightweight-account-creation/parchment/parchment-smoothener.gif); }
+
+.signUpForm .formBackground{ float: left; } /*parchment fix*/
+
+#parchment-container .parchment-top-smoothener { height:560px }
+
+/* Success view */
+div#downloads table tr.alt{background-color:#d5dc71;background-image:none}
+table.quickFaq{width:600px}
+
+/*Grenade*/
+#asset { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/account/images/lightweight-account-creation/promo-mistert/grenade.png'); }

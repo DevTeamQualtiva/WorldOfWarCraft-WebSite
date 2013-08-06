@@ -1,0 +1,57 @@
+/*default styles overwritten*/
+html{background:#150707 url(../../images/lightweight-account-creation/promo-cataclysm/background.jpg) 50% 0 no-repeat;}
+.footer, .footer .needHelp { border-color: #686868; }
+.footer .divider { color: #777777; }
+.footer, .languageSelection { color: #acacac;}
+.footer a, .languageSelection a.changeLanguage { color: #fff; }
+.footer a.bnet { background-image: url(../../images/logos/bnet-logo.png); width: 240px; height: 65px; }
+.footer a.blizzard { background-image: url(../../images/logos/blizz-logo.png); width: 100px; height: 57px; }
+
+.topLogin { background-image: none; background-color: #f6dc9f; border: 1px solid #9a6d4d; color: #620d06;margin: 0 0 20px 100px; position: relative; left: -68px; }
+a.signIn span { background-image: url(../../images/lightweight-account-creation/promo-mistert/small-button-right.gif); }
+a.signIn { background-image: url(../../images/lightweight-account-creation/promo-mistert/small-button-left.gif); }
+.signUpForm .backgroundExtension{ background: url(../../images/lightweight-account-creation/promo-mistert/parchment-extension.jpg) 0 100% no-repeat; padding: 0 0 82px 0; height: 450px; margin-left: -34px; width: 610px; position: relative; }
+.promoVisual { background: url(../../images/lightweight-account-creation/promo-mistert/runners-right.png) 0 100% no-repeat; height: 136px; width: 426px; position: absolute; left: 726px; margin-top: -125px; }
+.languageSelection { padding-top: 20px; }
+.languageSelection a.changeLanguage { background-image:url(../../images/lightweight-account-creation/promo-mistert/language-select.gif);}
+.logo { background-image: url(../../images/lightweight-account-creation-success/promo-mistert/en-us/logo.jpg); }
+#videoCover{/*height:648px;*/z-index:2;float:left; }
+#flashVideo{padding-bottom: 0; height: 508px; }
+#flashContainer{padding:17px; height: 699px;}
+.legal-notice { display:block;width:480px;height:50px;position:relative;top:420px;left:135px; font-size: 11px; color: #000;}
+
+#previewContainer .bg:after, #previewContainer:after, #previewContainer ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/*Logos*/
+.wow-logo { width: 340px; height: 158px; background: url(../../images/lightweight-account-creation/promo-cataclysm/vanilla-wow-logo.png) 0 100% no-repeat; position:absolute; top: -54px;; left: 84px; }
+
+/* Form parchment*/
+#parchment-container .wrapper-parchment-bottom { margin-left: 3px; background: url("/account/images/lightweight-account-creation/promo-cataclysm/parchment/parchment-bottom.png") no-repeat scroll 2px 100% transparent;}
+#parchment-container { margin-top: 42px; position: relative; width: 488px;}
+#parchment-container .parchment-top { min-height: 488px; background: url("/account/images/lightweight-account-creation/promo-cataclysm/parchment/parchment-top.jpg") no-repeat scroll 0 0 transparent;}
+#parchment-container .parchment-top-smoothener { background: url("/account/images/lightweight-account-creation/promo-cataclysm/parchment/parchment-smoothener.png") no-repeat scroll 36px 488px transparent; min-height:560px }
+#parchment-container .parchment-bottom { background: url("/account/images/lightweight-account-creation/promo-cataclysm/parchment/parchment-bottom.jpg") no-repeat scroll 36px 100% transparent; padding-bottom: 40px;}
+
+/*Flash trailer*/
+.flash-trailer { height: 216px; width: 432px; margin-left: 208px; margin-top: 221px; margin-bottom: 17px; position:relative; }
+.flash-trailer #trailer { position:relative; top: 1px; }
+.cataclysm-logo { width: 391px; height: 189px;; position: absolute; left: 25px; top: -188px; background: url(../../images/lightweight-account-creation/promo-cataclysm/cat-logo.jpg) no-repeat 0 0; }
+.new-age {width: 482px; height: 149px;; display: block; margin-left: 185px; }
+
+/* Layout */
+.rightColumn { width: 540px; margin-top: 17px; }
+.leftColumn { width: 673px; }
+
+/* Misc */
+a.watchCinematic { top: 20px; left: 234px; }
+a.learnMore { position: relative; top: -30px; left: 433px; }
+div.gameWorld {display: none}
+
+/*form graphics*/
+.signUpForm .formBackground{background:url(../../images/lightweight-account-creation/promo-cataclysm/input-bg-repeat-y.jpg) 149px 0 repeat-y}
+.signUpForm .formTop{background:url(../../images/lightweight-account-creation/promo-cataclysm/input-bg-top.jpg) 149px 0 no-repeat;padding-top:13px}
+.signUpForm .formBottom{background:url(../../images/lightweight-account-creation/promo-cataclysm/input-bg-bottom.jpg) 149px 100% no-repeat;padding-bottom:13px}
+.signUpForm .submit { background:url("/account/images/lightweight-account-creation/promo-cataclysm/submit.gif") no-repeat scroll 0 0 transparent; color:#fff; }
+
+.signUpForm { padding-top:65px; }
+#returningVisitor { top: 160px; }

@@ -1,4 +1,4 @@
 ﻿
-webroot/_debug/tmp.dbg
-aplicacion/configs/WoWConfig.php
-aplicacion/configs/DatabaseConfig.php
+estatico/_debug/tmp.dbg
+includes/configs/WoWConfig.php
+includes/configs/DatabaseConfig.php

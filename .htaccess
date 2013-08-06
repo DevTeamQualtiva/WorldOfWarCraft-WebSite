@@ -6,4 +6,4 @@ Options -Indexes
 #ErrorDocument 404 /wow/error.php?code=404
 RewriteEngine On
 # RewriteRule what-is/ /index.php?what-is
-RewriteRule		(.*) webroot/$1 [L]
+RewriteRule		(.*) estatico/$1 [L]

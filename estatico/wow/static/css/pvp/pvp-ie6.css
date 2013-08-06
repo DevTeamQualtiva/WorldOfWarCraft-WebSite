@@ -1,0 +1,8 @@
+
+.pvp { height: 700px; }
+.pvp-summary { zoom: 1; height: 500px; }
+.pvp-summary .column.first-child { margin-left: 0; }
+
+.recent-topics li a { zoom: 1 }
+
+#pvp-filters #current-filters span a { vertical-align: bottom; margin-bottom: -2px; }

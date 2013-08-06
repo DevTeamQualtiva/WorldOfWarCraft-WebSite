@@ -40,7 +40,7 @@ define('INTERFACES_DIR',  APLICACION_DIR . 'interfaces' . DS);
 define('LOCALES_DIR',     APLICACION_DIR . 'locales' . DS);
 define('TEMPLATES_DIR',   APLICACION_DIR . 'templates' . DS);
 define('CONTROLLERS_DIR', APLICACION_DIR . 'controllers' . DS);
-define('WEBROOT_DIR',     WOW_DIRECTORY . DS . 'webroot' . DS);
+define('ESTATICO_DIR',     WOW_DIRECTORY . DS . 'estatico' . DS);
 define('CACHE_DIR',       WOW_DIRECTORY . DS . 'cache' . DS);
 
 // Load defines

@@ -1,0 +1,4 @@
+
+.error-page { padding: 50px; margin: 50px 0; text-align: center; color: #a2b9c2; background: url("../local-common/images/opacity-black.png") repeat; border-top: 1px solid #181819; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+.error-header { font-size: 40px; font-weight: normal; color: #fff; margin-bottom: 50px; }
+.error-header span { background: url("../images/icons/error.gif") no-repeat; padding: 5px 0 5px 75px; }

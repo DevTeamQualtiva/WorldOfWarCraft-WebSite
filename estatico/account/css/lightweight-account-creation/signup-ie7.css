@@ -1,0 +1,4 @@
+.positionWrapper{width:auto;height:auto}
+.positionWrapper > .relative{postion:static}
+.page{margin:0 auto;left:auto;position:static}
+tr#touAgreeRow input{position:relative;top:-4px;left:-4px}
