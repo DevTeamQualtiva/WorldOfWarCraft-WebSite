@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* form */
+form { zoom: 1; }
+.input { color: #5a5a5a; }
+
+/* default button */
+.hover span { background-position: center -32px !important; }
+.disabled span { border-color: #bdbcb9; }
+.processing span,
+button.processing span { color: transparent; border-color: #bdbcb9; background-position: center -64px !important; }
+.button1 span span.hover { background-position: center -32px; }
+
+/* layout */
+#layout-top { background: url("../images/layout/bg-sides-msie.png") bottom center no-repeat; z-index: 100; /* z-index is needed for explore menu dropdown */ }
+#layout-middle { height: 400px; z-index: 50; /* z-index is needed for explore menu dropdown */ }
+#layout-bottom,
+#layout-bottom .wrapper { position: relative; }
+
+/* header */
+#header { z-index: 50; /* z-index is needed for explore menu dropdown */ }
+#service { z-index: 100; /* z-index is needed for explore menu dropdown */ }
+#header #logo a { background: none; cursor: pointer; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/account/local-common/images/logos/bnet-default.png', sizingMethod='image'); }
+#header #navigation { background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/account/local-common/images/opacity-black.png', sizingMethod='scale'); }
+
+#header #navigation h2 { zoom: 1; }
+#header .ui-breadcrumb li { background: url("../local-common/images/icons/arrows.gif") 105% -91px no-repeat; }
+
+#navigation { width: 990px; }
+
+#navigation #page-menu .flyout-menu { position: absolute; zoom: 1; }
+#navigation #page-menu .flyout-menu li { height: 20px; }
+
+/* dropdown */
+.ui-dropdown .dropdown-toggler { cursor: pointer; }
+.ui-dropdown .dropdown-toggler:hover,
+.ui-dropdown .dropdown-toggler:focus { color: #fff; }
+
+/*e-bank balance dropdown*/
+.ebank-balance { width: 200px }
+.balance { width: 200px; }
+
+/* section */
+.section-header { height: 50px; margin-bottom: 0; }
+
+/* fieldsets */
+fieldset.ui-controls { padding-top: 2em; }
+
+/* alerts */
+.alert.error,
+.alert.error .alert-inner,
+.alert.caution,
+.alert.caution .alert-inner,
+.alert.success,
+.alert.success .alert-inner,
+.alert.info,
+.alert.info, .alert-inner { background-image: none; }
+.alert-inner { display: inline-block; }
+.alert .alert-close {background: url("../images/icons/close-small.gif") no-repeat right center;}
+
+
+/* headlines */
+.zh-tw h3.headline { line-height: 1.6; }
+
+/* dialog */
+.ui-dialog  { zoom: 1 }
+.ui-dialog .ui-dialog-title { float: left; }
+
+/* kr postal code lookup */
+#zip-code { position:absolute; top:-450px; }
+#blackout { background:none }
+
+/* note */
+.ui-note .form-note { left:28px; top:-45px }
+.ui-note .close-note{background-image:url('../images/icons/close-small.gif');}
+
+/* lists */
+.confirm-notice li {list-style-image:url("../images/icons/warning-background.gif") }
+.confirm-notice span{ position:relative; top:-8px }
+
+/* authentication device selection */
+li.device .content .checkmark { background:none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/account/images/icons/check-lrg.png', sizingMethod='image'); }
+
+/*Payment Module */
+#payment-wrapper .section-box2 { position: relative; }
+
+#password-note { position:absolute; z-index:10000; }
+
+/* account success page */
+.obNotice .caution {background:url("../images/icons/warning-background.gif") no-repeat 0 0;}
+
+/* digital purchase */
+.ui-button-large.position {margin:0 0 0 30px;}
+.ui-button-large.position.float {float:right;margin:0 560px 0 0;}
+
+/* landing */
+.download a .icon { background:url("../images/icons/os.gif") no-repeat scroll 0 0 transparent; }
+.download.mac a .icon { background-position: -32px 0;}

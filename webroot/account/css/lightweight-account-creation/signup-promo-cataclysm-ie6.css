@@ -1,0 +1,20 @@
+html{height:100%;background:#150707 url(../../images/lightweight-account-creation/promo-cataclysm/background.jpg) 50% 0 no-repeat;}
+
+#parchment-container { left: -35px; top: -1px;}
+#parchment-container .wrapper-parchment-bottom { margin-left: 3px; background: url("../../images/lightweight-account-creation/promo-cataclysm/parchment/parchment-bottom.gif") no-repeat scroll 2px 100% transparent;}
+#parchment-container { margin-top: 43px; position: relative; width: 488px;}
+#parchment-container .parchment-top { min-height: 488px; background: url("../../images/lightweight-account-creation/promo-cataclysm/parchment/parchment-top.jpg") no-repeat scroll 0 0 transparent;}
+#parchment-container .parchment-top-smoothener { background: url("../../images/lightweight-account-creation/promo-cataclysm/parchment/parchment-smoothener.gif") no-repeat scroll 36px 488px transparent; min-height:560px }
+#parchment-container .parchment-bottom { background: url("../../images/lightweight-account-creation/promo-cataclysm/parchment/parchment-bottom.jpg") no-repeat scroll 36px 100% transparent; padding-bottom: 40px; position:relative; }
+#parchment-container .parchment-bottom-edge {	left: 27px;}
+
+.leftColumn { width:708px; }
+img.signUp{margin-left: 125px; }
+
+/* Footer */
+.footer a.bnet { cursor: pointer; background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src='/account/images/logos/bnet-logo.png');  }
+.footer a.blizzard { cursor: pointer; background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src='/account/images/logos/blizz-logo.png'); }
+
+/* Success view */
+div#downloads table tr.alt{background-color:#d5dc71;background-image:none}
+table.quickFaq{width:600px}

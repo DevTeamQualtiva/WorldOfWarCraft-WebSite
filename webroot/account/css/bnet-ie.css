@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* header */
+#header #navigation, #intro-bar { zoom: 1; }
+.balance, .ebank-balance { z-index: 80; position: relative }
+#header { z-index: 50; /* z-index is needed for explore menu dropdown */ }
+#service { z-index: 100; /* z-index is needed for explore menu dropdown */ }
+
+/* homepage */
+#intro-bar { height: 35px; overflow: hidden; }
+
+/* layout */
+#layout-top { z-index: 75; }
+#layout-middle { z-index: 74; }
+
+/* page */
+#navigation #page-menu li { z-index: 76; }
+#navigation #page-menu li.active { z-index: 75;}
+
+/* default button */
+.button1.disabled span,
+.button1.disabled:hover span,
+.button1.disabled:focus span,
+.button1.disabled:active span,
+.button1.disabled span { border-color: #bdbcb9; }
+.button1.processing span,
+.button1.processing:hover span,
+.button1.processing:focus span,
+.button1.processing:active span { color: #bdbcb9; border-color: #bdbcb9; }
+button.ui-button.hover span { background-position: 50% -32px; }
+button.ui-button.hover span span { background-position: 50% -32px; }
+
+/* download buttons */
+a.download { display: inline; zoom: 1; }
+
+/* icons */
+.icon-cards,
+.icon-note,
+.icon-add,
+.icon-buy,
+.icon-change,
+.icon-lock,
+.icon-delete,
+.icon-beta,
+.icon-merge,
+.icon-download,
+.icon-confirm {
+	display: inline; zoom: 1;
+}
+.icon-change {background-position:0 -6px;}
+
+/* search bar */
+#search-bar .ui-button span { border: 0; }
+#search-bar #search { margin-right: 8px; }
+
+ /* Form toggable notes */
+.ui-note { display: inline-block;}
+.ui-note .note { position:relative; z-index: 2;}
+.ui-note, #ie8#fix { display: inline; zoom: 1; } /* IE8 hack based on a bug */
+
+/* fieldsets */
+fieldset.ui-controls { display: block; } 
+
+/* address-book */
+.zipcode-text{display: inline;position:relative;top:-10px;}
+
+/* standalone alert page */
+.alert-page-message { zoom:1 }
+.alert-page-message { zoom:1}
+
+/* account success page */
+.notice-row .noticeTitle,
+.notice-row .noticeDesc, #ie8#fix{display:inline;zoom:1;}/* IE8 hack*/
+.notice-row .noticeDesc .verificationEmailQeustion{float:left;}
+.notice-row .noticeDesc .ui-note{position:relative;*top:0;left:0;}

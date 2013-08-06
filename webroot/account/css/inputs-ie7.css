@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.input-row-radio .input-right input,
+.input-row-checkbox .input-right input,
+.input-row-verification .input-radio-inline input,
+.input-row-verification .input-checkbox-inline input { height: auto; }

@@ -1,0 +1,26 @@
+/*language selection*/
+.languageSelection{width:880px;margin:60px auto 10px;padding:0 0 0 20px;font-size:11px;color:#515151;}
+.languageSelection a.changeLanguage{margin-left:5px;color:#055A76;background:url(../../images/lightweight-account-creation/language-select.gif) 0 50% no-repeat;padding:0 0 0 10px}
+.languageSelection a.changeLanguage:hover,
+.languageSelection a.changeLanguage:focus{text-decoration:underline}
+.languageSelection .languageContainer{float:left;display:none}
+#languageOptions{height:149px;background-color:#0f1b2b;border:1px solid #2d6598;float:left;position:absolute;z-index:1;margin:-165px 0 0 0}
+#languageOptions th{white-space:nowrap;text-align:left;padding:2px 5px;color:#FFF;/*border-bottom:1px solid #1D2532*/}
+#languageOptions a{display:block;padding:5px 18px 5px 8px;white-space:nowrap;color:#ffc800}
+#languageOptions a:hover,
+#languageOptions a:focus{background-color:#133e69;text-decoration:none}
+
+/*footer */
+.footer{width:880px;margin:0 auto;font-size:11px;color:#515151;border-top:1px solid #1c3651;padding: 10px 0 0 20px}
+.footer a{color:#055A76}
+.footer a:hover,
+.footer a:focus{text-decoration:underline}
+.footer .needHelp{border-right:1px solid #1c3651;line-height:20px;float:left;padding:0 20px 0 0;margin:0 20px 0 0}
+.footer .legal{line-height:20px}
+.footer a.blizzard{float:right;display:block;width:86px;height:46px;background:url(../../images/logos/blizzard.gif) no-repeat}
+.footer a.bnet{float:right;display:block;width:225px;margin:0 20px 0 0;height:50px;background:url(../../images/logos/bnet.gif) no-repeat}
+.footer .divider{padding:0 5px;color:#055A76}
+
+.footer .esrbLinks{margin:25px auto 15px;width:330px}
+.footer a.esrb{float:right;display:block;width:144px;height:53px;background:url(../../images/logos/esrb.jpg) no-repeat;}
+.footer a.esrb-rating{float:right;display:block;width:170px;height:104px;background:url(../../images/lightweight-account-creation/esrb-rating.gif) no-repeat;margin:0 0 0 10px}

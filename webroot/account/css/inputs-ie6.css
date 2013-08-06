@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.input-row-radio .input-right input,
+.input-row-checkbox .input-right input,
+.input-row-verification .input-radio-inline input,
+.input-row-verification .input-checkbox-inline input { height: auto; }
+
+.input-right { width: 500px; }
+.input-row-full .input-right,
+.input-row-important .input-right,
+.input-row-disclaimer .input-right { width: 920px; }
+
+.inline-message { height: 16px; }
