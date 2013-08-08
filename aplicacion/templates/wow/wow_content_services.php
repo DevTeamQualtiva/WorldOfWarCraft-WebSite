@@ -36,70 +36,70 @@
 					</a>
 						<span class="clear"><!-- --></span>
 					</div>
-								</div>
-				<!--
+				</div>
+				
 				<div class="right-col">
 					<div class="sub-services">					
 							<div class="sub-services-section">
 								<div class="sub-title">
-									<span>Account Services</span>
+									<span><?php echo WoW_Locale::GetString('template_services_account_services'); ?></span>
 								</div>
 								<ul>
-								<li><a href="ban-list.php" class="c3-l6"><span>Ban List</span></a></li>
-								<li><a href="javascript:;" class="c1-l1"><span>Manage your Account</span></a></li>
-								<li><a href="javascript:;" class="c1-l2"><span>Account Security</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c1-l3"><span>Add an Authenticator</span></a></li>
-										<li><a href="javascript:;" class="c1-l4"><span>Authenticator FAQ</span></a></li>-->
-				<!--				</ul>					
+								<li><a href="ban-list.php" class="c3-l6"><span><?php echo WoW_Locale::GetString('template_services_ban_list'); ?></span></a></li>
+								<li><a href="javascript:;" class="c1-l1"><span><?php echo WoW_Locale::GetString('template_services_manage_your_account'); ?></span></a></li>
+								<li><a href="javascript:;" class="c1-l2"><span><?php echo WoW_Locale::GetString('template_services_account_security'); ?></span></a></li>
+										<li><a href="javascript:;" class="c1-l3"><span><?php echo WoW_Locale::GetString('template_services_add_an_authenticator'); ?></span></a></li>
+										<li><a href="javascript:;" class="c1-l4"><span><?php echo WoW_Locale::GetString('template_services_authenticator_faq'); ?></span></a></li>
+								</ul>					
 							</div>
 							<div class="sub-services-section">
 								<div class="sub-title">
-									<span>OTHER SERVICES AND PROMOTIONS</span>
+									<span><?php echo WoW_Locale::GetString('template_services_osap'); ?></span>
 								</div>
-								<ul>-->
-										<!--<li><a href="javascript:;" class="c4-l1"><span>Keep your friends in game.</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c4-l2"><span>World of Warcraft Magazine</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c4-l3"><span>Refer-A-Friend</span></a></li>-->
-				<!--				</ul>					
+								<ul>
+										<li><a href="javascript:;" class="c4-l1"><span><?php echo WoW_Locale::GetString('template_services_Keep_your_friends_in_game'); ?></span></a></li>
+										<li><a href="javascript:;" class="c4-l2"><span><?php echo WoW_locale::GetString('template_services_wow_magazine'); ?></span></a></li>
+										<li><a href="javascript:;" class="c4-l3"><span><?php echo WoW_locale::GetString('template_services_raf'); ?></span></a></li>
+								</ul>					
 							</div>
 							<div class="sub-services-section">
 								<div class="sub-title">
-									<span>CHARACTER SERVICES</span>
+									<span><?php echo WoW_locale::GetString('template_services_character_services'); ?></span>
 								</div>
 								<ul>
-										<li><a href="javascript:;" class="c3-l1"><span>Trade Characters</span></a></li>
-										<li><a href="javascript:;" class="c3-l2"><span>Character Name Change</span></a></li>
-										<li><a href="javascript:;" class="c3-l3"><span>Character Race Change</span></a></li>
-										<li><a href="javascript:;" class="c3-l4"><span>Character Faction Change</span></a></li>
-										<li><a href="javascript:;" class="c3-l5"><span>Character Customization</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c3-l6"><span>Free Character Migration</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c3-l7"><span>Public Test Realm</span></a></li>-->
-				<!--				</ul>					
+										<li><a href="javascript:;" class="c3-l1"><span><?php echo WoW_locale::GetString('template_services_trade_characters'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l2"><span><?php echo WoW_locale::GetString('template_services_character_name_change'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l3"><span><?php echo WoW_locale::GetString('template_services_character_race_change'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l4"><span><?php echo WoW_locale::GetString('template_services_character_faction_change'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l5"><span><?php echo WoW_locale::GetString('template_services_character_customization'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l6"><span><?php echo WoW_locale::GetString('template_services_free_character_migration'); ?></span></a></li>
+										<li><a href="javascript:;" class="c3-l7"><span><?php echo WoW_locale::GetString('template_services_public_test_realm'); ?></span></a></li>
+								</ul>					
 							</div>
 							<div class="sub-services-section">
 								<div class="sub-title">
-									<span>Website Options</span>
+									<span><?php echo WoW_locale::GetString('template_services_website_options'); ?></span>
 								</div>
 								<ul>
-								<li><a href="javascript:;" class="c2-l1"><span>Change Website Theme</span></a></li>
-								<li><a href="services.php?ref=avatar" class="c4-20"><span>Change Avatar</span></a></li>
-								<li><a href="javascript:;" class="c2-l2"><span>Request GM Application</span></a></li>
-								<li><a href="javascript:;" class="c2-l3"><span>Request GM Trial</span></a></li>
-								<li><a href="game_client.php" class="c2-l4"><span>Download WoW Client</span></a></li>-->
-										<!--<li><a href="javascript:;" class="c2-l5"><span>Download Language Pack</span></a></li>-->
-			<!--					</ul>
+								<li><a href="javascript:;" class="c2-l1"><span><?php echo WoW_locale::GetString('template_services_change_website_theme'); ?></span></a></li>
+								<li><a href="services.php?ref=avatar" class="c4-20"><span><?php echo WoW_locale::GetString('template_services_change_avatar'); ?></span></a></li>
+								<li><a href="javascript:;" class="c2-l2"><span><?php echo WoW_locale::GetString('template_services_request_gm_application'); ?></span></a></li>
+								<li><a href="javascript:;" class="c2-l3"><span><?php echo WoW_locale::GetString('template_services_request_gm_trial'); ?></span></a></li>
+								<li><a href="game_client.php" class="c2-l4"><span><?php echo WoW_locale::GetString('template_services_download_wow_client'); ?></span></a></li>
+										<li><a href="javascript:;" class="c2-l5"><span><?php echo WoW_locale::GetString('template_services_download_language_pack'); ?></span></a></li>
+								</ul>
                             </div>
 							<div class="sub-services-section">
 								<div class="sub-title">
-									<span>Multimedia</span>
+									<span><?php echo WoW_locale::GetString('template_services_multimedia'); ?></span>
 								</div>
 								<ul>
-										<li><a href="/media/send_media.php" class="c1-l3"><span>Send Multimedia</span></a></li>
+									<li><a href="/media/send_media.php" class="c1-l3"><span><?php echo WoW_locale::GetString('template_services_send_multimedia'); ?></span></a></li>
 										
 								</ul>					
 							</div>                                					
-							</div>
-					</div>	-->
+					</div>
+					</div>	
 				
 				<br />
 				<span class="clear"><!-- --></span>
