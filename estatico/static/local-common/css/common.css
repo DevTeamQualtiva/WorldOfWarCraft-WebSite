@@ -197,39 +197,71 @@ a.ui-button.imgbutton span span span { padding: 0 5px; }
 .service-language a:hover { background-position: 50% -40px; }
 
 /* explore menu */
-.explore-menu { position: absolute; z-index: 85; top: 33px; right: 0; width: 425px; text-align: left; }
-.explore-primary { line-height: 1.5; overflow: hidden; padding: 1em 23px 1em 25px; background: url("../images/service-bar/explore-menu.png") repeat-y 0 0; }
-.explore-secondary { line-height: 1.1; overflow: hidden; padding: 0 7px 33px 9px; height: 217px; background: url("../images/service-bar/explore-menu.png") repeat-y -425px 0; }
-.explore-caption { font-size: 16px; line-height: 1.333; color: #393939; letter-spacing: -1px; margin: 0 0 .5em 0; font-weight: bold; display: block; color: #E8EBF0; font-weight: normal; line-height: 1.333; margin: 0; }
+.explore-menu { background:#343C46; position: absolute; z-index: 85; top: 33px; right: 7px; width: 439px; text-align: left; box-shadow:-1px 1px 14px rgba(0, 0, 0, 0.6); }
+.zh-tw .explore-menu { font-family: 微軟正黑, Microsoft JhengHei, Helvetica, Tahoma, 新明細體, PMingLiU, SimSun, sans-serif }
+.ie6 .explore-menu { right: -1px; }
+
+.explore-primary { background:#343C46; line-height: 1.5; overflow: hidden; padding:1em 16px 1em 16px; }
+
+.explore-menu .explore-caption { font-size: 16px; line-height: 1.333; color: #393939; letter-spacing: -1px; margin: 0 0 .5em 0; font-weight: bold; display: block; color: #B2BAC7; font-weight: normal; line-height: 1.333; margin: 0; }
+.ko-kr .explore-menu .explore-caption { font-weight: bold; letter-spacing:0; }
+
 .explore-nav { margin: 0; padding: 0; }
 .explore-nav li { list-style: none; }
+.ko-kr .explore-nav li { line-height: 1.2em }
+.ko-kr .explore-nav .explore-caption { font-size:12px; word-spacing:-0.1em }
 .explore-nav { width: 50%; float: left; }
-.explore-nav a { display: block; color: #94989F; margin: 0 0 .5em 0; padding: 0 0 .75em 0; border-bottom: 3px solid #2A5164; }
+.explore-nav a { display: block; color: #94989F; margin: 0 0 .5em 0; padding: 0.5em 0 .75em 0; border-bottom: 3px solid #2A5164; }
+.ko-kr .explore-nav a { font-size:12px }
 .explore-nav a:hover,
 .explore-nav a:focus,
-.explore-nav a:active { border-color: #FFF; }
+.explore-nav a:active { border-color: #FFF; color:white; }
+.explore-nav a:hover .explore-caption,
+.explore-nav a:focus .explore-caption,
+.explore-nav a:active .explore-caption { color:white; }
 .explore-links { width: 40%; float: right; }
 .explore-links ul { margin: 0; padding: 0; }
 .explore-links ul li { list-style: none; }
-.explore-links .explore-caption { margin: 0 0 .25em 0; padding: 0 4px; font-size: 14px; }
+.explore-links .explore-caption { margin: 0 0 .25em 0; padding: 0 4px; font-size: 14px; white-space: normal; }
 .explore-links a { margin: 0 0 .1em 0; color: #94989F; display: block; padding: 2px 4px; -moz-border-radius: 2px; border-radius: 2px; }
 .explore-links a:hover,
 .explore-links a:focus,
 .explore-links a:active { background: #212832; }
-.explore-secondary { margin: 0; }
-.explore-secondary li { list-style: none; }
-.explore-secondary li { width: 136px; float: left; }
-.explore-secondary .explore-game-wow { width: 137px; }
-.explore-secondary .explore-caption { font-size: 14px; }
-.explore-secondary a { display: block; padding: 120px 10px 61px 10px; height: 35px; font-size: 11px; color: #94989F; }
-.explore-game a:hover,
-.explore-game a:focus { background: url("../images/service-bar/explore-menu.png") repeat-y -859px 0; }
-.explore-game-sc2 a:hover,
-.explore-game-sc2 a:focus { background-position: -859px 0; }
-.explore-game-wow a:hover,
-.explore-game-wow a:focus { background-position: -995px 0; }
-.explore-game-d3 a:hover,
-.explore-game-d3 a:focus { background-position: -1132px 0; }
+.ie6 .explore-links li,
+.ie6 .explore-links a { height: 1%; }
+
+.explore-secondary { margin:0; line-height: 1.1; overflow: visible; padding: 0; height: 160px; background:#232A31; }
+.explore-secondary li { list-style: none; width: 110px; float: left; }
+.explore-secondary .explore-game-sc2 { width: 109px; }
+
+
+.explore-secondary .explore-caption { font-size: 15px; display: block; padding-bottom: 4px; text-align: center; white-space: normal; }
+.ko-kr .explore-secondary .explore-caption { font-weight: normal; font-size: 12px; letter-spacing: 0; word-break: keep-all; }
+.zh-cn .explore-secondary .explore-caption { font-size: 12px; }
+.explore-secondary a { display: block; width: 110px; height: 158px; color: #94989F; }
+.explore-secondary .explore-game-sc2 a { width: 109px; }
+.ko-kr .explore-secondary a { line-height: 1.2em }
+.explore-secondary a:hover .explore-caption { color: white; }
+.explore-secondary .explore-game-inner { display:block; padding: 110px 7px 0; }
+
+.explore-secondary .explore-game-inner { display: block; padding: 110px 0 0 0; }
+
+.explore-secondary span { display: block; padding-bottom: 4px; white-space: nowrap; overflow: hidden; font-size: 11px; }
+.explore-game a { height:160px; position:relative; background:url("../images/service-bar/explore-menu.jpg") no-repeat -434px -190px; }
+.explore-game a:hover { background:url("../images/service-bar/explore-menu.jpg") no-repeat -434px -125px; }
+.explore-game-sc2 a { background-position:0 0; }
+.explore-game-wow a { background-position:-109px 0; }
+.explore-game-d3  a { background-position:-219px 0; }
+.explore-game-hs  a { background-position:-329px 0; }
+.explore-game-sc2 a:hover { background-position:-439px 0;  }
+.explore-game-wow a:hover { background-position:-548px 0;  }
+.explore-game-d3  a:hover { background-position:-658px 0; }
+.explore-game-hs  a:hover { background-position:-768px 0; }
+.service-cell > a.active { position:relative; z-index:100; }
+.explore-secondary li { background:#232A31; border-left:1px solid #343C46; margin-left:-1px; }
+.explore-secondary li:first-child { border-left:0; margin-left:0; }
+.explore-secondary li:hover { background:#202730; }
+
 
 /* warnings */
 #warnings-wrapper { width: 100%; top: 33px; right: 0; position: absolute; z-index: 74; }

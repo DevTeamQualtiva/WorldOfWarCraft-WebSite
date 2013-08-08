@@ -63,20 +63,30 @@
 					<ul class="explore-secondary">
 							<li class="explore-game explore-game-sc2">
 								<a href="http://eu.battle.net/sc2/" tabindex="55">
-									<strong class="explore-caption">StarCraft II</strong>
-									<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_starcraft'); ?>
+								<span class="explore-game-inner">
+									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_starcraft'); ?></strong>
+							    </span>
 								</a>
 							</li>
 							<li class="explore-game explore-game-wow">
 								<a href="http://eu.battle.net/wow/" tabindex="55">
-									<strong class="explore-caption">World of Warcraft</strong>
-									<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_worldofwarcraft'); ?>
+								<span class="explore-game-inner">
+									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_worldofwarcraft'); ?></strong>
+								</span>	
 								</a>
 							</li>
 							<li class="explore-game explore-game-d3">
-								<a href="http://eu.battle.net/games/d3" tabindex="55">
-									<strong class="explore-caption">Diablo III</strong>
-									<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_diablo'); ?> 
+								<a href="http://eu.battle.net/d3" tabindex="55">
+								<span class="explore-game-inner">
+									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_diablo'); ?></strong>
+                                </span>									
+								</a>
+							</li>							
+							<li class="explore-game explore-game-hs">
+								<a href="http://eu.battle.net/hs" tabindex="55">
+								<span class="explore-game-inner">
+									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_hs'); ?></strong>
+                                </span>	
 								</a>
 							</li>
 					</ul>

@@ -79,7 +79,7 @@ WoW_Template::LoadTemplate('block_service', true);
 WoW_Template::LoadTemplate('block_js_messages', true);
 ?>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/local-common/js/menu.js?v15"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/js/wow.js?v4"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/js/wow.js"></script>
 <script type="text/javascript">
 friendData = [
 ];
@@ -92,15 +92,15 @@ $(function(){
 <!--[if lt IE 8]> <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/local-common/js/third-party/jquery.pngFix.pack.js?v15"></script>
 <script type="text/javascript">$('.png-fix').pngFix();</script>
 <![endif]-->
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/local-common/js/cms.js?v4"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/wow/static/local-common/js/cms.js"></script>
 <?php
 switch(WoW_Template::GetPageData('page')) {
     case 'character_profile':
-        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/profile.js?v4"></script>
-<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/character/summary.js?v4"></script>';
+        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/profile.js"></script>
+<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/character/summary.js"></script>';
         break;
     case 'character_talents':
-        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/profile.js?v4"></script>
+        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/profile.js"></script>
 <script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/character/talent.js?v6"></script>
 <script type="text/javascript" src="' . WoW::GetWoWPath() . '/wow/static/js/tool/talent-calculator.js?v6"></script>';
         break;

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-mx" class="es-mx">
 <?php
 WoW_Template::LoadTemplate('block_header');
 ?>
@@ -9,12 +9,12 @@ WoW_Template::LoadTemplate('block_header');
             <div class="wrapper">
                 <div id="header">
                     <div id="search-bar">
-                        <form action="<?php echo WoW::GetWoWPath(); ?>/search" method="get" id="search-form">
-	                        <div>
+						<form action="<?php echo WoW::GetWoWPath(); ?>/search" method="get" id="search-form">
+							<div>
 								<input type="submit" id="search-button" value="" tabindex="41" />
-	                            <input type="text" name="q" id="search-field" tabindex="40" value="<?php echo WoW_Locale::GetString('template_bn_search'); ?>"  maxlength="200" alt="<?php echo WoW_Locale::GetString('template_bn_search'); ?>" />
-	                        </div>
-	                    </form>
+								<input type="text" name="q" id="search-field" tabindex="40" value="<?php echo WoW_Locale::GetString('template_bn_search'); ?>"  maxlength="200" alt="<?php echo WoW_Locale::GetString('template_bn_search'); ?>" />
+							</div>
+						</form>
                     </div>
 
                     <h1 id="logo"><a href="<?php echo WoW::GetWoWPath(); ?>/">Battle.net</a></h1>
@@ -32,9 +32,9 @@ WoW_Template::LoadTemplate('block_header');
         <!-- section/mygames end -->
                 </div>
 
-<?php
-WoW_Template::LoadTemplate('block_service', true);
-?>
+		<?php
+		WoW_Template::LoadTemplate('block_service', true);
+		?>
 
             </div>
         </div>
@@ -66,11 +66,21 @@ WoW_Template::LoadTemplate('block_service', true);
         </div>
 
         <div class="game-column" id="home-game-d3">
-            <a href="http://eu.battle.net/games/d3" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_diablo3_cs'); ?></span></a>
-
+            <a href="http://eu.battle.net/d3" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_diablo3_cs'); ?></span></a>
             <ul>
                 <li>
                     <?php echo WoW_Locale::GetString('template_bn_d3_cs_status'); ?><br />
+                    <span class="text-red"><?php echo WoW_Locale::GetString('template_indev_caption'); ?></span>
+                </li>
+            </ul>
+        </div>
+		
+	
+		<div class="game-column" id="home-game-hs">
+		    <a href="http://us.battle.net/hearthstone/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_hs_cs'); ?></span></a>
+            <ul>
+                <li>
+                    <?php echo WoW_Locale::GetString('template_bn_hs_cs_status'); ?><br />
                     <span class="text-red"><?php echo WoW_Locale::GetString('template_indev_caption'); ?></span>
                 </li>
             </ul>
@@ -92,7 +102,7 @@ WoW_Template::LoadTemplate('block_service', true);
 WoW_Template::LoadTemplate('block_js_messages', true);
 ?>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/js/bnet.js?v5"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/menu.js?v15"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/menu.js"></script>
 <script type="text/javascript">
 var friendData = [];
 $(function() {
@@ -102,17 +112,17 @@ Search.init('/ta/lookup');
 });
 </script>
 <!--[if lt IE 8]>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.pngFix.pack.js?v15"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.pngFix.pack.js"></script>
 <script type="text/javascript">$('.png-fix').pngFix();</script>
 <![endif]-->
 <script type="text/javascript">
 //<![CDATA[
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.mousewheel.min.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.tinyscrollbar.min.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/overlay.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/search.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/login.js?v15", false, function() {
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.mousewheel.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.tinyscrollbar.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/overlay.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/search.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/login.js", false, function() {
 Login.embeddedUrl = '<?php echo WoW::GetWoWPath(); ?>/login/<?php echo WoW_Locale::GetLocale(); ?>/login.frag';
 });
 //]]>

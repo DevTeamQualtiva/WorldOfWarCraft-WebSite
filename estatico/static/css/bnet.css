@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html, body {  background: #020202 url("../images/layout/bg-top.jpg") 50% 0 no-repeat; color: #4a4a4a; font: normal 12px/1.5 "Trebuchet MS", Arial, sans-serif; }
+html, body {  background: #040404 url("../images/layout/bg-top.jpg") 50% 0 no-repeat; color: #4a4a4a; font: normal 12px/1.5 "Trebuchet MS", Arial, sans-serif; }
 
 /* text and headings */
 h2 { color: #393939; font-weight: bold; font-size: 28px; letter-spacing: -1px; }
@@ -37,38 +37,27 @@ a:focus { color: #0c536a; }
 .landing .button1.disabled,
 .landing .button1.disabled span { color: #484a4d; }
 
+.button1.disabled span { background-position:0 -82px; color:#666; }
+.button1.disabled span span { background-position:right -205px; }
+
 .button2 span { padding: 0 0 0 13px; height: 30px; line-height: 30px; font-size: 11px; background-image: url("../images/buttons/button-2.png"); background-repeat: no-repeat; color: #fff; }
-.button2 span span { padding: 0 13px 0 0; }
+.button2 span span { padding: 0 13px 0 0; background-position: 100% -123px; }
 .button2.hover span,
 .button2:hover span,
 .button2.disabled span,
 .button2.processing span { color: #fff; }
+
+.button2.hover span,
+.button2:hover span { background-position:0 -41px; }
+
+.button2.hover span span,
+.button2:hover span span { background-position: 100% -164px; }
 
 .button4 span { background-image: url("../images/buttons/button-large.png"); background-repeat: no-repeat; color: #fff; }
 .button4.hover span,
 .button4:hover span,
 .button4.disabled span,
 .button4.disabled span { color: #fff; }
-
-.ui-button.button4 span { height: 76px; line-height: 76px; font-size:24px; font-weight:bold; padding-right:40px; background-position: 100% -246px; cursor: pointer;  }
-.ui-button.button4 span { padding: 0 0 0 40px; background-position: 0 0; }
-.ui-button.button4 span span { padding: 0 40px 0 0; background-position: 100% -246px; }
-.ui-button.button4:hover span,
-.ui-button.button4.hover span { background-position: 0 -82px; }
-.ui-button.button4:hover span span,
-.ui-button.button4.hover span span { background-position: 100% -328px; }
-
-.ui-cancel { border-left: 1px solid #bababa; padding: 0; margin-left: 10px; }
-.ui-cancel span { padding: 0 15px; }
-
-.button3 { background:#064680; -moz-border-radius:4px; -moz-box-shadow: #444 0 0 5px; -webkit-box-shadow: #444 0 0 5px; box-shadow: #444 0 0 5px;
-			background-image: -moz-linear-gradient(top, #10508A, #013769);
-			background-image: -webkit-gradient(linear,center top, center bottom,from(#10508A),to(#013769)); 
-		  } 
-.button3:hover { background-image: -moz-linear-gradient(top, #3F7FB9, #1B5B95);
-				 background-image: -webkit-gradient(linear,center top, center bottom,from(#3F7FB9),to(#1B5B95)); }
-.button3 span { height:auto; line-height:normal; color:#FFF; padding:0; }
-.button3 span span { padding:5px 10px; }
 
 /* breadcrumbs */
 .ui-breadcrumb li { padding-right: 15px; background: url("../local-common/images/icons/arrows.gif") 105% -91px no-repeat; }
