@@ -9,9 +9,10 @@
                         echo WoW_Locale::GetString('template_servicebar_auth_caption');
                     } ?>
 				</li>
-			<li class="service-cell service-account"><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=1" class="service-link" tabindex="50" accesskey="3"><?php echo WoW_Locale::GetString('template_servicebar_account'); ?></a></li>
-				<li class="service-cell service-support"><a href="http://eu.blizzard.com/support/" class="service-link" tabindex="50" accesskey="4"><?php echo WoW_Locale::GetString('template_servicebar_support'); ?></a></li>
-
+			<li class="service-cell service-account"><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=1" class="service-link" tabindex="50" accesskey="3"><?php echo WoW_Locale::GetString('template_servicebar_account'); ?></a>
+			</li>
+			<li class="service-cell service-support"><a href="http://eu.blizzard.com/support/" class="service-link" tabindex="50" accesskey="4"><?php echo WoW_Locale::GetString('template_servicebar_support'); ?></a>
+			</li>
 			<li class="service-cell service-explore">
 				<a href="#explore" tabindex="50" accesskey="5" class="dropdown" id="explore-link" onclick="return false" style="cursor: progress" rel="javascript"><?php echo WoW_Locale::GetString('template_servicebar_explore'); ?></a>
 
@@ -21,25 +22,21 @@
 							<li>
 								<a href="<?php echo WoW::GetWoWPath(); ?>/" tabindex="55">
 									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_home_title'); ?></strong>
-									<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_home_description'); ?>
 								</a>
 							</li>
 							<li>
 								<a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=2" tabindex="55">
 									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_account_title'); ?></strong>
-									<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_account_description'); ?>
 								</a>
 							</li>
 								<li>
 									<a href="http://eu.blizzard.com/support/" tabindex="55">
 										<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_support_title'); ?></strong>
-										<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_support_description'); ?>
 									</a>
 								</li>
 								<li>
 									<a href="<?php echo WoW::GetWoWPath(); ?>/account/management/get-a-game.html" tabindex="55">
 										<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_buy_title'); ?></strong>
-										<?php echo WoW_Locale::GetString('template_servicebar_explore_menu_buy_description'); ?>
 									</a>
 								</li>
 						</ul>
@@ -57,7 +54,7 @@
 							</ul>
 						</div>
 
-	<span class="clear"><!-- --></span>
+	                <span class="clear"><!-- --></span>
 					</div>
 
 					<ul class="explore-secondary">

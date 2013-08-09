@@ -203,11 +203,11 @@ hr { margin: 0.75em auto 2em; height: 1px; border: none; border-top: 1px solid #
 #layout-top { background: url("../images/layout/bg-sides.png") bottom center repeat-x; position: relative; }
 #layout-top .wrapper { position: relative; }
 #layout-middle { background: #d3d1ce url("../images/layout/bg-middle.jpg") top center repeat-x; border-bottom: 4px solid #777674; min-height: 400px; min-width: 1120px; }
-#layout-bottom { background: #040404 url("../images/layout/bg-top-man.jpg") no-repeat 50% 70%; min-height: 300px; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+#layout-bottom { background: #040404 url("../images/layout/bg-top.jpg") no-repeat 50% 70%; min-height: 300px; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
 img { -moz-user-select: none; -webkit-user-select: none; user-select: none; }
 
 /* lightweight account completion */
-.bam-wow #layout-middle .wrapper { background: url("../images/layout/bg-middle-varian.jpg") no-repeat right 64px; height: 520px; }
+.bam-wow #layout-middle .wrapper { background: url("../images/layout/bg-middle.jpg") no-repeat right 64px; height: 520px; }
 .bam-wow .wow-content { background: url("../local-common/images/game-icons/wow-64.png") no-repeat left 28px; padding: 40px 340px 40px 80px; }
 .bam-wow .wow-content .caption { margin: 32px 0; }
 .bam-wow .wow-content .button1 { padding: 0; }

@@ -252,39 +252,36 @@ a.ui-button.imgbutton span span span { padding: 0 5px; }
 .ticket-summary li a:active .icon-ticket-status { background: url("../images/icons/sprite.png") -256px -160px; }
 
 /* explore menu */
-.explore-menu { position: absolute; z-index: 85; top: 33px; right: 0; width: 425px; text-align: left; }
+.explore-menu { position: absolute; z-index: 85; top: 33px; right: 0; width: 455px; text-align: left; }
 .explore-primary { line-height: 1.5; overflow: hidden; padding: 1em 23px 1em 25px; background: url("../images/service-bar/explore-menu.png") repeat-y 0 0; }
-.explore-secondary { line-height: 1.1; overflow: hidden; padding: 0 7px 33px 9px; height: 217px; background: url("../images/service-bar/explore-menu.png") no-repeat -425px 0; }
-.explore-caption { font-size: 16px; line-height: 1.333; color: #393939; letter-spacing: -1px; margin: 0 0 .5em 0; font-weight: bold; display: block; color: #E8EBF0; font-weight: normal; line-height: 1.333; margin: 0; }
+.explore-secondary { line-height: 1.1; overflow: hidden; padding: 0 7px 33px 9px; height: 217px; background: url("../images/service-bar/explore-menu.png") no-repeat -455px 0; }
+.explore-caption { font-size: 16px; line-height: 1.333; color: #393939; letter-spacing: -1px; margin: 0 0 .5em 0; font-weight: bold; display: block; color: #B2BAC7; font-weight: normal; line-height: 1.333; margin: 0; }
 .explore-nav { margin: 0; padding: 0; }
 .explore-nav li { list-style: none; }
 .explore-nav { width: 50%; float: left; }
-.explore-nav a { display: block; color: #94989F; margin: 0 0 .5em 0; padding: 0 0 .75em 0; border-bottom: 3px solid #2A5164; }
-.explore-nav a:hover,
-.explore-nav a:focus,
-.explore-nav a:active { border-color: #FFF; }
+.explore-nav a { display: block; color: #94989F; margin: 0 0 .5em 0; padding: .5em 0 .75em 0; border-bottom: 3px solid #2A5164; }
+.explore-nav a:hover { border-color: #FFF; color:white; }
+.explore-nav a:hover .explore-caption { color:white; }
 .explore-links { width: 40%; float: right; }
 .explore-links ul { margin: 0; padding: 0; }
 .explore-links ul li { list-style: none; }
-.explore-links .explore-caption { margin: 0 0 .25em 0; padding: 0 4px; font-size: 14px; }
-.explore-links a { margin: 0 0 .1em 0; color: #94989F; display: block; padding: 2px 4px; -moz-border-radius: 2px; border-radius: 2px; }
-.explore-links a:hover,
-.explore-links a:focus,
-.explore-links a:active { background: #212832; }
+.explore-links .explore-caption { margin: 0 0 .25em 0; padding: 0 4px; font-size: 14px; white-space: normal;  }
+.explore-links a { margin: 0 0 .1em 0; color: #94989F; display: block; padding: 2px 4px; border-radius: 2px; }
+.explore-links a:hover { background: #212832; }
 .explore-secondary { margin: 0; }
 .explore-secondary li { list-style: none; }
-.explore-secondary li { width: 136px; float: left; }
-.explore-secondary .explore-game-wow { width: 137px; }
-.explore-secondary .explore-caption { font-size: 14px; }
-.explore-secondary a { display: block; padding: 120px 10px 61px 10px; height: 35px; font-size: 11px; color: #94989F; }
-.explore-game a:hover,
-.explore-game a:focus { background: url("../images/service-bar/explore-menu.png") repeat-y -859px 0; }
-.explore-game-sc2 a:hover,
-.explore-game-sc2 a:focus { background-position: -859px 0; }
-.explore-game-wow a:hover,
-.explore-game-wow a:focus { background-position: -995px 0; }
-.explore-game-d3 a:hover,
-.explore-game-d3 a:focus { background-position: -1132px 0; }
+.explore-secondary li { width: 110px; float: left; }
+.explore-secondary .explore-game-sc2 { width: 109px; }
+.explore-secondary .explore-caption { font-size: 15px; display: block; padding-bottom: 4px; text-align: center; white-space: normal; }
+.explore-secondary a { display: block; width: 110px; height: 158px; color: #94989F; }
+.explore-secondary a:hover .explore-caption { color:white; }
+.explore-secondary .explore-game-inner { display: block; padding: 110px 7px 0; }
+.explore-secondary span { display: block; padding-bottom: 4px; white-space: nowrap; overflow: hidden; font-size: 11px; }
+.explore-game a:hover { background: url("../images/service-bar/explore-menu.png") repeat-y -918px 0; }
+.explore-game-sc2 a:hover { background-position: -918px 0; }
+.explore-game-wow a:hover { background-position: -1027px 0; }
+.explore-game-d3 a:hover { background-position: -1137px 0; }
+.explore-game-hs a:hover { background-position: -1247px 0; }
 
 /* warnings */
 #warnings-wrapper { width: 100%; top: 33px; right: 0; position: absolute; z-index: 74; }

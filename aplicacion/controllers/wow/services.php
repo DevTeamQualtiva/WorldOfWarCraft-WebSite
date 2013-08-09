@@ -36,3 +36,4 @@ class Services extends Controller {
 		WoW_Template::LoadTemplate('page_index');
 	}
 }
+?>
