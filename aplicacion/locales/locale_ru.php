@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Copyright (C) 2010-2011 Shadez <https://github.com/Shadez>
+ * Copyright (C) 2013 Apocalypsecore <https://Apocalypsecore.tk>
+ * Copyright (C) 2011 Shadez <https://github.com/Shadez>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -273,7 +274,7 @@ $WoW_Locale = array(
     'login_error_empty_password_title' => 'Необходимо указать пароль.',
     'login_error_wrong_username_or_password_title' => 'Имя пользователя или пароль указаны неверно. Попробуйте еще раз.',
     'login_error_invalid_password_format_title' => 'Пароль недействителен.',
-    'copyright_bottom_title' => '&copy; Blizzard Entertainment, 2011 г. Все права защищены.',
+    'copyright_bottom_title' => '&copy; Blizzard Entertainment, 2013 г. Все права защищены.',
    	'copyright_bottom_legal' => 'Соглашения',
 	'copyright_bottom_privacy' => 'Политика конфиденциальности',
     'copyright_bottom_support' => 'Служба поддержки',

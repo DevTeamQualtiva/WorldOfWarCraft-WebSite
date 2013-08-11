@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Copyright (C) 2010-2011 Shadez <https://github.com/Shadez>
+ * Copyright (C) 2013 Apocalypsecore <https://Apocalypsecore.tk>
+ * Copyright (C) 2011 Shadez <https://github.com/Shadez>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,9 +35,9 @@ Class WoWConfig {
     public static $WoW_Path          = ''; // Without slash at the end of path. If your site is in root directory, leave this empty.
                                            // For example: site is available at http://example.org/wowcs/
                                            // That means that you should set this variable as '/wowcs'.
-    public static $DefaultExpansion  = 3; // 0 - Classic, 1 - Burning Crusade, 2 - Wrath, 3 - Cataclysm
+    public static $DefaultExpansion  = 4; // 0 - Classic, 1 - Burning Crusade, 2 - Wrath, 3 - Cataclysm, 4 - Mists Of Pandaria
     public static $Maintenance       = false; // Disable site? true/false
-    public static $TwitterAccount    = 'theasfo'; // Twitter account name (displayed on maintenance page). Leave it blank if you don't use any.
+    public static $TwitterAccount    = 'YOUR TWITTER'; // Twitter account name (displayed on maintenance page). Leave it blank if you don't use any.
     public static $UseRealmsStatus   = false; // Try to detect realms statuses when building account's character list?
     public static $EnableBNPage      = true; // Enable Battle.net page (true - page will be displayed, false - you will be redirected to WoW portal)
 
@@ -52,7 +53,7 @@ Class WoWConfig {
     public static $Realms = array(
         1 => array(
             'id'   => 1,
-            'name' => 'Trinity',
+            'name' => 'ApocalypseCore',
             'type' => SERVER_TRINITY
         ),
     );

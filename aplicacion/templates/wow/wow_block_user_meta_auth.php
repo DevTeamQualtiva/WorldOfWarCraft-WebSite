@@ -1,40 +1,42 @@
-<div class="user-plate ajax-update">
-<div id="user-plate" class="card-character plate-<?php echo WoW_Account::GetActiveCharacterInfo('faction_text'); ?> ajax-update"
-style="background: url(<?php echo WoW::GetWoWPath(); ?>/wow/static/images/2d/card/<?php echo WoW_Account::GetActiveCharacterInfo('race'); ?>-<?php echo WoW_Account::GetActiveCharacterInfo('gender'); ?>.jpg) 0 100% no-repeat;">
-<a href="<?php echo WoW_Account::GetActiveCharacterInfo('url'); ?>" rel="np" class="profile-link">
-<span class="hover"></span>
-</a>
-<div class="meta">
-<div class="player-name"><?php echo WoW_Account::GetFullName(); ?></div>
-<div class="character">
+<div class="user-plate">
+    <a id="user-plate" class="card-character plate-<?php echo WoW_Account::GetActiveCharacterInfo('faction_text'); ?> ajax-update" rel="np" href="#"> <!--http://eu.battle.net/static-render/eu/twisting-nether/68/83271236-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg-->
+        <span class="card-portrait" style="background-image:url(<?php echo WoW::GetWoWPath(); ?>/wow/static/images/2d/avatar/<?php echo WoW_Account::GetActiveCharacterInfo('race'); ?>-<?php echo WoW_Account::GetActiveCharacterInfo('gender'); ?>.jpg)"></span>
+    </a>
+    <a href="<?php echo WoW_Account::GetActiveCharacterInfo('url'); ?>" rel="np" class="profile-link">
+		<span class="hover"></span>
+    </a>
+	<div class="meta-wrapper meta-ajax-update">
+		<div class="meta">
+        <div class="player-name"><?php echo WoW_Account::GetFullName(); ?></div>
+        <div class="character">
 <?php
-echo sprintf('<a class="character-name context-link"
-rel="np"
-href="%s"
-data-tooltip="%s %s (%s)"
-data-tooltip-options=\'{"location": "topCenter"}\'>
-%s
-</a>', WoW_Account::GetActiveCharacterInfo('url'), WoW_Account::GetActiveCharacterInfo('race_text'), WoW_Account::GetActiveCharacterInfo('class_text'), WoW_Account::GetActiveCharacterInfo('realmName'), WoW_Account::GetActiveCharacterInfo('name'));
+		echo sprintf('<a class="character-name context-link"
+		rel="np"
+		href="%s"
+		data-tooltip="%s %s (%s)"
+		data-tooltip-options=\'{"location": "topCenter"}\'>
+		%s
+		</a>', WoW_Account::GetActiveCharacterInfo('url'), WoW_Account::GetActiveCharacterInfo('race_text'), WoW_Account::GetActiveCharacterInfo('class_text'), WoW_Account::GetActiveCharacterInfo('realmName'), WoW_Account::GetActiveCharacterInfo('name'));
 ?>
 <div id="context-1" class="ui-context character-select">
-<div class="context">
-<a href="javascript:;" class="close" onclick="return CharSelect.close(this);"></a>
-<div class="context-user">
-<strong><?php echo WoW_Account::GetActiveCharacterInfo('name'); ?></strong>
-<br />
-<span class="realm <?php echo WoW_Account::GetActiveCharacterInfo('realmStatus'); ?>"><?php echo WoW_Account::GetActiveCharacterInfo('realmName'); ?></span>
-</div>
-<div class="context-links">
-<a href="<?php echo WoW_Account::GetActiveCharacterInfo('url'); ?>" title="<?php echo WoW_Locale::GetString('template_profile_caption'); ?>" rel="np" class="icon-profile link-first">
-<?php echo WoW_Locale::GetString('template_profile_caption'); ?></a>
-<a href="<?php echo WoW::GetWoWPath(); ?>/wow/search?f=post&amp;a=<?php echo urlencode(sprintf('%s@%s', WoW_Account::GetActiveCharacterInfo('name'), WoW_Account::GetActiveCharacterInfo('realmName'))); ?>&amp;s=time" title="<?php echo WoW_Locale::GetString('template_my_forum_posts_caption'); ?>" rel="np" class="icon-posts"></a>
-<a href="<?php echo WoW::GetWoWPath(); ?>/wow/vault/character/auction/<?php echo WoW_Account::GetActiveCharacterInfo('faction') == FACTION_ALLIANCE ? 'alliance' : 'horde'; ?>/" title="<?php echo WoW_Locale::GetString('template_browse_auction_caption'); ?>" rel="np" class="icon-auctions"></a>
-<a href="<?php echo WoW::GetWoWPath(); ?>/wow/vault/character/event" title="<?php echo WoW_Locale::GetString('template_browse_events_caption'); ?>" rel="np" class="icon-events link-last"></a>
-</div>
+	<div class="context">
+	<a href="javascript:;" class="close" onclick="return CharSelect.close(this);"></a>
+	<div class="context-user">
+		<strong><?php echo WoW_Account::GetActiveCharacterInfo('name'); ?></strong>
+		<br />
+		<span class="realm <?php echo WoW_Account::GetActiveCharacterInfo('realmStatus'); ?>"><?php echo WoW_Account::GetActiveCharacterInfo('realmName'); ?></span>
+	</div>
+    <div class="context-links">
+		<a href="<?php echo WoW_Account::GetActiveCharacterInfo('url'); ?>" title="<?php echo WoW_Locale::GetString('template_profile_caption'); ?>" rel="np" class="icon-profile link-first">
+		<?php echo WoW_Locale::GetString('template_profile_caption'); ?></a>
+		<a href="<?php echo WoW::GetWoWPath(); ?>/wow/search?f=post&amp;a=<?php echo urlencode(sprintf('%s@%s', WoW_Account::GetActiveCharacterInfo('name'), WoW_Account::GetActiveCharacterInfo('realmName'))); ?>&amp;s=time" title="<?php echo WoW_Locale::GetString('template_my_forum_posts_caption'); ?>" rel="np" class="icon-posts"></a>
+		<a href="<?php echo WoW::GetWoWPath(); ?>/wow/vault/character/auction/<?php echo WoW_Account::GetActiveCharacterInfo('faction') == FACTION_ALLIANCE ? 'alliance' : 'horde'; ?>/" title="<?php echo WoW_Locale::GetString('template_browse_auction_caption'); ?>" rel="np" class="icon-auctions"></a>
+		<a href="<?php echo WoW::GetWoWPath(); ?>/wow/vault/character/event" title="<?php echo WoW_Locale::GetString('template_browse_events_caption'); ?>" rel="np" class="icon-events link-last"></a>
+	</div>
 </div>
 <div class="character-list">
-<div class="primary chars-pane">
-<div class="char-wrapper">
+    <div class="primary chars-pane">
+        <div class="char-wrapper">
 <?php
 echo sprintf('<a href="javascript:;"
 class="char pinned"
@@ -104,5 +106,4 @@ if(WoW_Account::GetActiveCharacterInfo('guildId') > 0) {
 ?>
 </div>
 </div>
-<div class="card-overlay"></div>
 </div>

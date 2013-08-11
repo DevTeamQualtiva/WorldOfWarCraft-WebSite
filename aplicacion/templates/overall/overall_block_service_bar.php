@@ -66,7 +66,7 @@
 								</a>
 							</li>
 							<li class="explore-game explore-game-wow">
-								<a href="http://eu.battle.net/wow/" tabindex="55">
+								<a href="<?php echo WoW::GetWoWPath(); ?>/wow/" tabindex="55">
 								<span class="explore-game-inner">
 									<strong class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_worldofwarcraft'); ?></strong>
 								</span>	

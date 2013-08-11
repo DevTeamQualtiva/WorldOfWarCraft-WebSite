@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Copyright (C) 2010-2011 Shadez <https://github.com/Shadez>
+ * Copyright (C) 2013 Apocalypsecore <https://Apocalypsecore.tk>
+ * Copyright (C) 2011 Shadez <https://github.com/Shadez>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,7 +30,7 @@ Class DatabaseConfig {
     public static $world = array(
         'host'      => 'localhost',
         'user'      => 'root',
-        'password'  => 'oneluiz1992',
+        'password'  => 'Your PASS / TU CONTRASEÑA',
         'db_name'   => 'world',
         'charset'   => 'UTF8',
         'db_prefix' => ''
@@ -44,8 +45,8 @@ Class DatabaseConfig {
         1 => array(
             'host'      => 'localhost',
             'user'      => 'root',
-            'password'  => 'oneluiz1992',
-            'db_name'   => 'char',
+            'password'  => 'Your PASS / TU CONTRASEÑA',
+            'db_name'   => 'characters',
             'charset'   => 'UTF8',
             'db_prefix' => ''
         )
@@ -58,7 +59,7 @@ Class DatabaseConfig {
     public static $realm = array(
         'host'      => 'localhost',
         'user'      => 'root',
-        'password'  => 'oneluiz1992',
+        'password'  => 'Your PASS / TU CONTRASEÑA',
         'db_name'   => 'auth',
         'charset'   => 'UTF8',
         'db_prefix' => ''
@@ -71,7 +72,7 @@ Class DatabaseConfig {
     public static $wow = array(
         'host'      => 'localhost',
         'user'      => 'root',
-        'password'  => 'oneluiz1992',
+        'password'  => 'Your PASS / TU CONTRASEÑA',
         'db_name'   => 'battle',
         'charset'   => 'UTF8',
         'db_prefix' => 'wow'

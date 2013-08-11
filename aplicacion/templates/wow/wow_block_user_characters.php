@@ -29,8 +29,7 @@
 			</div>
 
 				<a href="javascript:;" class="manage-chars" onclick="CharSelect.swipe('in', this); return false;">
-					<span class="plus"></span>
-                    <?php echo WoW_Locale::GetString('template_manage_characters_caption'); ?>
+                    <span class="plus"></span><?php echo WoW_Locale::GetString('template_manage_characters_caption'); ?>
 				</a>
 		</div>
 			

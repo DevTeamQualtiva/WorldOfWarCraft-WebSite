@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Copyright (C) 2010-2011 Shadez <https://github.com/Shadez>
+ * Copyright (C) 2013 Apocalypsecore <https://Apocalypsecore.tk>
+ * Copyright (C) 2011 Shadez <https://github.com/Shadez>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -1730,3 +1731,4 @@ Class WoW_Account {
     }
 }
 ?>
+
