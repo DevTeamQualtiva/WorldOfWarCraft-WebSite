@@ -37,4 +37,4 @@ ALTER TABLE `wow_mounts`
 	ADD COLUMN `source_fr` TEXT CHARSET utf8 COLLATE utf8_general_ci NOT NULL AFTER `source_es`,
 	CHANGE `name_en` `name_en` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
 	CHANGE `source_en` `source_en` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
-	
+
