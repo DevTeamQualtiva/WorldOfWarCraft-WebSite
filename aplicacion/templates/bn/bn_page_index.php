@@ -38,60 +38,32 @@ WoW_Template::LoadTemplate('block_header');
 
             </div>
         </div>
-
         <div id="layout-middle">
             <div class="wrapper">
                 <div id="content">
-    <div id="homepage">
-        <div class="game-column" id="home-game-sc2">
-            <a href="http://eu.battle.net/sc2/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_sc2_cs'); ?></span></a>
+					<div id="homepage">
+						<div class="game-column" id="home-game-sc2">
+							<a href="http://eu.battle.net/sc2/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_sc2_cs'); ?></span></a>
+						</div>
 
-            <ul>
-                <li>
-                    <?php echo WoW_Locale::GetString('template_bn_sc2_cs_status'); ?><br />
-                    <span class="text-green"><?php echo WoW_Locale::GetString('template_online_caption'); ?></span>
-                </li>
-            </ul>
-        </div>
+						<div class="game-column" id="home-game-wow">
+							<a href="<?php echo WoW::GetWoWPath(); ?>/wow/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_wow_cs'); ?></span></a>
+						</div>
 
-        <div class="game-column" id="home-game-wow">
-            <a href="<?php echo WoW::GetWoWPath(); ?>/wow/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_wow_cs'); ?></span></a>
+						<div class="game-column" id="home-game-d3">
+							<a href="http://eu.battle.net/d3" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_diablo3_cs'); ?></span></a>
+						</div>
+						
+					
+						<div class="game-column" id="home-game-hs">
+							<a href="http://us.battle.net/hearthstone/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_hs_cs'); ?></span></a>
+						</div>
 
-            <ul>
-                <li>
-                    <?php echo WoW_Locale::GetString('template_bn_wow_cs_status'); ?><br />
-                    <span class="text-green"><?php echo WoW_Locale::GetString('template_online_caption'); ?></span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="game-column" id="home-game-d3">
-            <a href="http://eu.battle.net/d3" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_diablo3_cs'); ?></span></a>
-            <ul>
-                <li>
-                    <?php echo WoW_Locale::GetString('template_bn_d3_cs_status'); ?><br />
-                    <span class="text-red"><?php echo WoW_Locale::GetString('template_indev_caption'); ?></span>
-                </li>
-            </ul>
-        </div>
-		
-	
-		<div class="game-column" id="home-game-hs">
-		    <a href="http://us.battle.net/hearthstone/" class="game-promo"><span class="game-tip"><?php echo WoW_Locale::GetString('template_bn_hs_cs'); ?></span></a>
-            <ul>
-                <li>
-                    <?php echo WoW_Locale::GetString('template_bn_hs_cs_status'); ?><br />
-                    <span class="text-red"><?php echo WoW_Locale::GetString('template_indev_caption'); ?></span>
-                </li>
-            </ul>
-        </div>
-
-	<span class="clear"><!-- --></span>
-    </div>
+					<span class="clear"><!-- --></span>
+					</div>
                 </div>
             </div>
         </div>
-
         <div id="layout-bottom">
             <div class="wrapper">
                 <?php WoW_Template::LoadTemplate('block_footer', true); ?>

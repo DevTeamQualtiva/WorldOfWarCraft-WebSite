@@ -86,7 +86,7 @@
 								<li><a href="javascript:;" class="c2-l2"><span><?php echo WoW_locale::GetString('template_services_request_gm_application'); ?></span></a></li>
 								<li><a href="javascript:;" class="c2-l3"><span><?php echo WoW_locale::GetString('template_services_request_gm_trial'); ?></span></a></li>
 								<li><a href="game_client.php" class="c2-l4"><span><?php echo WoW_locale::GetString('template_services_download_wow_client'); ?></span></a></li>
-										<li><a href="javascript:;" class="c2-l5"><span><?php echo WoW_locale::GetString('template_services_download_language_pack'); ?></span></a></li>
+								<li><a href="javascript:;" class="c2-l5"><span><?php echo WoW_locale::GetString('template_services_download_language_pack'); ?></span></a></li>
 								</ul>
                             </div>
 							<div class="sub-services-section">
@@ -94,8 +94,7 @@
 									<span><?php echo WoW_locale::GetString('template_services_multimedia'); ?></span>
 								</div>
 								<ul>
-									<li><a href="/media/send_media.php" class="c1-l3"><span><?php echo WoW_locale::GetString('template_services_send_multimedia'); ?></span></a></li>
-										
+									<li><a href="/media/send_media.php" class="c1-l3"><span><?php echo WoW_locale::GetString('template_services_send_multimedia'); ?></span></a></li>	
 								</ul>					
 							</div>                                					
 					</div>

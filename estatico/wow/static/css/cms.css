@@ -1,27 +1,15 @@
 @charset "utf-8";
 
 /* WoW CMS Overrides */
-#homepage { padding: 0; }
+#right { margin: 0 20px 0 0; padding: 0; }
+.homepage #right { padding-top: 15px; }
 
-/* News */
-#news-updates { padding: 0 0 20px 0; word-wrap:break-word; /*background: url("../images/homepage/news-bottom.png") 0 100% no-repeat;*/ }
-#news-updates .news-article { background: no-repeat scroll 0 0 transparent; padding: 40px 25px 20px 30px; /*padding: 40px 0 0 0; border-top: 3px solid #002748; border-bottom: 1px solid #002748;*/  }
-#news-updates .article-left { width: 148px; height: 141px; float: left; background-position: center center; background-repeat: no-repeat;margin:15px 0 0 0; }
-#news-updates .article-left a { display:block; width:100%; height:100%; }
-#news-updates a:hover, #news-updates a:focus { color: #fff; }
-#news-updates .article-right { width: 435px; float: left; padding: 7px 0 0 14px; position:relative;}
-#news-updates h3 { font-weight:normal; font-size:20px; letter-spacing:-0.08em;  }
-#news-updates .article-summary { line-height: 1.8em; width:420px;}
-#news-updates .by-line { font-size: 12px; margin:3px 0 0 0; }
-#news-updates .by-line a {   }
-#news-updates .by-line a:hover, #news-updates .by-line a:focus { color: #fff; }
-#news-updates .by-line span { }
-#news-updates .blog-paging { padding:0 15px 15px; }
-
-/* Slideshow */
-#slideshow .slide { }
-#slideshow .slide h3,
-.slide h3 a { text-transform: uppercase; font-weight: normal; font-size: 24px; letter-spacing: -0.05em; }
+#homepage, #blog-wrapper { background: url("../images/homepage/shadow.png") repeat-y; }
+#news-updates h3, #news-updates .by-line { padding-left:3px; }
+#news-updates .article-left, #news-updates .article-left img { width:139px; height:127px; display:block; }
+#news-updates .article-left { -moz-box-shadow:0 0 20px -4px #000; -webkit-box-shadow:0 0 20px -4px #000; box-shadow:0 0 20px -4px #000; }
+#news-updates .article-left a { border:1px solid #541F09; }
+#news-updates .article-left a:hover { border-color:#CD9000; }
 
 /* Common */
 .more { background:url("../images/icons/more-arrows.gif") no-repeat scroll 100% 2px transparent; padding-right:12px }
@@ -306,10 +294,10 @@ div.forum-options a.active { color:#fff; font-weight: bold; }
 #right .sidebar-module .sidebar-title h3 a { color: #FEF092; padding-right: 20px; background: url("../images/icons/next.gif") 100% 50% no-repeat; }
 #right .sidebar-module .sidebar-title h3 a:hover { color: #fff; }
 .sidebar-module .sidebar-content { padding: 0; }
-.sidebar-module .sidebar-content.loading { padding: 40px; background: url("../images/loaders/canvas-loader.gif") 50% 50% no-repeat }
+.sidebar-module .sidebar-content.loading { padding: 40px; background: url("/wow/static/images/loaders/canvas-loader.gif") 50% 50% no-repeat }
 .sidebar-module .sidebar-content .empty { color: #C09A67; }
 .sidebar-module .sidebar-all { text-align: right; padding-top: 10px }
-.sidebar-module .sidebar-all a { padding-right: 12px; background: url("../images/icons/more-arrows.gif") 100% 2px no-repeat }
+.sidebar-module .sidebar-all a { padding-right: 12px; background: url("/wow/static/images/icons/more-arrows.gif") 100% 2px no-repeat }
 .sidebar-module .sidebar-all a:hover { background-position: 100% -45px }
 .sidebar-module .sidebar-error { padding: 10px 0 5px 0; text-align: center; color: #C09A67;}
 .sidebar-module .date { color: #71401F; font-size: 11px; }
@@ -418,7 +406,7 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 #sidebar-realm-status .down-realms li { margin: 5px; }
 #sidebar-realm-status .pvp { color: #C33; }
 #sidebar-realm-status .rp { color: #3C3; }
-#sidebar-realm-status .status-icon { background: url("../images/icons/status.html") -1px 0 no-repeat; margin: 0 auto; height: 30px; width: 25px; }
+#sidebar-realm-status .status-icon { background: url("../images/icons/status.png") -1px 0 no-repeat; margin: 0 auto; height: 30px; width: 25px; }
 #sidebar-realm-status .status-icon.up { background-position: -111px 0; }
 
 .sidebar-bot { min-height: 200px; position: relative; }
@@ -452,14 +440,14 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 .promo .promo-link:hover { background-position: 0 -250px; }
 
 	/* presale */
-	.promo.promo-presale { background: url("../images/sidebar/pre-sale/en-us.html") no-repeat; width: 300px; height: 250px; }
-	.de-de .promo.promo-presale { background: url("../images/sidebar/pre-sale/de-de.html") no-repeat; }
-	.es-es .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-es.html") no-repeat; }
-	.es-mx .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-mx.html") no-repeat; }
-	.fr-fr .promo.promo-presale { background: url("../images/sidebar/pre-sale/fr-fr.html") no-repeat; }
-	.it-it .promo.promo-presale { background: url("../images/sidebar/pre-sale/it-it.html") no-repeat; }
-	.pl-pl .promo.promo-presale { background: url("../images/sidebar/pre-sale/pl-pl.html") no-repeat; }
-	.ru-ru .promo.promo-presale { background: url("../images/sidebar/pre-sale/ru-ru.html") no-repeat; }
+	.promo.promo-presale { background: url("../images/sidebar/pre-sale/en-us.jpg") no-repeat; width: 300px; height: 250px; }
+	.de-de .promo.promo-presale { background: url("../images/sidebar/pre-sale/de-de.jpg") no-repeat; }
+	.es-es .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-es.jpg") no-repeat; }
+	.es-mx .promo.promo-presale { background: url("../images/sidebar/pre-sale/es-mx.jpg") no-repeat; }
+	.fr-fr .promo.promo-presale { background: url("../images/sidebar/pre-sale/fr-fr.jpg") no-repeat; }
+	.it-it .promo.promo-presale { background: url("../images/sidebar/pre-sale/it-it.jpg") no-repeat; }
+	.pl-pl .promo.promo-presale { background: url("../images/sidebar/pre-sale/pl-pl.jpg") no-repeat; }
+	.ru-ru .promo.promo-presale { background: url("../images/sidebar/pre-sale/ru-ru.jpg") no-repeat; }
 
 	/* activate */
 	.promo.promo-cataclysm-activate { background: url("../images/sidebar/cataclysm-activate/bg.jpg") no-repeat; width: 300px; height: 250px; }
@@ -534,7 +522,6 @@ a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb10
 
 /* Post/Topic History */
 .post-history-int {border:1px solid #2e1f1a;}
-
 
 /* Community*/
 .community-home #content .content-bot { background: url("../images/homepage/shadow.png") repeat-y 0 0 transparent; }

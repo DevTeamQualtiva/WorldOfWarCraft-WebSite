@@ -2,10 +2,10 @@
 #homepage { padding: 0; }
 
 /* News */
-#news-updates { padding: 0 0 20px 0; /*background: url("../images/homepage/news-bottom.png") 0 100% no-repeat;*/ }
+#news-updates { padding: 0 0 20px 0; word-wrap:break-word; /*background: url("../images/homepage/news-bottom.png") 0 100% no-repeat;*/ }
 #news-updates .news-article { background: no-repeat scroll 0 0 transparent; padding: 40px 25px 20px 30px; /*padding: 40px 0 0 0; border-top: 3px solid #002748; border-bottom: 1px solid #002748;*/  }
 #news-updates .article-left { width: 148px; height: 141px; float: left; background-position: center center; background-repeat: no-repeat;margin:15px 0 0 0; }
-#news-updates .article-left a { display:block; }
+#news-updates .article-left a { display:block; width:100%; height:100%; }
 #news-updates a:hover, #news-updates a:focus { color: #fff; }
 #news-updates .article-right { width: 435px; float: left; padding: 7px 0 0 14px; position:relative;}
 #news-updates h3 { font-weight:normal; font-size:20px; letter-spacing:-0.08em;  }

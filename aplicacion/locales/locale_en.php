@@ -96,7 +96,7 @@ $WoW_Locale = array(
     
     'template_menu_game' => 'Game',
     'template_menu_items' => 'Items',
-    'template_menu_forums' => 'Forums',
+    'template_menu_forums' => 'LATEST BLIZZARD POSTS',
     
     'template_locale_de' => 'German',
     'template_locale_en' => 'English',
@@ -783,6 +783,9 @@ $WoW_Locale = array(
     'template_game_expansion_1' => 'The Burning Crusade',
     'template_game_expansion_0' => 'Classic',
     
+    'template_under_development' => 'UNDER DEVELOPMENT',
+    'template_stay_connected' => 'STAY CONNECTED',
+	
     'template_auction_auction' => 'Auction House',
     'template_auction_my_lots' => 'My Auctions',
     'template_auction_sold' => 'Sold',
