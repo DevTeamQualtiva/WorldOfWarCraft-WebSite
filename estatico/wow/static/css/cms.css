@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* WoW CMS Overrides */
-#right { margin: 0 20px 0 0; padding: 0; margin: 0% 0 5% 0; }
+#right { margin: 0 20px 0 0; padding: 0; margin: 0 0 5px 0; }
 .homepage #right { padding-top: 15px; }
 
 #homepage, #blog-wrapper { background: url("../images/homepage/shadow.png") repeat-y; }
