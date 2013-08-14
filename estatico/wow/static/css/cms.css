@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* WoW CMS Overrides */
-#right { margin: 0 20px 0 0; padding: 0; }
+#right { margin: 0 20px 0 0; padding: 0; margin: 0% 0 5% 0; }
 .homepage #right { padding-top: 15px; }
 
 #homepage, #blog-wrapper { background: url("../images/homepage/shadow.png") repeat-y; }
@@ -344,7 +344,7 @@ a.sidebar-esports { display: block; width: 285px; height: 97px; border: 1px soli
 a.sidebar-esports:hover { background-position: left bottom; border-color: #ffb100; }
 
 #sidebar-under-dev a.sidebar-under-dev { display: block; width: 295px; height: 110px; border: 1px solid #372511; background: url("../images/sidebar/under-dev/under-dev.jpg") no-repeat 0 0;
-	border-radius: 5px; margin: 10px auto 0 auto; }
+	border-radius: 5px; margin: 10px auto 0 auto;}
 .es-mx #sidebar-under-dev  a.sidebar-under-dev { background: url("../images/sidebar/under-dev/under-dev_es-mx.jpg") no-repeat 0 0; }
 .es-es #sidebar-under-dev  a.sidebar-under-dev { background: url("../images/sidebar/under-dev/under-dev_es-es.jpg") no-repeat 0 0; }
 .it-it #sidebar-under-dev a.sidebar-under-dev { background: url("../images/sidebar/under-dev/under-dev_it-it.jpg") no-repeat 0 0; }

@@ -45,7 +45,7 @@ Class DatabaseConfig {
         1 => array(
             'host'      => 'localhost',
             'user'      => 'root',
-            'password'  => 'Your PASS / TU CONTRASEÑA',
+            'password'  => '',
             'db_name'   => 'characters',
             'charset'   => 'UTF8',
             'db_prefix' => ''
@@ -59,7 +59,7 @@ Class DatabaseConfig {
     public static $realm = array(
         'host'      => 'localhost',
         'user'      => 'root',
-        'password'  => 'Your PASS / TU CONTRASEÑA',
+        'password'  => '',
         'db_name'   => 'auth',
         'charset'   => 'UTF8',
         'db_prefix' => ''
@@ -72,7 +72,7 @@ Class DatabaseConfig {
     public static $wow = array(
         'host'      => 'localhost',
         'user'      => 'root',
-        'password'  => 'Your PASS / TU CONTRASEÑA',
+        'password'  => '',
         'db_name'   => 'battle',
         'charset'   => 'UTF8',
         'db_prefix' => 'wow'
