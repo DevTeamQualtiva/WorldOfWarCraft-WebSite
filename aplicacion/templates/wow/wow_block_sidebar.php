@@ -104,19 +104,19 @@ if(WoW_Account::IsLoggedIn() && WoW_Account::IsHaveActiveCharacter()) {
 				<a href="/wow/es/feed/news" target="_blank"></a>
 			</li>
 				<li class="facebook">
-					<a href="https://www.facebook.com/pages/Apocalypse-Mmorpg-Framework/298495913595147?ref=hl" title="World of Warcraft en Facebook"></a>
+					<a href="You URL / Tu URL Facebook" title="World of Warcraft en Facebook"></a>
 				</li>
 				<li class="vk">
 					<a href="" title=""></a>
 				</li>
 				<li class="twitter">
-					<a href="http://twitter.com/warcraft_Es" title="World of Warcraft en Twitter"></a>
+					<a href="You URL / Tu URL Twitter" title="World of Warcraft en Twitter"></a>
 				</li>
 				<li class="youtube">
-					<a href="http://www.youtube.com/user/WorldofWarcraftES" title="World of Warcraft en Youtube"></a>
+					<a href="You URL / Tu URL Yotube" title="World of Warcraft en Youtube"></a>
 				</li>
 				<li class="reddit">
-					<a href="http://www.reddit.com/r/wow" title="World of Warcraft on reddit"></a>
+					<a href="You URL / Tu URL Reddit" title="World of Warcraft on reddit"></a>
 				</li>
 		<span class="clear"><!-- --></span>
 		</ul>
