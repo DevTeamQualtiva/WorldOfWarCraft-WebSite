@@ -27,7 +27,7 @@ a:hover { color: #FFF !important }
 #right a:hover { color: #FFF }
 
 /* tooltip */
-.ui-tooltip { border: 1px solid #353837; color: #fff; background-color: rgba(15, 15, 15, 0.9); padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: #000 0 0 15px; -webkit-box-shadow: #000 0 0 15px; box-shadow: #000 0 0 15px; font-size: 12px; max-width: 400px;}
+.ui-tooltip { border: 1px solid #353837; color: #fff; background-color: rgba(15, 15, 15, 0.9); padding: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: #000 0 0 15px; -webkit-box-shadow: #000 0 0 15px; box-shadow: #000 0 0 15px; font-size: 12px; max-width: 400px; }
 .ui-tooltip h3 { font-size: 16px; font-weight: normal; } /* title of the tooltip */
 .ui-tooltip li { clear: both; }
 .ui-tooltip a { color: white; }
@@ -48,7 +48,7 @@ a.tip, .tip a { cursor: pointer; }
 
 /* ui-fansite */
 .hover .ui-fansite-link { visibility: visible; }
-.ui-fansite-link { width: 21px; height: 21px; vertical-align: top; display: inline-block; overflow: hidden; background: url("../images/icons/goto-ui-fansite-button.gif") no-repeat; pad }
+.ui-fansite-link { width: 21px; height: 21px; vertical-align: top; display: inline-block; overflow: hidden; background: url("../images/icons/goto-ui-fansite-button.gif") no-repeat; }
 .ui-fansite-link:hover,
 .hover .ui-fansite-link { background-position: 0 -21px; }
 .ui-fansite-link.ui-fansite-small { width: 16px; height: 16px; background-position: 0 -42px; }
