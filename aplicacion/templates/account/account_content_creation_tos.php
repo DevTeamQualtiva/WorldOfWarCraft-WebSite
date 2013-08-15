@@ -307,26 +307,12 @@ for($i = 1; $i < 11; $i++) {
 <span class="title-text">
 </span>
 <span class="input-required"></span>
-</span>
-<span class="input-right">
+</span><!--
+--><span class="input-right">
 <label for="agreedToToU">
 <input type="checkbox" name="agreedToToU" value="true" id="agreedToToU" tabindex="1" required="required" />
 <span class="label-text">
 <?php echo WoW_Locale::GetString('template_account_creation_tos_agreement_text'); ?>
-<span class="input-required">*</span>
-</span>
-</label>
-</span>
-<span class="input-left">
-<span class="title-text">
-</span>
-<span class="input-required"></span>
-</span>
-<span class="input-right">
-<label for="agreedToChatPolicy">
-<input type="checkbox" name="agreedToChatPolicy" value="true" id="agreedToChatPolicy" tabindex="1" required="required" />
-<span class="label-text">
-<?php echo WoW_Locale::GetString('template_account_creation_pm_monitoring_agreement_text'); ?>
 <span class="input-required">*</span>
 </span>
 </label>
@@ -337,25 +323,28 @@ for($i = 1; $i < 11; $i++) {
 <span class="title-text">
 </span>
 <span class="input-required"></span>
+</span><!--
+--><span class="input-right">
+<label for="blizzardNewsletter">
+<input type="checkbox" name="blizzardNewsletter" value="true" id="blizzardNewsletter" tabindex="1" checked="checked" />
+<span class="label-text">
+<?php echo WoW_Locale::GetString('template_account_creation_pm_monitoring_agreement_text'); ?>
+</span>
+</label>
 </span>
 </div>
 <div class="submit-row">
 <div class="input-left"></div>
 <div class="input-right">
-<button
-class="ui-button button1 "
-type="submit"
-id="creation-submit"
-tabindex="1">
-<span>
-<span><?php echo WoW_Locale::GetString('template_account_creation_create'); ?></span>
-</span>
+<button class="ui-button button1 " type="submit" id="creation-submit" tabindex="1">
+	<span>
+		<span>
+		    <?php echo WoW_Locale::GetString('template_account_creation_create'); ?><span class="input-required"></span>
+		</span>
+	</span>
 </button>
-<a class="ui-cancel "
-href="<?php echo WoW::GetWoWPath(); ?>/"
-tabindex="1">
-<span>
-<?php echo WoW_Locale::GetString('template_wow_dashboard_upgrade_account_cancel'); ?> </span>
+<a class="ui-cancel" href="<?php echo WoW::GetWoWPath(); ?>/" tabindex="1">
+<span><?php echo WoW_Locale::GetString('template_wow_dashboard_upgrade_account_cancel'); ?><span class="input-required"></span>
 </a>
 </div>
 </div>

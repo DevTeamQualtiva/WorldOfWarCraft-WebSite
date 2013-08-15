@@ -96,7 +96,7 @@ $WoW_Locale = array(
     
     'template_menu_game' => 'Game',
     'template_menu_items' => 'Items',
-    'template_menu_forums' => 'LATEST BLIZZARD POSTS',
+    'template_menu_forums' => 'Forums',
     
     'template_locale_de' => 'German',
     'template_locale_en' => 'English',
