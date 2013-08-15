@@ -11,7 +11,27 @@
 				</li>
 			<li class="service-cell service-account"><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=1" class="service-link" tabindex="50" accesskey="3"><?php echo WoW_Locale::GetString('template_servicebar_account'); ?></a>
 			</li>
-			<li class="service-cell service-support"><a href="http://eu.blizzard.com/support/" class="service-link" tabindex="50" accesskey="4"><?php echo WoW_Locale::GetString('template_servicebar_support'); ?></a>
+			<li class="service-cell service-support"><a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
+			<div class="support-menu" id="support-menu" style="display:none;">
+			<div class="support-primary">
+			<ul class="support-nav">
+			<li>
+			<a href="http://eu.battle.net/support/" tabindex="55" class="support-category">
+			<strong class="support-caption">Knowledge Center</strong>
+					Browse our support articles
+			</a>
+			</li>
+			<li>
+			<a href="https://eu.battle.net/support/ticket/status" tabindex="55" class="support-category">
+			<strong class="support-caption">Your Support Tickets</strong>
+					View your active tickets (login required).
+			</a>
+
+			</li>
+			</ul>
+			<span class="clear"><!-- --></span>
+			</div>
+			<div class="support-secondary"></div>
 			</li>
 			<li class="service-cell service-explore">
 				<a href="#explore" tabindex="50" accesskey="5" class="dropdown" id="explore-link" onclick="return false" style="cursor: progress" rel="javascript"><?php echo WoW_Locale::GetString('template_servicebar_explore'); ?></a>
