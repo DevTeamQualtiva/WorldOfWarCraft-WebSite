@@ -73,7 +73,7 @@ Class DatabaseConfig {
         'host'      => 'localhost',
         'user'      => 'root',
         'password'  => 'Your PASS / TU CONTRASEÑA',
-        'db_name'   => 'battle',
+        'db_name'   => 'Battle',
         'charset'   => 'UTF8',
         'db_prefix' => 'wow'
     );

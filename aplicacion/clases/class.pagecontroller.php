@@ -193,7 +193,7 @@ Class PageController {
                 }
                 break;
         }
-        $controller_file = CONTROLLERS_DIR . $this->m_type . DS . $this->m_controller . '.php';
+        $controller_file = CONTROLADORES_DIR . $this->m_type . DS . $this->m_controller . '.php';
         if(!file_exists($controller_file)) {
             if($this->m_allowErrorPage) {
                 WoW_Template::ErrorPage(404, null, ($this->m_type == 'wow' ? false : true));

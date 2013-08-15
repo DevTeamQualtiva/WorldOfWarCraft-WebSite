@@ -17,8 +17,8 @@
 				<![endif]-->
 				<!--[if lte IE 8]>
 					<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/CFInstall.min.js?v15"></script>
-	<script type="text/javascript">
-	//<![CDATA[
+				<script type="text/javascript">
+				    //<![CDATA[
 						$(function() {
 							var age = 365 * 24 * 60 * 60 * 1000;
 							var src = 'https://www.google.com/chromeframe/';
@@ -28,7 +28,8 @@
 							}
 							document.cookie = "disableGCFCheck=0;path=/;max-age="+age;
 							$('#chrome-frame-link').bind({
-								'click': function() {
+								'click': function() 
+								{
 									App.closeWarning('#browser-warning');
 									CFInstall.check({
 										mode: 'overlay',
@@ -38,8 +39,8 @@
 								}
 							});
 						});
-	//]]>
-	</script>
+				    //]]>
+				</script>
 				<![endif]-->
 
 

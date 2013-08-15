@@ -35,14 +35,14 @@ if(!defined('WOW_DIRECTORY') || !WOW_DIRECTORY) {
 
 define('DS', DIRECTORY_SEPARATOR);
 define('APLICACION_DIR',    WOW_DIRECTORY . DS . 'aplicacion' . DS);
-define('CLASSES_DIR',     APLICACION_DIR . 'classes' . DS);
-define('CONFIGS_DIR',     APLICACION_DIR . 'configs' . DS);
-define('INTERFACES_DIR',  APLICACION_DIR . 'interfaces' . DS);
-define('LOCALES_DIR',     APLICACION_DIR . 'locales' . DS);
-define('TEMPLATES_DIR',   APLICACION_DIR . 'templates' . DS);
-define('CONTROLLERS_DIR', APLICACION_DIR . 'controllers' . DS);
-define('ESTATICO_DIR',     WOW_DIRECTORY . DS . 'estatico' . DS);
-define('CACHE_DIR',       WOW_DIRECTORY . DS . 'cache' . DS);
+define('CLASES_DIR',        APLICACION_DIR . 'clases' . DS);
+define('CONFIGS_DIR',       APLICACION_DIR . 'configs' . DS);
+define('INTERFACES_DIR',    APLICACION_DIR . 'interfaces' . DS);
+define('LOCALES_DIR',       APLICACION_DIR . 'locales' . DS);
+define('VISTA_DIR',         APLICACION_DIR . 'vista' . DS);
+define('CONTROLADORES_DIR', APLICACION_DIR . 'controladores' . DS);
+define('ESTATICO_DIR',      WOW_DIRECTORY . DS . 'estatico' . DS);
+define('CACHE_DIR',         WOW_DIRECTORY . DS . 'cache' . DS);
 
 // Load defines
 include(APLICACION_DIR . 'revision_nr.php');
@@ -77,18 +77,18 @@ else{
 }*/
 
 // Load libraries
-include(CLASSES_DIR . 'libs' . DS . 'mysqldatabase.php');
-include(CLASSES_DIR . 'libs' . DS . 'log.php');
-include(CLASSES_DIR . 'libs' . DS . 'cacher.php');
+include(CLASES_DIR . 'libs' . DS . 'mysqldatabase.php');
+include(CLASES_DIR . 'libs' . DS . 'log.php');
+include(CLASES_DIR . 'libs' . DS . 'cacher.php');
 
 // Load classes
-include(CLASSES_DIR . 'class.db.php');
-include(CLASSES_DIR . 'class.wow.php');
-include(CLASSES_DIR . 'class.locale.php');
-include(CLASSES_DIR . 'class.template.php');
+include(CLASES_DIR . 'class.db.php');
+include(CLASES_DIR . 'class.wow.php');
+include(CLASES_DIR . 'class.locale.php');
+include(CLASES_DIR . 'class.template.php');
 
-include(CLASSES_DIR . 'class.pagecontroller.php');
-include(CONTROLLERS_DIR . 'controller.php');
+include(CLASES_DIR . 'class.pagecontroller.php');
+include(CONTROLADORES_DIR . 'controller.php');
 
 // Load data
 include(APLICACION_DIR . 'data' . DS . 'data.classes.php');
@@ -114,7 +114,7 @@ function WoW_Autoload($className)
             $classFileName = APLICACION_DIR . 'storages' . DS . ucfirst(str_replace('Storage', null, $className)) . '.php';
         }
         else {
-            $classFileName = CLASSES_DIR . 'class.' . strtolower(str_replace('WoW_', null, $className)) . '.php';
+            $classFileName = CLASES_DIR . 'class.' . strtolower(str_replace('WoW_', null, $className)) . '.php';
         }
         if(!file_exists($classFileName)) {
             die('<strong>Autoload Fatal Error:</strong> unable to autoload class ' . $className . ' (path: ' . $classFileName . ')!');

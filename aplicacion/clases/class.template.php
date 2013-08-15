@@ -71,10 +71,10 @@ Class WoW_Template {
             return false; // Do not load any templates if error page was triggered or page is redirecting.
         }
         if($overall) {
-            $template = TEMPLATES_DIR . 'overall' . DS . 'overall_' . $template_name . '.php';
+            $template = VISTA_DIR . 'overall' . DS . 'overall_' . $template_name . '.php';
         }
         else {
-            $template = TEMPLATES_DIR . self::GetTemplateTheme() . DS . self::GetTemplateTheme() . '_' . $template_name . '.php';
+            $template = VISTA_DIR . self::GetTemplateTheme() . DS . self::GetTemplateTheme() . '_' . $template_name . '.php';
         }
         if(file_exists($template)) {
             include($template);

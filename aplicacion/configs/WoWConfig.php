@@ -32,15 +32,46 @@ Class WoWConfig {
     public static $DefaultLocale     = 'en';
     public static $DefaultLocaleID   = 0;
     public static $SkipBanned        = false;
-    public static $WoW_Path          = ''; // Without slash at the end of path. If your site is in root directory, leave this empty.
-                                           // For example: site is available at http://example.org/wowcs/
-                                           // That means that you should set this variable as '/wowcs'.
-    public static $DefaultExpansion  = 4; // 0 - Classic, 1 - Burning Crusade, 2 - Wrath, 3 - Cataclysm, 4 - Mists Of Pandaria
-    public static $Maintenance       = false; // Disable site? true/false
-    public static $TwitterAccount    = 'YOUR TWITTER'; // Twitter account name (displayed on maintenance page). Leave it blank if you don't use any.
-    public static $UseRealmsStatus   = false; // Try to detect realms statuses when building account's character list?
-    public static $EnableBNPage      = true; // Enable Battle.net page (true - page will be displayed, false - you will be redirected to WoW portal)
+	/**
+    * Without slash at the end of path. If your site is in root directory, leave this empty.
+    * For example: site is available at http://example.org/wowcs/
+    * That means that you should set this variable as '/wowcs'. 
+	**/
+    public static $WoW_Path          = '';
+	
+	/** 
+	 * Your Expansion for Default - Tu Expansion por defecto
+	 * 0 - Classic, 1 - Burning Crusade, 2 - Wrath, 3 - Cataclysm, 4 - Mists Of Pandaria 
+	 **/
+    public static $DefaultExpansion  = 4;
+	
+	/**
+	 * Disable site? true/false
+	 * Deshabilitar La Pagina Web y ponerla en mantenimiento
+	 *        true or false
+	 **/
+    public static $Maintenance       = false;
+	
+	/**
+	 * Twitter account name (displayed on maintenance page). Leave it blank if you don't use any.
+	 * Tu cuenta de Twiter
+     *	PD: No modificar si no poseen una:
+	 **/
+    public static $TwitterAccount    = 'YOUR TWITTER';
 
+	/**
+     * Try to detect realms statuses when building account's character list?
+	 * Autodetectar el estado de reinos
+	 *        true or false
+	 **/
+    public static $UseRealmsStatus   = false;
+	
+    /** 
+	 * Enable Battle.net page (true - page will be displayed, false - you will be redirected to WoW portal)
+	 * Habilitar pagina de Battle.net (true - Mostrara la pagina, false - Redireccionara a la pagina de WoW)
+	 **/
+    public static $EnableBNPage      = true;
+	
     /**
      * All available realms
      * Structure:
@@ -53,6 +84,12 @@ Class WoWConfig {
     public static $Realms = array(
         1 => array(
             'id'   => 1,
+            'name' => 'ApocalypseCore',
+            'type' => SERVER_TRINITY
+        ),
+		
+        2 => array(
+            'id'   => 2,
             'name' => 'ApocalypseCore',
             'type' => SERVER_TRINITY
         ),
@@ -73,14 +110,18 @@ Class WoWConfig {
             'realms' => array(1, 2)
         )
     );
-
+	
+    /**
+     * Mail Service
+     * Servidor de correo
+     **/
     public static $MailSender        = array(
-        'smtp' => '', //smtp server url - for gmail use 'smtp.gmail.com'
-        'name' => '', //smtp auth username - for gmail use your gmail login
-        'pass' => '', //smtp auth password - for gmail use your gmail password
-        'port' => '', //smtp port - for gmail use '465'
-        'security' => '', //security (ssl, tls or blank) - for gmail use 'ssl'
-        'from' => 'wowcs@yourserver.com' //email adress
+        'smtp' => 'smtp.gmail.com',                        //smtp server url - for gmail use 'smtp.gmail.com'
+        'name' => 'User Name Login - usuario del correo',  //smtp auth username - for gmail use your gmail login
+        'pass' => 'Your Pass - Tu contraseña',             //smtp auth password - for gmail use your gmail password
+        'port' => '465',                                   //smtp port - for gmail use '465'
+        'security' => 'ssl',                               //security (ssl, tls or blank) - for gmail use 'ssl'
+        'from' => 'Info@yourserver.com'                    //email adress
     );
 }
 ?>
