@@ -17,6 +17,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
+ * Needs to be Translated
  **/
 
 $WoW_Locale = array(
@@ -145,6 +147,10 @@ $WoW_Locale = array(
 	'template_servicebar_explore_menu_home_title' => 'Battle.net',
 	'template_servicebar_explore_menu_account_title' => 'Account',
 	'template_servicebar_explore_menu_support_title' => 'Support',
+    'template_servicebar_explore_menu_support_title_art' => 'Knowledge Center',
+    'template_servicebar_explore_menu_support_title_art_db' => 'Browse our support articles',
+    'template_servicebar_explore_menu_support_title_ticket' => 'Your Support Tickets',
+    'template_servicebar_explore_menu_support_title_ticket_desc' => 'View your active tickets (login required).',
 	'template_servicebar_explore_menu_buy_title' => 'Buy Games',
 	'template_servicebar_explore_menu_more_title' => 'More',
 	'template_servicebar_explore_menu_more_link1' => 'What is Battle.net?',
