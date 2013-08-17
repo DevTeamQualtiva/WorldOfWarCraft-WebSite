@@ -87,12 +87,6 @@ Class WoWConfig {
             'name' => 'ApocalypseCore',
             'type' => SERVER_TRINITY
         ),
-		
-        2 => array(
-            'id'   => 2,
-            'name' => 'ApocalypseCore',
-            'type' => SERVER_TRINITY
-        ),
     );
 
     /**
