@@ -30,11 +30,13 @@ $WoW_Locale = array(
     'expansion_1' => 'World of Warcraft&reg;: the Burning Crusade',
     'expansion_2' => 'World of Warcraft&reg;: Wrath of the Lich King',
     'expansion_3' => 'World of Warcraft&reg;: Cataclysm',
+    'expansion_4' => 'World of Warcraft&reg;: Mists Of Pandaria',
     
     'template_expansion_0' => 'Classic',
     'template_expansion_1' => 'The Burning Crusade',
     'template_expansion_2' => 'Wrath of the Lich King',
     'template_expansion_3' => 'Cataclysm',
+    'template_expansion_4' => 'Mists Of Pandaria',
     
     'character_class_1' => 'Warrior',
     'character_class_2' => 'Paladin',
@@ -784,6 +786,7 @@ $WoW_Locale = array(
     'template_game_lore' => 'Expanded Universe',
     'template_game_lore_story' => 'Short Stories',
     'template_game_lore_leaders' => 'Leader Short Stories',
+    'template_game_expansion_4' => 'Mists Of Pandaria',
     'template_game_expansion_3' => 'Cataclysm',
     'template_game_expansion_2' => 'Wrath of the Lich King',
     'template_game_expansion_1' => 'The Burning Crusade',
