@@ -1,6 +1,6 @@
 <!-- START: Footer -->
 <div id="footer">
-<div id="sitemap"<?php echo WoW_Template::GetTemplateTheme() == 'wow' ? ' class="footer-ads"' : null; ?>>
+<div id="sitemap">
 <div class="column">
 <h3 class="bnet">
 <a href="http://eu.battle.net/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>

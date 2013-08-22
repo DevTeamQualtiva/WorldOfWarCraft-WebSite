@@ -436,7 +436,7 @@ a.ui-button.imgbutton span span span { padding: 0 5px; }
 #international .column { float: left; padding: 20px; width: 115px; }
 #international .column a { display: block; padding: 3px 0; }
 #international .column a.selected { background: url("../images/icons/i18n-support.gif") 0 4px no-repeat; padding-left: 15px; margin-left: -15px; color: #fff; }
-#change-language { float: right; background: url("../images/icons/arrows.gif") 100% -99px no-repeat; padding-right: 20px }
+#change-language { float: right; background: url("../images/icons/arrows.gif") 100% -99px no-repeat; padding-right: 20px; margin-top:-2px }
 #change-language.open { background-position: 100% 1px; }
 #change-language span { display: inline-block; background: url("../images/icons/map-small.gif") 0 50% no-repeat; padding: 2px 0 2px 35px }
 
