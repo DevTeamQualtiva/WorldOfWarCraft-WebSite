@@ -16,7 +16,7 @@
 				</div>
 				<![endif]-->
 				<!--[if lte IE 8]>
-					<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/CFInstall.min.js?v15"></script>
+					<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/CFInstall.min.js"></script>
 				<script type="text/javascript">
 				    //<![CDATA[
 						$(function() {

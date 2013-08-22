@@ -6,12 +6,12 @@
 <div class="header">
 <h2 class="subcategory"><?php echo WoW_Locale::GetString('template_wow_dashboard_management'); ?></h2>
 <h3 class="headline"><?php echo WoW_Locale::GetString('expansion_' . WoW_Account::GetExpansion()); ?></h3>
-<a href="<?php echo WoW::GetWoWPath(); ?>/account/management/wow/dashboard.html?region=EU&amp;accountName=<?php echo WoW_Account::GetUserName(); ?>"><img src="/account/local-common/images/game-icons/wow<?php echo WoW_Account::GetExpansion() > 0 ? 'x' . WoW_Account::GetExpansion() : 'c'; ?>.png?v17" alt="World of Warcraft®" title="" width="48" height="48" /></a>
+<a href="<?php echo WoW::GetWoWPath(); ?>/account/management/wow/dashboard.html?region=EU&amp;accountName=<?php echo WoW_Account::GetUserName(); ?>"><img src="/account/local-common/images/game-icons/wow<?php echo WoW_Account::GetExpansion() > 0 ? 'x' . WoW_Account::GetExpansion() : 'c'; ?>.png" alt="World of Warcraft®" title="" width="48" height="48" /></a>
 </div>
 <div class="account-summary">
 <div class="account-management">
 <div class="section box-art" id="box-art">
-<img src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/images/game-boxes/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>/wow<?php echo WoW_Account::GetExpansion() > 0 ? 'x' . WoW_Account::GetExpansion() : 'c'; ?>-big.png?v17" alt="World of Warcraft®" title="" width="242" height="288" id="box-img" />
+<img src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/images/game-boxes/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>/wow<?php echo WoW_Account::GetExpansion() > 0 ? 'x' . WoW_Account::GetExpansion() : 'c'; ?>-big.png" alt="World of Warcraft®" title="" width="242" height="288" id="box-img" />
 </div>
 <div class="section account-details">
 <dl>
@@ -220,7 +220,7 @@ echo sprintf('<strong>%s</strong>%s', WoW_Locale::GetString('template_wow_dashbo
 </div>
 </div>
 </div>
-<!--[if lt IE 7]> <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/DD_belatedPNG.js?v17"></script>
+<!--[if lt IE 7]> <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/DD_belatedPNG.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 DD_belatedPNG.fix('.download a .icon');

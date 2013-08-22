@@ -91,7 +91,7 @@ for($i=0;$i<count($UserGames);$i++)
 </div>
 </div>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/locales/<?php echo WoW_Locale::GetLocale(); ?>.js"></script>
-<!--[if IE 6]> <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/DD_belatedPNG.js?v17"></script>
+<!--[if IE 6]> <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/DD_belatedPNG.js"></script>
 <script type="text/javascript">
 //<![CDATA[
 DD_belatedPNG.fix('.icon-16');

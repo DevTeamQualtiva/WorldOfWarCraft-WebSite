@@ -29,8 +29,8 @@ WoW_Template::LoadTemplate('block_footer', true);
 WoW_Template::LoadTemplate('block_service', true);
 WoW_Template::LoadTemplate('block_js_messages', true);
 ?>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/js/bnet.js?v5"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/menu.js?v15"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/js/bnet.js"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/menu.js"></script>
 <script type="text/javascript">
 var friendData = [];
 $(function() {
@@ -40,15 +40,15 @@ Search.init('/ta/lookup');
 });
 </script>
 <!--[if lt IE 8]>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.pngFix.pack.js?v15"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery.pngFix.pack.js"></script>
 <script type="text/javascript">$('.png-fix').pngFix();</script>
 <![endif]-->
 <script type="text/javascript">
 //<![CDATA[
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/overlay.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/search.js?v15");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/login.js?v15", false, function() {
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/overlay.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/search.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/login.js", false, function() {
 Login.embeddedUrl = '<?php echo WoW::GetWoWPath(); ?>/login/login.frag';
 });
 //]]>

@@ -29,11 +29,11 @@ World of Warcraft
 
 	<div id="realm-status">
 	<ul class="tab-menu ">
-				<li>
-					<a href="javascript:;" class="tab-active">
-					   <?php echo WoW_Locale::GetString('template_realm_status_all_realms'); ?>
-					</a>
-				</li>
+		<li>
+			<a href="javascript:;" class="tab-active">
+				<?php echo WoW_Locale::GetString('template_realm_status_all_realms'); ?>
+			</a>
+		</li>
 	</ul>
 
 		<div class="filter-toggle">
@@ -60,40 +60,25 @@ World of Warcraft
 
 				<div class="filter">
 					<label for="filter-name"><?php echo WoW_Locale::GetString('template_realm_status_realm_name'); ?></label>
-
-					<input type="text" class="input" id="filter-name" 
-						   data-filter="column" data-column="1" />
+					<input type="text" class="input" id="filter-name" data-filter="column" data-column="1" />
 				</div>
 
 				<div class="filter">
 					<label for="filter-type"><?php echo WoW_Locale::GetString('template_realm_status_realm_type'); ?></label>
-
 					<select id="filter-type" class="input select" data-filter="column" data-column="2">
-						<option value="">Все</option>
-							<option value="pve">
-								PvE
-							</option>
-
-							<option value="rppvp">
-								<?php echo WoW_Locale::GetString('template_realm_status_type_rppvp'); ?>
-							</option>
-							<option value="pvp">
-								PvP
-							</option>
-							<option value="rp">
-								<?php echo WoW_Locale::GetString('template_realm_status_type_roleplay'); ?>
-							</option>
+						<option value="normal"><?php echo WoW_Locale::GetString('template_realm_status_type_normal'); ?></option>
+						<option value="pve"><?php echo WoW_Locale::GetString('template_realm_status_type_pve'); ?></option>
+						<option value="rppvp"><?php echo WoW_Locale::GetString('template_realm_status_type_rppvp'); ?></option>
+						<option value="pvp"><?php echo WoW_Locale::GetString('template_realm_status_type_pvp'); ?></option>
+						<option value="rp"><?php echo WoW_Locale::GetString('template_realm_status_type_roleplay'); ?></option>
 					</select>
-
 				</div>
 
 				<div class="filter">
 					<label for="filter-population"><?php echo WoW_Locale::GetString('template_realm_status_population'); ?></label>
-
 					<select id="filter-population" class="input select" data-filter="column" data-column="3">
 						<option value=""><?php echo WoW_Locale::GetString('template_realm_status_all'); ?></option>
 							<option value="high"><?php echo WoW_Locale::GetString('template_realm_status_popul_high'); ?></option>
-
 							<option value="medium"><?php echo WoW_Locale::GetString('template_realm_status_popul_medium'); ?></option>
 							<option value="low"><?php echo WoW_Locale::GetString('template_realm_status_popul_low'); ?></option>
 					</select>
@@ -114,19 +99,15 @@ World of Warcraft
 
 				<div class="filter">
 					<label for="filter-queue"><?php echo WoW_Locale::GetString('template_realm_status_queue'); ?></label>
-
 					<input type="checkbox" id="filter-queue" class="input" value="true" data-column="5" data-filter="column" />
 				</div>
 
 				<div class="filter" style="margin: 5px 0 5px 15px">
-					
-
-	<button class="ui-button button1 " type="button" id="filter-button" onclick="RealmStatus.reset();">
-		<span>
-			<span><?php echo WoW_Locale::GetString('template_realm_status_reset_filters'); ?></span>
-		</span>
-	</button>
-
+					<button class="ui-button button1 " type="button" id="filter-button" onclick="RealmStatus.reset();">
+						<span>
+							<span><?php echo WoW_Locale::GetString('template_realm_status_reset_filters'); ?></span>
+						</span>
+					</button>
 				</div>
 
 	<span class="clear"><!-- --></span>
@@ -137,7 +118,7 @@ World of Warcraft
 	<span class="clear"><!-- --></span>
 
 
-		<div id="all-realms">
+<div id="all-realms">
 	<div class="table full-width">
 
 		<table>
@@ -160,10 +141,7 @@ World of Warcraft
                         foreach($realms as $realm) {
                             echo sprintf('<tr class="row%d">
 						<td class="status" data-raw="%s">
-							<div class="status-icon %s"
-								 onmouseover="Tooltip.show(this, \'%s\')">
-
-							</div>
+							<div class="status-icon %s" onmouseover="Tooltip.show(this, \'%s\')"></div>
 						</td>
 						<td class="name">
 							%s
@@ -196,7 +174,7 @@ World of Warcraft
 			</tbody>
 		</table>
 	</div>
-		</div>
+</div>
 
 	<span class="clear"><!-- --></span>
 </div>

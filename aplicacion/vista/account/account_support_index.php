@@ -45,9 +45,9 @@ switch(WoW_Template::GetPageIndex()) {
 </div>
 </div>
 <?php WoW_Template::LoadTemplate('block_js_messages', true); ?>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/js/bam.js?v19"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/tooltip.js?v17"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/menu.js?v17"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/js/bam.js"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/tooltip.js"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/menu.js"></script>
 <script type="text/javascript">
 $(function() {
 Menu.initialize();
@@ -56,34 +56,34 @@ Locale.dataPath = '<?php echo WoW::GetWoWPath(); ?>/data/i18n.frag';
 });
 </script>
 <!--[if lt IE 8]>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.pngFix.pack.js?v17"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.pngFix.pack.js"></script>
 <script type="text/javascript">$('.png-fix').pngFix();</script>
 <![endif]-->
 <?php
 switch(WoW_Template::GetPageIndex()) {
     case 'password_reset':
-        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/cant-login/cant-login.js?v19"></script>
-<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/support/validation.js?v19"></script>';
+        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/cant-login/cant-login.js"></script>
+<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/support/validation.js"></script>';
         break;
     case 'password_reset_select':
     case 'password_reset_secred_answer':
     case 'password_reset_success':
-        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/support/validation.js?v19"></script>';
+        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/support/validation.js"></script>';
         break;
     case 'password_reset_confirm':
-        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/settings/settings.js?v19"></script>';
+        echo '<script type="text/javascript" src="' . WoW::GetWoWPath() . '/account/js/settings/settings.js"></script>';
         break;
 }
 ?>
 
 <script type="text/javascript">
 //<![CDATA[
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/overlay.js?v17");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/search.js?v17");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js?v17");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.mousewheel.min.js?v17");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.tinyscrollbar.custom.js?v17");
-Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/login.js?v17", false, function() {
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/overlay.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/search.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.mousewheel.min.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery.tinyscrollbar.custom.js");
+Core.load("<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/login.js", false, function() {
 Login.embeddedUrl = '<?php echo WoW::GetWoWPath(); ?>/login/login.frag';
 });
 //]]>

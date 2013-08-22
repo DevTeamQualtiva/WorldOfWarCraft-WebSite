@@ -12,8 +12,8 @@
 <link rel="search" type="application/opensearchdescription+xml" href="http://eu.battle.net/ru-ru/data/opensearch" title="Поиск по Battle.net" />
 <?php echo WoW_Layout::PrintCSSForBNPage(); ?>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/third-party/jquery-1.4.4-p1.min.js"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/core.js?v17"></script>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/tooltip.js?v17"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/core.js"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/account/local-common/js/tooltip.js"></script>
 <!--[if IE 6]> <script type="text/javascript">
 //<![CDATA[
 try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}

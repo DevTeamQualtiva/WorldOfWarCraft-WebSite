@@ -1,9 +1,9 @@
-<link rel="stylesheet" type="text/css" href="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/css/common.css?v15"/>
+<link rel="stylesheet" type="text/css" href="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo WoW::GetWoWPath(); ?>/login/static/_themes/bam/css/master.css?v1"/>
-			<link rel="stylesheet" type="text/css" media="all" href="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/css/locale/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>.css?v15" />
+			<link rel="stylesheet" type="text/css" media="all" href="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/css/locale/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>.css" />
 			<link rel="stylesheet" type="text/css" media="all" href="<?php echo WoW::GetWoWPath(); ?>/login/static/_themes/bam/css/_lang/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>.css?v1" />
-		<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/js/third-party/jquery-1.4.2.min.js?v15"></script>
-		<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/js/core.js?v15"></script>
+		<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/js/third-party/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/login/static/local-common/js/core.js"></script>
     <script>
 			var targetOrigin = "http://<?php echo $_SERVER['HTTP_HOST'].WoW::GetWoWPath(); ?>/";
 

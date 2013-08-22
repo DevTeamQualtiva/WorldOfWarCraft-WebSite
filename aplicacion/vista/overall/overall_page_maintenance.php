@@ -267,7 +267,7 @@
         <div class="notice" id="es-es:notice" style="display: none;">
             <h1 class="logo"><span>Battle.net</span></h1>
             <div class="info">
-                <div class="title">¡Volvemos en un periquete!</div>
+                <div class="title">¡Volvemos Pronto!</div>
                 <p class="short">Las páginas web de Blizzard están temporalmente bajo mantenimiento para asegurar la máxima calidad del servicio. ¡Agradecemos tu paciencia!</p>
                 <?php
                 if(WoWConfig::$TwitterAccount != null) {
@@ -357,7 +357,7 @@
 
         <div class="footer" id="en-us:footer">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. All rights reserved</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. All rights reserved</span>
 
             <span class="legal">
                 <a target="_blank" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="2">Terms of Use</a>
@@ -378,7 +378,7 @@
 
         <div class="footer" id="es-mx:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Todos los derechos reservados</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Todos los derechos reservados</span>
 
             <span class="legal">
                 <a target="_blank" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="2">Condiciones de Uso</a>
@@ -399,7 +399,7 @@
 
         <div class="footer" id="pt-br:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Todos os direitos reservados</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Todos os direitos reservados</span>
 
             <span class="legal">
                 <a target="_blank" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="2">Termos de Uso</a>
@@ -422,7 +422,7 @@
 
         <div class="footer" id="en-gb:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. All rights reserved</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. All rights reserved</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Terms of Use</a>
@@ -437,7 +437,7 @@
 
         <div class="footer" id="de-de:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Alle Rechte vorbehalten</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Alle Rechte vorbehalten</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Nutzungsbestimmungen</a>
@@ -452,7 +452,7 @@
 
         <div class="footer" id="es-es:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Todos los derechos reservados</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Todos los derechos reservados</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Condiciones de Uso</a>
@@ -467,7 +467,7 @@
 
         <div class="footer" id="fr-fr:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Tous droits réservés</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Tous droits réservés</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Conditions d’utilisation</a>
@@ -482,7 +482,7 @@
 
         <div class="footer" id="it-it:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Tutti i diritti riservati</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Tutti i diritti riservati</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Condizioni d’uso</a>
@@ -497,7 +497,7 @@
 
         <div class="footer" id="pl-pl:footer" style="display: none;">
 
-            <span class="copyright">©2011 Blizzard Entertainment, Inc. Wszystkie prawa zastrzeżone</span>
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. Wszystkie prawa zastrzeżone</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Warunki użytkowania</a>

@@ -73,7 +73,7 @@ WoW_Template::LoadTemplate('block_header');
 <?php
 WoW_Template::LoadTemplate('block_js_messages', true);
 ?>
-<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/js/bnet.js?v5"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/js/bnet.js"></script>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/menu.js"></script>
 <script type="text/javascript">
 var friendData = [];
