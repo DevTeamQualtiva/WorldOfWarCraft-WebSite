@@ -16,40 +16,40 @@
 		<div class="profiles">
 			<h4><?php echo WoW_locale::GetString('template_community_title'); ?></h4>
 			<div class="profiles-section">
-	        <div class="sidebar-module " id="sidebar-profiles-search">
-			<div class="sidebar-title">
-	        <h3 class="category title-profiles-search"><?php echo WoW_locale::GetString('template_community_perfil'); ?></h3>
-			</div>
-		    <div class="sidebar-content">
-				<div class="profiles-search-block">
-					<span class="profiles-search-title"><?php echo WoW_locale::GetString('template_community_personaje'); ?></span>
-						<form action="http://us.battle.net/wow/es/search" method="get">
-							<input type="hidden" name="f" value="wowcharacter" />
-							<input type="text" id="wowcharacter" alt="Nombre" name="q" />
-							<button class="ui-button button1" type="submit">
-								<span>
-									<span><?php echo WoW_locale::GetString('template_community_search'); ?></span>
-								</span>
-							</button>
-						</form>
-					</div>
+				<div class="sidebar-module " id="sidebar-profiles-search">
+				<div class="sidebar-title">
+					<h3 class="category title-profiles-search"><?php echo WoW_locale::GetString('template_community_perfil'); ?></h3>
+				</div>
+				<div class="sidebar-content">
 					<div class="profiles-search-block">
-						<span class="profiles-search-title"><?php echo WoW_locale::GetString('template_community_guild'); ?></span>
-						<form action="http://us.battle.net/wow/es/search" method="get">
-							<input type="hidden" name="f" value="wowguild" />
-							<input type="text" id="wowguild" alt="Nombre" name="q" />
-								<button
-									class="ui-button button1" type="submit">
+						<span class="profiles-search-title"><?php echo WoW_locale::GetString('template_community_personaje'); ?></span>
+							<form action="<?php echo WoW::GetWoWPath(); ?>/wow/search?q=" method="get">
+								<input type="hidden" name="f" value="wowcharacter" />
+								<input type="text" id="wowcharacter" alt="Nombre" name="q" />
+								<button class="ui-button button1" type="submit">
 									<span>
 										<span><?php echo WoW_locale::GetString('template_community_search'); ?></span>
 									</span>
 								</button>
-						</form>
+							</form>
+						</div>
+						<div class="profiles-search-block">
+							<span class="profiles-search-title"><?php echo WoW_locale::GetString('template_community_guild'); ?></span>
+							<form action="<?php echo WoW::GetWoWPath(); ?>/wow/search?q=" method="get">
+								<input type="hidden" name="f" value="wowguild" />
+								<input type="text" id="wowguild" alt="Nombre" name="q" />
+									<button
+										class="ui-button button1" type="submit">
+										<span>
+											<span><?php echo WoW_locale::GetString('template_community_search'); ?></span>
+										</span>
+									</button>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
-			<p class="profiles-tip"><?php echo WoW_locale::GetString('template_community_tip'); ?></p>
-			<span class="clear"><!-- --></span>
+				<p class="profiles-tip"><?php echo WoW_locale::GetString('template_community_tip'); ?></p>
+				<span class="clear"><!-- --></span>
 			</div>
 		</div>
 			<div class="main-feature">
