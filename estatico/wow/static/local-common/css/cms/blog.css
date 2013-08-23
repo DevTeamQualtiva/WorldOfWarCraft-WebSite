@@ -2,8 +2,7 @@
 #blog-container { }
 
 #left { width: 655px; float: left; }
-#right { margin: 20px 13px 20px 0; width: 305px; float: right; padding: 10px; line-height: 1.5em; 
-		-moz-border-radius: 10px; border-radius: 10px;}
+#right { margin: 20px 13px 20px 0; width: 305px; float: right; padding: 10px; line-height: 1.5em; border-radius: 10px;}
 
 /* Featured */
 .featured-news { line-height: 1.08em; padding: 20px 0 20px 27px; background:50% 0 no-repeat; }
@@ -11,8 +10,7 @@
 .featured-news .featured:last-child { margin: 0; }
 .featured-news .featured a {  }
 .featured-news .featured a:hover, .featured-news .featured a:focus { color: #fff; }
-.featured-news .featured a .featured-img { 	height: 90px; display: block; border: 1px solid transparent; background-position:50%; 
-											-moz-border-radius:3px; border-radius:3px; }
+.featured-news .featured a .featured-img { 	height: 90px; display: block; border: 1px solid transparent; background-position:50%; border-radius:3px; }
 .featured-news a:hover .featured-img { }
 .featured-news .featured a:hover { text-decoration: none; }
 .featured-news .featured-desc { padding:7px 0 0 0; display:block; word-wrap:break-word; }
@@ -30,7 +28,7 @@
 /* News Blog */
 
 #blog, .page-comment-interior h3, .comments-container { padding:29px 11px 0 20px; background: 50% 0 no-repeat;  }
-h3.blog-title { font-weight:normal; font-size:30px; color:#fff; letter-spacing:-1px; }
+h3.blog-title { font-weight:normal; font-size:30px; color:#fff; letter-spacing:-1px; word-wrap: break-word; }
 
 #sidebar-related { display:none; }
 
@@ -39,8 +37,9 @@ h3.blog-title { font-weight:normal; font-size:30px; color:#fff; letter-spacing:-
 #blog .byline a:hover, #blog .byline a:focus { color: #fff; }
 #blog .blog-info { float:left; }
 
-#blog .header-image { padding:10px 0 19px 0; text-align:center; }
-
+#blog img { max-width: 100%; }
+#blog .header-image { padding:10px 0 19px 0; text-align:center; position: relative; overflow: hidden; height: auto; width: 600px;}
+#blog .header-image img { position: relative; left: -11px; max-width: none;}
 #blog .detail, .damocles-edit { line-height: 2em; padding: 5px 0 20px; }
 #blog .detail p { padding:6px 0; }
 #blog .detail h3 { margin-top:25px; text-decoration:underline; }
@@ -55,7 +54,7 @@ h3.blog-title { font-weight:normal; font-size:30px; color:#fff; letter-spacing:-
 #blog .community-share a:hover { color:#fff; }
 
 #blog .addthis_toolbox { float:right; background-position:-14px -120px; padding-left:24px; width:100px }
-#blog .addthis_toolbox { padding:2px; -moz-border-radius:3px; border-radius:3px; background:#FFF}
+#blog .addthis_toolbox { padding:2px; border-radius:3px; background:#FFF}
 
 #blog .keyword-list { padding:14px 0; clear:both; border-top: 2px solid black; font-size:11px; }
 
