@@ -227,10 +227,17 @@ foreach($game_guide_menu as $active_menu) {
 								</a>
 							</li>
 							<li>
-								<a href="../race/forsaken">
+								<a href="../race/undead">
 								
-									<span class="icon-frame frame-36" style="background-image: url(<?php echo WoW::GetWoWPath(); ?>/wow/icons/36/race_forsaken_male.jpg);"><span class="frame"></span></span>
-									<span class="list-title"><?php echo WoW_Locale::GetString('template_guide_getting_started_step2_forsaken'); ?></span>
+									<span class="icon-frame frame-36" style="background-image: url(<?php echo WoW::GetWoWPath(); ?>/wow/icons/36/race_undead_male.jpg);"><span class="frame"></span></span>
+									<span class="list-title"><?php echo WoW_Locale::GetString('template_guide_getting_started_step2_undead'); ?></span>
+								</a>
+							</li>
+							<li>
+								<a href="../race/pandaren">
+								
+									<span class="icon-frame frame-36" style="background-image: url(<?php echo WoW::GetWoWPath(); ?>/wow/icons/36/race_pandaren_male.jpg);"><span class="frame"></span></span>
+									<span class="list-title"><?php echo WoW_Locale::GetString('template_guide_getting_started_step2_pandaren'); ?></span>
 								</a>
 							</li>
 				</ul>
@@ -335,6 +342,15 @@ foreach($game_guide_menu as $active_menu) {
 									<span class="frame"></span>
 								</span>
 								<span class="list-title"><?php echo WoW_Locale::GetString('template_guide_getting_started_step3_druid'); ?></span>
+							</a>
+						</li>
+						<li>
+							<a href="../class/monk">
+								<span class="icon-frame frame-36"
+									style="background-image: url(<?php echo WoW::GetWoWPath(); ?>/wow/icons/36/class_monk.jpg);">
+									<span class="frame"></span>
+								</span>
+								<span class="list-title"><?php echo WoW_Locale::GetString('template_guide_getting_started_step3_monk'); ?></span>
 							</a>
 						</li>
 				</ul>

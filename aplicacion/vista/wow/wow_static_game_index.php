@@ -18,16 +18,16 @@
 				<span><?php echo WoW_Locale::GetString('template_game_guide_desc'); ?></span>
 			</a>
 		</div>
-		<div class="index">
-			<div class="panel">
-	<div class="column" style="width: 295px;">
-		<div class="box first-child">
+<div class="index">
+	<div class="panel">
+		<div class="column" style="width: 295px;">
+			<div class="box first-child">
 				<h2 class="header "><a href="<?php echo WoW::GetWoWPath(); ?>/wow/game/race/"><?php echo WoW_Locale::GetString('template_game_race_title'); ?></a></h2>
 				<?php
                 $horde_races = array(
                     'goblin' => 9,
                     'orc' => RACE_ORC,
-                    'forsaken' => RACE_UNDEAD,
+                    'undead' => RACE_UNDEAD,
                     'tauren' => RACE_TAUREN,
                     'troll' => RACE_TROLL,
                     'blood-elf' => RACE_BLOODELF
@@ -40,9 +40,13 @@
                     'night-elf' => RACE_NIGHTELF,
                     'human' => RACE_HUMAN
                 );
+                $neutral_races = array(
+                    'pandaren' => 24
+                );
                 $races = array(
                     'alliance' => $alliance_races,
-                    'horde' => $horde_races
+                    'horde' => $horde_races,
+					'neutral' => $neutral_races
                 );
                 foreach($races as $faction_name => $races) {
                     echo sprintf('<h4 class="subcategory ">%s</h4>', WoW_Locale::GetString('faction_' . $faction_name));
@@ -55,7 +59,7 @@
                         <a href="race/%s">
                             <span class="icon-frame frame-14 ">
                                 <img src="http://eu.media.blizzard.com/wow/icons/18/race_%s_male.jpg" alt="" width="14" height="14" />
-                            </span>
+		                    </span>
                             %s
                         </a>
                     </li>', $race_name, $race_name, WoW_Locale::GetString('character_race_' . $race_id));
@@ -85,6 +89,7 @@
                     'rogue' => CLASS_ROGUE,
                     'death-knight' => CLASS_DK,
                     'warlock' => CLASS_WARLOCK,
+                    'monk' => CLASS_MONK,
                     'shaman' => CLASS_SHAMAN
                 );
                 $i = 0;
@@ -113,7 +118,7 @@
 					<h2 class="header "><a href="<?php echo WoW::GetWoWPath(); ?>/wow/zone/"><?php echo WoW_Locale::GetString('template_game_dungeons_and_raids'); ?></a></h2>
 				<ul>
                         <?php
-                        for($i = 3; $i >= 0; --$i) {
+                        for($i = 4; $i >= 0; --$i) {
                             echo sprintf('<li><a href="%s/wow/zone/#expansion=%d">%s</a></li>', WoW::GetWoWPath(), $i, WoW_Locale::GetString('template_game_expansion_' . $i));
                         }
                         ?>
@@ -124,7 +129,7 @@
 					<h2 class="header "><a href="<?php echo WoW::GetWoWPath(); ?>/wow/faction/"><?php echo WoW_Locale::GetString('template_game_factions'); ?></a></h2>
 				<ul>
 						<?php
-                        for($i = 3; $i >= 0; --$i) {
+                        for($i = 4; $i >= 0; --$i) {
                             echo sprintf('<li><a href="%s/wow/faction/#expansion=%d">%s</a></li>', WoW::GetWoWPath(), $i, WoW_Locale::GetString('template_game_expansion_' . $i));
                         }
                         ?>

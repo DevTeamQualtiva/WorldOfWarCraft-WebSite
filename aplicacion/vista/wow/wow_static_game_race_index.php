@@ -15,6 +15,7 @@
 	<p class="main-header-desc"><?php echo WoW_Locale::GetString('template_game_race_intro'); ?></p>
     <?php
     $alliance_races = array(
+        'pandaren' => 24,
         'worgen' => 22,
         'draenei' => RACE_DRAENEI,
         'dwarf'  => RACE_DWARF,
@@ -23,18 +24,20 @@
         'night-elf' => RACE_NIGHTELF
     );
     $horde_races = array(
+        'pandaren' => 24,
         'goblin' => 9,
         'blood-elf' => RACE_BLOODELF,
         'orc' => RACE_ORC,
         'tauren' => RACE_TAUREN,
         'troll' => RACE_TROLL,
-        'forsaken' => RACE_UNDEAD
+        'undead' => RACE_UNDEAD
     );
     $races = array(
         'alliance' => $alliance_races,
         'horde' => $horde_races
     );
     $exp_races = array(
+        'mop' => array('pandaren'),
         'cataclysm' => array('worgen', 'goblin'),
         'bc' =>  array('draenei', 'blood-elf')
     );
@@ -42,9 +45,12 @@
         echo sprintf('<div class="racegroup %s"><span class="race-title">%s</span>', $faction_name, WoW_Locale::GetString('faction_' . $faction_name));
         $i = 0;
         foreach($races as $race_name => $race_id) {
-            if(in_array($race_name, $exp_races['cataclysm']) ) {
-                $req = sprintf('<em class="class-req cataclysm">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_3'));
+            if(in_array($race_name, $exp_races['mop']) ) {
+                $req = sprintf('<em class="class-req mop">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_4'));
             }
+			elseif(in_array($race_name, $exp_races['cataclysm']) ) {
+					$req = sprintf('<em class="class-req cataclysm">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_3'));
+			}
             elseif(in_array($race_name, $exp_races['bc']) ) {
                 $req = sprintf('<em class="class-req bc">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_1'));
             }

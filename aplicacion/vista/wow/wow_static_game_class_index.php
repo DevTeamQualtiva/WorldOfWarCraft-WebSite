@@ -24,14 +24,19 @@ $classes = array(
     'shaman' => CLASS_SHAMAN,
     'mage' => CLASS_MAGE,
     'warlock' => CLASS_WARLOCK,
+    'monk' => CLASS_MONK,
     'druid' => CLASS_DRUID
 );
 $exp_classes = array(
+    'mop' => array('monk'),
     'wrath' => array('death-knight')
 );
 $i = 0;
 foreach($classes as $class_name => $class_id) {
-    if(in_array($class_name, $exp_classes['wrath']) ) {
+    if(in_array($class_name, $exp_classes['mop']) ) {
+        $req = sprintf('<em class="class-req mop">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_4'));
+    }
+    elseif(in_array($class_name, $exp_classes['wrath']) ) {
         $req = sprintf('<em class="class-req wrath">%s</em>', WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_2'));
     }
     else {

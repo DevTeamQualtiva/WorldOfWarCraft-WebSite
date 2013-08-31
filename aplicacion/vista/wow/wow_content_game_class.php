@@ -21,7 +21,7 @@ $class = WoW_Game::GetClass();
       <div class="faction-req">
         <?php
         if($class['expansion'] > EXPANSION_CLASSIC) {
-            echo '<span class="req ' . ($class['expansion'] == 1 ? 'bc' : $class['expansion'] == 2 ? 'wrath' : 'cataclysm') . '">' . WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_' . $class['expansion']) . '</span>';
+            echo '<span class="req ' . ($class['expansion'] == 1 ? 'bc' : $class['expansion'] == 2 ? 'wrath' : $class['expansion'] == 3 ? 'cataclysm' : $class['expansion'] == 4 ? 'mop') . '">' . WoW_Locale::GetString('template_zone_expansion_required') . ' ' . WoW_Locale::GetString('template_expansion_' . $class['expansion']) . '</span>';
         }
         ?>
       </div>

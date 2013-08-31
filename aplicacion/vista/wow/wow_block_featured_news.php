@@ -1,5 +1,7 @@
 <!-- START: Featured News -->
-<div class="featured-news">
+<div class="homepage-news-wrapper">
+	<div class="featured-news">
+		<div class="featured-news-inner">
 <?php
 $wow_news = WoW::GetFeaturedNews();
 for($i = 0; $i < 5; ++$i) {
@@ -15,5 +17,7 @@ for($i = 0; $i < 5; ++$i) {
 }
 ?>
         <span class="clear"></span>
+        </div>
     </div>
+</div>
 <!-- END: Featured News -->

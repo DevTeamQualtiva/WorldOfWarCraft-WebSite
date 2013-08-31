@@ -29,8 +29,9 @@ define('CLASS_DK',      6);
 define('CLASS_SHAMAN',  7);
 define('CLASS_MAGE',    8);
 define('CLASS_WARLOCK', 9);
-define('CLASS_DRUID',   11);
-define('MAX_CLASSES',   12);
+define('CLASS_MONK',   10);
+define('CLASS_DRUID',  11);
+define('MAX_CLASSES',  12);
 
 define('CLASS_MASK_WARRIOR',   1);
 define('CLASS_MASK_PALADIN',   2);
@@ -42,6 +43,7 @@ define('CLASS_MASK_SHAMAN',   64);
 define('CLASS_MASK_MAGE',    128);
 define('CLASS_MASK_WARLOCK', 256);
 define('CLASS_MASK_DRUID',   512);
+define('CLASS_MASK_MONK',   1024);
 
 /** WoW Races **/
 define('RACE_HUMAN',     1);
@@ -56,20 +58,22 @@ define('RACE_GOBLIN',    9);
 define('RACE_BLOODELF', 10);
 define('RACE_DRAENEI',  11);
 define('RACE_WORGEN',   22);
-define('MAX_RACES',     23);
+define('RACE_PANDAREN', 24);
+define('MAX_RACES',     25);
 
-define('RACE_MASK_HUMAN',      1);
-define('RACE_MASK_ORC',        2);
-define('RACE_MASK_DWARF',      4);
-define('RACE_MASK_NIGHTELF',   8);
-define('RACE_MASK_UNDEAD',    16);
-define('RACE_MASK_TAUREN',    32);
-define('RACE_MASK_GNOME',     64);
-define('RACE_MASK_TROLL',    128);
-define('RACE_MASK_GOBLIN',   256);
-define('RACE_MASK_BLOODELF', 512);
-define('RACE_MASK_DRAENEI', 1024);
-define('RACE_MASK_WORGEN',  2048);
+define('RACE_MASK_HUMAN',       1);
+define('RACE_MASK_ORC',         2);
+define('RACE_MASK_DWARF',       4);
+define('RACE_MASK_NIGHTELF',    8);
+define('RACE_MASK_UNDEAD',     16);
+define('RACE_MASK_TAUREN',     32);
+define('RACE_MASK_GNOME',      64);
+define('RACE_MASK_TROLL',     128);
+define('RACE_MASK_GOBLIN',    256);
+define('RACE_MASK_BLOODELF',  512);
+define('RACE_MASK_DRAENEI',  1024);
+define('RACE_MASK_WORGEN',   2048);
+define('RACE_MASK_PANDAREN', 4096);
 
 /* Factions */
 define('FACTION_HORDE',    1);
@@ -89,32 +93,32 @@ define('REP_HONORED',    5);
 define('REP_REVERED',    6);
 define('REP_EXALTED',    7);
 
-define('REPUTATION_CAP', 42999);
-define('REPUTATION_BOTTOM', -42000);
+define('REPUTATION_CAP', 		  42999);
+define('REPUTATION_BOTTOM', 	 -42000);
 define('MIN_REPUTATION_RANK', REP_HATED);
-define('MAX_REPUTATION_RANK', 8);
+define('MAX_REPUTATION_RANK',		  8);
 
 /* Reputation ranks values */
 //TODO: fill values
-define('REPUTATION_VALUE_HATED', -6000);
+define('REPUTATION_VALUE_HATED',   -6000);
 define('REPUTATION_VALUE_HOSTILE', -3000);
-define('REPUTATION_VALUE_UNFRIENDLY', 0);
-define('REPUTATION_VALUE_NEUTRAL', 3000);
+define('REPUTATION_VALUE_UNFRIENDLY',  0);
+define('REPUTATION_VALUE_NEUTRAL',  3000);
 define('REPUTATION_VALUE_FRIENDLY', 9000);
 define('REPUTATION_VALUE_HONORED', 21000);
 define('REPUTATION_VALUE_REVERED', 42000);
 define('REPUTATION_VALUE_EXALTED', 42999);
 
 /* Achievements */
-define('ACHIEVEMENTS_CATEGORY_GENERAL',     92);
-define('ACHIEVEMENTS_CATEGORY_QUESTS',      96);
-define('ACHIEVEMENTS_CATEGORY_EXPLORATION', 97);
-define('ACHIEVEMENTS_CATEGORY_PVP',         95);
+define('ACHIEVEMENTS_CATEGORY_GENERAL',      92);
+define('ACHIEVEMENTS_CATEGORY_QUESTS',       96);
+define('ACHIEVEMENTS_CATEGORY_EXPLORATION',  97);
+define('ACHIEVEMENTS_CATEGORY_PVP',          95);
 define('ACHIEVEMENTS_CATEGORY_DUNGEONS',    168);
 define('ACHIEVEMENTS_CATEGORY_PROFESSIONS', 169);
 define('ACHIEVEMENTS_CATEGORY_REPUTATION',  201);
 define('ACHIEVEMENTS_CATEGORY_EVENTS',      155);
-define('ACHIEVEMENTS_CATEGORY_FEATS',       81);
+define('ACHIEVEMENTS_CATEGORY_FEATS',        81);
 
 /* SkillType */
 define('SKILL_NONE', 0);
@@ -286,6 +290,7 @@ define('SKILL_GENERAL_SHAMAN', 801);
 define('SKILL_GENERAL_WARLOCK', 802);
 define('SKILL_GENERAL_WARRIOR', 803);
 define('SKILL_GENERAL_PRIEST', 804);
+define('SKILL_GENERAL_MONK', 805);
 
 /* FactionFlags */
 define('FACTION_FLAG_VISIBLE', 0x01);         // makes visible in client (set or can be set at interaction with target of this faction)
@@ -538,25 +543,25 @@ define('MAX_COMBAT_RATING', 25);
 define('UNIT_FIELD_RESISTANCES_START', 101);
 
 /** Weapon Attack Types **/
-define('BASE_ATTACK', 0);
-define('OFF_ATTACK', 1);
+define('BASE_ATTACK',	0);
+define('OFF_ATTACK', 	1);
 define('RANGED_ATTACK', 2);
-define('MAX_ATTACK', 3);
+define('MAX_ATTACK', 	3);
 
 // Player::LoadFromDB()
 define('DEFAULT_WORLD_OBJECT_SIZE', 0.388999998569489);
-define('PLAYER_FLAGS_HIDE_HELM', 1024);
-define('PLAYER_FLAGS_HIDE_CLOAK', 2048);
+define('PLAYER_FLAGS_HIDE_HELM',                 1024);
+define('PLAYER_FLAGS_HIDE_CLOAK', 				 2048);
 
 /** Spell Schools **/
 define('SPELL_SCHOOL_NORMAL', 0);
-define('SPELL_SCHOOL_HOLY', 1);
-define('SPELL_SCHOOL_FIRE', 2);
+define('SPELL_SCHOOL_HOLY',   1);
+define('SPELL_SCHOOL_FIRE',   2);
 define('SPELL_SCHOOL_NATURE', 3);
-define('SPELL_SCHOOL_FROST', 4);
+define('SPELL_SCHOOL_FROST',  4);
 define('SPELL_SCHOOL_SHADOW', 5);
 define('SPELL_SCHOOL_ARCANE', 6);
-define('MAX_SPELL_SCHOOL', 7);
+define('MAX_SPELL_SCHOOL',    7);
 
 /** Spell School Masks **/
 define('SPELL_SCHOOL_MASK_NONE', 0x00);
@@ -592,44 +597,52 @@ define('PLAYER_SLOT_ITEM_OFF_HAND', PLAYER_FIELD_INV_SLOT_HEAD+32);
 define('PLAYER_SLOT_ITEM_RANGED', PLAYER_FIELD_INV_SLOT_HEAD+34);
 define('PLAYER_SLOT_ITEM_TABARD', PLAYER_FIELD_INV_SLOT_HEAD+36);
 
-/* Player level */
-define('MAX_PLAYER_LEVEL', 80); // Wrath
-define('GT_MAX_LEVEL', 100);
-define('MAX_EXPANSION_LEVEL', 3); // Cataclysm
+/**
+ * Player level 
+ * define('MAX_EXPANSION_LEVEL', 3); // Cataclysm
+ * define('MAX_EXPANSION_LEVEL', 2); // Wotlk
+ *
+ * define('MAX_PLAYER_LEVEL', 85); // Cataclysm
+ * define('MAX_PLAYER_LEVEL', 80); // Wotlk
+ **/
+ 
+define('MAX_PLAYER_LEVEL', 	 90); // Mists of Pandaria
+define('GT_MAX_LEVEL', 		100);
+define('MAX_EXPANSION_LEVEL', 4); // Mist Of Pandaria
 
 /* Item Proto */
 define('MAX_ITEM_PROTO_DAMAGES', 2);                            // changed in 3.1.0
 define('MAX_ITEM_PROTO_SOCKETS', 3);
-define('MAX_ITEM_PROTO_SPELLS', 5);
-define('MAX_ITEM_PROTO_STATS', 10);
+define('MAX_ITEM_PROTO_SPELLS',	 5);
+define('MAX_ITEM_PROTO_STATS', 	10);
 
 /* Unit Mod */
-define('UNIT_MOD_STAT_STRENGTH', 0);
-define('UNIT_MOD_STAT_AGILITY', 1);
-define('UNIT_MOD_STAT_STAMINA', 2);
-define('UNIT_MOD_STAT_INTELLECT', 3);
-define('UNIT_MOD_STAT_SPIRIT', 4);
-define('UNIT_MOD_HEALTH', 5);
-define('UNIT_MOD_MANA', 6);
-define('UNIT_MOD_RAGE', 7);
-define('UNIT_MOD_FOCUS', 8);
-define('UNIT_MOD_ENERGY', 9);
-define('UNIT_MOD_HAPPINESS', 10);
-define('UNIT_MOD_RUNE', 11);
-define('UNIT_MOD_RUNIC_POWER', 12);
-define('UNIT_MOD_ARMOR', 13);
-define('UNIT_MOD_RESISTANCE_HOLY', 14);
-define('UNIT_MOD_RESISTANCE_FIRE', 15);
-define('UNIT_MOD_RESISTANCE_NATURE', 16);
-define('UNIT_MOD_RESISTANCE_FROST', 17);
-define('UNIT_MOD_RESISTANCE_SHADOW', 18);
-define('UNIT_MOD_RESISTANCE_ARCANE', 19);
-define('UNIT_MOD_ATTACK_POWER', 20);
+define('UNIT_MOD_STAT_STRENGTH', 		0);
+define('UNIT_MOD_STAT_AGILITY', 		1);
+define('UNIT_MOD_STAT_STAMINA', 		2);
+define('UNIT_MOD_STAT_INTELLECT',       3);
+define('UNIT_MOD_STAT_SPIRIT', 			4);
+define('UNIT_MOD_HEALTH',               5);
+define('UNIT_MOD_MANA',                 6);
+define('UNIT_MOD_RAGE',                 7);
+define('UNIT_MOD_FOCUS',                8);
+define('UNIT_MOD_ENERGY',               9);
+define('UNIT_MOD_HAPPINESS',  		   10);
+define('UNIT_MOD_RUNE', 			   11);
+define('UNIT_MOD_RUNIC_POWER', 		   12);
+define('UNIT_MOD_ARMOR', 			   13);
+define('UNIT_MOD_RESISTANCE_HOLY',     14);
+define('UNIT_MOD_RESISTANCE_FIRE',     15);
+define('UNIT_MOD_RESISTANCE_NATURE',   16);
+define('UNIT_MOD_RESISTANCE_FROST',    17);
+define('UNIT_MOD_RESISTANCE_SHADOW',   18);
+define('UNIT_MOD_RESISTANCE_ARCANE',   19);
+define('UNIT_MOD_ATTACK_POWER',        20);
 define('UNIT_MOD_ATTACK_POWER_RANGED', 21);
-define('UNIT_MOD_DAMAGE_MAINHAND', 22);
-define('UNIT_MOD_DAMAGE_OFFHAND', 23);
-define('UNIT_MOD_DAMAGE_RANGED', 24);
-define('UNIT_MOD_END', 25);
+define('UNIT_MOD_DAMAGE_MAINHAND',	   22);
+define('UNIT_MOD_DAMAGE_OFFHAND', 	   23);
+define('UNIT_MOD_DAMAGE_RANGED', 	   24);
+define('UNIT_MOD_END', 				   25);
 define('UNIT_MOD_STAT_START', UNIT_MOD_STAT_STRENGTH);
 define('UNIT_MOD_STAT_END', UNIT_MOD_STAT_SPIRIT+1);
 define('UNIT_MOD_RESISTANCE_START', UNIT_MOD_ARMOR);
@@ -638,22 +651,22 @@ define('UNIT_MOD_POWER_START', UNIT_MOD_MANA);
 define('UNIT_MOD_POWER_END', UNIT_MOD_RUNIC_POWER+1);
 
 /* Unit Modifier Type */
-define('BASE_VALUE', 0);
-define('BASE_PCT', 1);
-define('TOTAL_VALUE', 2);
-define('TOTAL_PCT', 3);
+define('BASE_VALUE', 		0);
+define('BASE_PCT', 			1);
+define('TOTAL_VALUE', 		2);
+define('TOTAL_PCT', 		3);
 define('MODIFIER_TYPE_END', 4);
 
 /* Powers */
 define('POWER_HEALTH', 0xFFFFFFFE);
-define('POWER_MANA', 0);
-define('POWER_RAGE', 1);
-define('POWER_FOCUS', 2);
-define('POWER_ENERGY', 3);
-define('POWER_HAPPINESS', 4);
-define('POWER_RUNE', 5);
-define('POWER_RUNIC_POWER', 6);
-define('MAX_POWERS', 7);
+define('POWER_MANA', 			0);
+define('POWER_RAGE', 			1);
+define('POWER_FOCUS', 			2);
+define('POWER_ENERGY', 			3);
+define('POWER_HAPPINESS',   	4);
+define('POWER_RUNE', 			5);
+define('POWER_RUNIC_POWER', 	6);
+define('MAX_POWERS', 			7);
 
 define('POWER_MASK_MANA',         1);
 define('POWER_MASK_RAGE',         2);
@@ -704,34 +717,34 @@ define('ITEM_BIND_QUEST',   4);
 
 
 /* Inventory Types */
-define('INV_TYPE_HEAD', 1);
-define('INV_TYPE_NECK', 2);
-define('INV_TYPE_SHOULDER', 3);
-define('INV_TYPE_SHIRT', 4);
-define('INV_TYPE_CHEST', 4);
-define('INV_TYPE_WAIST', 6);
-define('INV_TYPE_LEGS', 7);
-define('INV_TYPE_FEET', 8);
-define('INV_TYPE_WRISTS', 9);
-define('INV_TYPE_HANDS', 10);
-define('INV_TYPE_FINGER', 11);
-define('INV_TYPE_TRINKET', 12);
-define('INV_TYPE_WEAPON', 13);
-define('INV_TYPE_SHIELD', 14);
-define('INV_TYPE_RANGED', 15);
-define('INV_TYPE_BACK', 16);
-define('INV_TYPE_TWOHAND', 17);
-define('INV_TYPE_BAG', 18);
-define('INV_TYPE_TABARD', 19);
-define('INV_TYPE_ROBE', 20);
-define('INV_TYPE_MAINHAND', 21);
-define('INV_TYPE_OFFHAND', 22);
-define('INV_TYPE_TOME', 23);
-define('INV_TYPE_AMMO', 24);
-define('INV_TYPE_THROWN', 25);
+define('INV_TYPE_HEAD',			1);
+define('INV_TYPE_NECK', 		2);
+define('INV_TYPE_SHOULDER',     3);
+define('INV_TYPE_SHIRT',		4);
+define('INV_TYPE_CHEST', 		4);
+define('INV_TYPE_WAIST', 		6);
+define('INV_TYPE_LEGS',     	7);
+define('INV_TYPE_FEET',         8);
+define('INV_TYPE_WRISTS',       9);
+define('INV_TYPE_HANDS',        10);
+define('INV_TYPE_FINGER',       11);
+define('INV_TYPE_TRINKET',      12);
+define('INV_TYPE_WEAPON',       13);
+define('INV_TYPE_SHIELD',       14);
+define('INV_TYPE_RANGED',       15);
+define('INV_TYPE_BACK',         16);
+define('INV_TYPE_TWOHAND',      17);
+define('INV_TYPE_BAG',          18);
+define('INV_TYPE_TABARD',       19);
+define('INV_TYPE_ROBE',         20);
+define('INV_TYPE_MAINHAND',     21);
+define('INV_TYPE_OFFHAND',      22);
+define('INV_TYPE_TOME',         23);
+define('INV_TYPE_AMMO',         24);
+define('INV_TYPE_THROWN',       25);
 define('INV_TYPE_RANGED_RIGHT', 26);
-define('INV_TYPE_QUIVER', 27);
-define('INV_TYPE_RELIC', 28);
+define('INV_TYPE_QUIVER',       27);
+define('INV_TYPE_RELIC',        28);
 
 /** Inventory Type (from ItemPrototype.h) **/
 define('INVTYPE_NON_EQUIP', 0);
@@ -765,16 +778,16 @@ define('INVTYPE_QUIVER', 27);
 define('INVTYPE_RELIC', 28);
 
 /* BaseModGroup */
-define('CRIT_PERCENTAGE', 0);
-define('RANGED_CRIT_PERCENTAGE', 1);
+define('CRIT_PERCENTAGE',    	  0);
+define('RANGED_CRIT_PERCENTAGE',  1);
 define('OFFHAND_CRIT_PERCENTAGE', 2);
-define('SHIELD_BLOCK_VALUE', 3);
-define('BASEMOD_END', 4);
+define('SHIELD_BLOCK_VALUE',      3);
+define('BASEMOD_END', 			  4);
 
 /* BaseModType */
 define('FLAT_MOD', 0);
-define('PCT_MOD', 1);
-define('MOD_END', 2);
+define('PCT_MOD',  1);
+define('MOD_END',  2);
 
 /* BaseDamage */
 define('BASE_MINDAMAGE', 1.0);
@@ -845,45 +858,45 @@ define('ITEM_SUBCLASS_WEAPON_FISHING_POLE', 20);
 define('MAX_ITEM_SUBCLASS_WEAPON', 21);
 
 /* ItemSubclassArmor */
-define('ITEM_SUBCLASS_ARMOR_MISC', 0);
-define('ITEM_SUBCLASS_ARMOR_CLOTH', 1);
+define('ITEM_SUBCLASS_ARMOR_MISC',    0);
+define('ITEM_SUBCLASS_ARMOR_CLOTH',   1);
 define('ITEM_SUBCLASS_ARMOR_LEATHER', 2);
-define('ITEM_SUBCLASS_ARMOR_MAIL', 3);
-define('ITEM_SUBCLASS_ARMOR_PLATE', 4);
+define('ITEM_SUBCLASS_ARMOR_MAIL',    3);
+define('ITEM_SUBCLASS_ARMOR_PLATE',   4);
 define('ITEM_SUBCLASS_ARMOR_BUCKLER', 5);
-define('ITEM_SUBCLASS_ARMOR_SHIELD', 6);
-define('ITEM_SUBCLASS_ARMOR_LIBRAM', 7);
-define('ITEM_SUBCLASS_ARMOR_IDOL', 8);
-define('ITEM_SUBCLASS_ARMOR_TOTEM', 9);
-define('ITEM_SUBCLASS_ARMOR_SIGIL', 10);
-define('MAX_ITEM_SUBCLASS_ARMOR', 11);
+define('ITEM_SUBCLASS_ARMOR_SHIELD',  6);
+define('ITEM_SUBCLASS_ARMOR_LIBRAM',  7);
+define('ITEM_SUBCLASS_ARMOR_IDOL',    8);
+define('ITEM_SUBCLASS_ARMOR_TOTEM',   9);
+define('ITEM_SUBCLASS_ARMOR_SIGIL',  10);
+define('MAX_ITEM_SUBCLASS_ARMOR',    11);
 
 /** Item Quality**/
-define('ITEM_QUALITY_POOR', 0);
-define('ITEM_QUALITY_COMMON', 1);
-define('ITEM_QUALITY_UNCOMMON', 2);
-define('ITEM_QUALITY_RARE', 3);
-define('ITEM_QUALITY_EPIC', 4);
+define('ITEM_QUALITY_POOR',      0);
+define('ITEM_QUALITY_COMMON',    1);
+define('ITEM_QUALITY_UNCOMMON',  2);
+define('ITEM_QUALITY_RARE',      3);
+define('ITEM_QUALITY_EPIC',      4);
 define('ITEM_QUALITY_LEGENDARY', 5);
-define('ITEM_QUALITY_ARTEFACT', 6);
-define('ITEM_QUALITY_HEIRLOOM', 7);
+define('ITEM_QUALITY_ARTEFACT',  6);
+define('ITEM_QUALITY_HEIRLOOM',  7);
 
 /** Server Types **/
-define('UNK_SERVER', 0);
-define('SERVER_MANGOS', 1);
+define('UNK_SERVER',     0);
+define('SERVER_MANGOS',  1);
 define('SERVER_TRINITY', 2);
 
 /** Guild Bank Rights **/
-define('GUILD_BANK_RIGHT_VIEW_TAB', 0x01);
-define('GUILD_BANK_RIGHT_PUT_ITEM', 0x02);
+define('GUILD_BANK_RIGHT_VIEW_TAB',    0x01);
+define('GUILD_BANK_RIGHT_PUT_ITEM',    0x02);
 define('GUILD_BANK_RIGHT_UPDATE_TEXT', 0x04);
 define('GUILD_BANK_RIGHT_DEPOSIT_ITEM', GUILD_BANK_RIGHT_VIEW_TAB | GUILD_BANK_RIGHT_PUT_ITEM);
-define('GUILD_BANK_RIGHT_FULL', 0xFF);
+define('GUILD_BANK_RIGHT_FULL',        0xFF);
 
 define('MAX_TALENT_POINTS', 71); // Wrath
 
 /** Bookmarks and selected characters **/
-define('MAX_BOOKMARKS_COUNT', 60);
+define('MAX_BOOKMARKS_COUNT',          60);
 define('MAX_SELECTED_CHARACTERS_COUNT', 5);
 
 /** Engine defines **/
@@ -892,26 +905,26 @@ define('LOCALE_DOUBLE', 2);
 define('LOCALE_SPLIT',  3);
 define('LOCALE_PATH',   4);
 
-define('ACCMGR_IDLE', 0);
-define('ACCMGR_PERFORM_LOGIN', 1);
-define('ACCMGR_LOGGED_IN', 2);
-define('ACCMGR_LOGGED_OFF', 3);
+define('ACCMGR_IDLE',              0);
+define('ACCMGR_PERFORM_LOGIN',     1);
+define('ACCMGR_LOGGED_IN',         2);
+define('ACCMGR_LOGGED_OFF',        3);
 define('ACCMGR_SPECIAL_OPERATION', 4);
 
-define('NORMALIZE_TO', 1);
+define('NORMALIZE_TO',   1);
 define('NORMALIZE_FROM', 2);
 
-define('ERROR_NONE', 0);
-define('ERROR_EMPTY_USERNAME', 1);
-define('ERROR_EMPTY_PASSWORD', 2);
-define('ERROR_WRONG_USERNAME_OR_PASSWORD', 4);
-define('ERORR_INVALID_PASSWORD_FORMAT', 8);
-define('ERROR_USER_LOCKED', 16);
-define('ERROR_USER_BANNED', 32);
+define('ERROR_NONE',								   0);
+define('ERROR_EMPTY_USERNAME', 						   1);
+define('ERROR_EMPTY_PASSWORD',						   2);
+define('ERROR_WRONG_USERNAME_OR_PASSWORD',			   4);
+define('ERORR_INVALID_PASSWORD_FORMAT',				   8);
+define('ERROR_USER_LOCKED', 						  16);
+define('ERROR_USER_BANNED', 						  32);
 define('ERORR_INVALID_PASSWORD_RECOVERY_COMBINATION', 64);
-define('ERORR_INVALID_PASSWORD_RECOVERY_ANSWER', 128);
-define('ERORR_NEW_PASSWORD_NOT_MATCH', 256);
-define('ERORR_NEW_PASSWORD_FAIL', 512);
+define('ERORR_INVALID_PASSWORD_RECOVERY_ANSWER',     128);
+define('ERORR_NEW_PASSWORD_NOT_MATCH',               256);
+define('ERORR_NEW_PASSWORD_FAIL',                    512);
 
 /** Database Types **/
 define('DB_WORLD',      0);
@@ -920,13 +933,13 @@ define('DB_REALM',      2);
 define('DB_WOW',        3);
 
 /** Time **/
-define('IN_MILISECONDS', 1000);
-define('IN_SECONDS', 1 * IN_MILISECONDS);
-define('IN_MINUTES', 60 * IN_SECONDS);
-define('IN_HOURS', 60 * IN_MINUTES);
-define('IN_DAYS', 24 * IN_HOURS);
-define('IN_WEEKS', 7 * IN_DAYS);
-define('IN_MONTHS', 30 * IN_DAYS);
+define('IN_MILISECONDS',              1000);
+define('IN_SECONDS',    1 * IN_MILISECONDS);
+define('IN_MINUTES', 	   60 * IN_SECONDS);
+define('IN_HOURS', 		   60 * IN_MINUTES);
+define('IN_DAYS', 			 24 * IN_HOURS);
+define('IN_WEEKS', 			   7 * IN_DAYS);
+define('IN_MONTHS', 		  30 * IN_DAYS);
 
 /** Class Roles **/
 define('ROLE_MELEE',  1);
@@ -974,24 +987,25 @@ define('THREAD_FLAG_MVP',       8);
 define('THREAD_FLAG_FEATURED', 16);
 
 define('EXPANSION_CLASSIC', 0);
-define('EXPANSION_BC', 1);
-define('EXPANSION_WRATH', 2);
-define('EXPANSION_CATA', 3);
+define('EXPANSION_BC',      1);
+define('EXPANSION_WRATH',   2);
+define('EXPANSION_CATA',    3);
+define('EXPANSION_MOP',     4);
 
 /** WoW Zones **/
-define('INSTANCE_FLAG_DUNGEON', 1);
-define('INSTANCE_FLAG_RAID', 2);
-define('INSTANCE_FLAG_NORMAL', 4);
-define('INSTANCE_FLAG_HEROIC', 8);
-define('INSTANCE_FLAG_NORMAL_ONLY', 16);
-define('INSTANCE_FLAG_HEROIC_ONLY', 32);
-define('INSTANCE_FLAG_REVAMPED', 64);
-define('INSTANCE_FLAG_CATA_REVAMP', 128);
-define('INSTANCE_FLAG_EXTRA_HEROIC_LEVEL', 256);
+define('INSTANCE_FLAG_DUNGEON',                1);
+define('INSTANCE_FLAG_RAID',                   2);
+define('INSTANCE_FLAG_NORMAL',                 4);
+define('INSTANCE_FLAG_HEROIC',                 8);
+define('INSTANCE_FLAG_NORMAL_ONLY',           16);
+define('INSTANCE_FLAG_HEROIC_ONLY',           32);
+define('INSTANCE_FLAG_REVAMPED',              64);
+define('INSTANCE_FLAG_CATA_REVAMP',          128);
+define('INSTANCE_FLAG_EXTRA_HEROIC_LEVEL',   256);
 define('INSTANCE_FLAG_SKIP_INTRODUCED_INFO', 512);
-define('INSTANCE_FLAG_RAID1_MODE_ONLY', 1024); // 10 players mode only
-define('INSTANCE_FLAG_RAID2_MODE_ONLY', 2048); // 25 players mode only
-define('INSTANCE_FLAG_RAID3_MODE_ONLY', 4096); // 40 players mode only
+define('INSTANCE_FLAG_RAID1_MODE_ONLY',     1024); // 10 players mode only
+define('INSTANCE_FLAG_RAID2_MODE_ONLY',     2048); // 25 players mode only
+define('INSTANCE_FLAG_RAID3_MODE_ONLY',     4096); // 40 players mode only
 
 /** WoW Classes **/
 define('ITEM_SUBCLASS_MASK_CLOTH',   1);
@@ -1000,42 +1014,42 @@ define('ITEM_SUBCLASS_MASK_MAIL',    4);
 define('ITEM_SUBCLASS_MASK_PLATE',   8);
 define('ITEM_SUBCLASS_MASK_SHIELD', 16);
 
-define('ITEM_SUBCLASS_MASK_AXE', 1);
-define('ITEM_SUBCLASS_MASK_AXE2', 2);
-define('ITEM_SUBCLASS_MASK_BOW', 4);
-define('ITEM_SUBCLASS_MASK_GUN', 8);
-define('ITEM_SUBCLASS_MASK_MACE', 16);
-define('ITEM_SUBCLASS_MASK_MACE2', 32);
-define('ITEM_SUBCLASS_MASK_POLEARM', 64);
-define('ITEM_SUBCLASS_MASK_SWORD', 128);
-define('ITEM_SUBCLASS_MASK_SWORD2', 256);
-define('ITEM_SUBCLASS_MASK_STAFF', 512);
-define('ITEM_SUBCLASS_MASK_FIST', 1024);
-define('ITEM_SUBCLASS_MASK_DAGGER', 2048);
-define('ITEM_SUBCLASS_MASK_THROWN', 4096);
-define('ITEM_SUBCLASS_MASK_SPEAR', 8192);
+define('ITEM_SUBCLASS_MASK_AXE',          1);
+define('ITEM_SUBCLASS_MASK_AXE2',         2);
+define('ITEM_SUBCLASS_MASK_BOW',          4);
+define('ITEM_SUBCLASS_MASK_GUN',          8);
+define('ITEM_SUBCLASS_MASK_MACE',        16);
+define('ITEM_SUBCLASS_MASK_MACE2',       32);
+define('ITEM_SUBCLASS_MASK_POLEARM',     64);
+define('ITEM_SUBCLASS_MASK_SWORD',      128);
+define('ITEM_SUBCLASS_MASK_SWORD2',     256);
+define('ITEM_SUBCLASS_MASK_STAFF',      512);
+define('ITEM_SUBCLASS_MASK_FIST',      1024);
+define('ITEM_SUBCLASS_MASK_DAGGER',    2048);
+define('ITEM_SUBCLASS_MASK_THROWN',    4096);
+define('ITEM_SUBCLASS_MASK_SPEAR',     8192);
 define('ITEM_SUBCLASS_MASK_CROSSBOW', 16384);
-define('ITEM_SUBCLASS_MASK_WAND', 32768);
+define('ITEM_SUBCLASS_MASK_WAND', 	  32768);
 
-define('SOURCE_TYPE_QUEST', 0);
-define('SOURCE_TYPE_DROP', 1);
-define('SOURCE_TYPE_PROFESSION', 2);
+define('SOURCE_TYPE_QUEST',       0);
+define('SOURCE_TYPE_DROP', 		  1);
+define('SOURCE_TYPE_PROFESSION',  2);
 define('SOURCE_TYPE_ACHIEVEMENT', 3);
-define('SOURCE_TYPE_FACTION', 4);
-define('SOURCE_TYPE_EVENT', 5);
-define('SOURCE_TYPE_PROMOTION', 6);
-define('SOURCE_TYPE_PET_STORE', 7);
-define('SOURCE_TYPE_CARD_GAME', 8);
-define('SOURCE_TYPE_TRAINER', 9);
-define('SOURCE_TYPE_VENDOR', 10);
-define('SOURCE_TYPE_OTHER', 11);
+define('SOURCE_TYPE_FACTION',     4);
+define('SOURCE_TYPE_EVENT',       5);
+define('SOURCE_TYPE_PROMOTION',   6);
+define('SOURCE_TYPE_PET_STORE',   7);
+define('SOURCE_TYPE_CARD_GAME',   8);
+define('SOURCE_TYPE_TRAINER',     9);
+define('SOURCE_TYPE_VENDOR',     10);
+define('SOURCE_TYPE_OTHER',      11);
 
 define('BOSS_FLAG_EXTRA_LEVEL', 1);
-define('BOSS_FLAG_BOSS_RANK', 2);
+define('BOSS_FLAG_BOSS_RANK',   2);
 
-define('CACHE_TYPE_NONE', 0);
-define('CACHE_TYPE_CHARACTER_SIMPLE', 1);
-define('CACHE_TYPE_CHARACTER_ADVANCED', 2);
+define('CACHE_TYPE_NONE',				    0);
+define('CACHE_TYPE_CHARACTER_SIMPLE',       1);
+define('CACHE_TYPE_CHARACTER_ADVANCED',     2);
 define('CACHE_TYPE_CHARACTER_ACHIEVEMENTS', 3);
-define('CACHE_TYPE_ITEM', 4);
+define('CACHE_TYPE_ITEM',                   4);
 ?>
