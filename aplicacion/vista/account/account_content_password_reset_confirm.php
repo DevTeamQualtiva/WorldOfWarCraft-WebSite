@@ -1,28 +1,28 @@
 <div id="layout-middle">
   <div class="wrapper">
     <div id="content">
-<?php
-if(WoW_Account::GetLastErrorCode() != ERROR_NONE) {
-    echo '<div class="alert error closeable border-4 glow-shadow">
-<div class="alert-inner">
-<div class="alert-message">
-<p class="title"><strong>'.WoW_Locale::GetString('template_account_password_reset_error').'</strong></p>
-';
-    $error_code = WoW_Account::GetLastErrorCode();
-    if($error_code & ERORR_NEW_PASSWORD_NOT_MATCH) {
-        echo '<p class="error.pass.notmatch">'.WoW_Locale::GetString('template_account_password_error_pass_not_match').'</p>';
-    }
-    elseif($error_code & ERORR_NEW_PASSWORD_FAIL) {
-        echo '<p class="error"></p>';
-    }
-    echo '
-</div>
-</div>
-<a class="alert-close" href="#" onclick="$(this).parent().fadeOut(250, function() { $(this).css({opacity:0}).animate({height: 0}, 100, function() { $(this).remove(); }); }); return false;">'.WoW_Locale::GetString('template_account_password_reset_error_close').'</a>
-<span class="clear"><!-- --></span>
-</div>';
-}
-?>  
+		<?php
+		if(WoW_Account::GetLastErrorCode() != ERROR_NONE) {
+			echo '<div class="alert error closeable border-4 glow-shadow">
+		<div class="alert-inner">
+		<div class="alert-message">
+		<p class="title"><strong>'.WoW_Locale::GetString('template_account_password_reset_error').'</strong></p>
+		';
+			$error_code = WoW_Account::GetLastErrorCode();
+			if($error_code & ERORR_NEW_PASSWORD_NOT_MATCH) {
+				echo '<p class="error.pass.notmatch">'.WoW_Locale::GetString('template_account_password_error_pass_not_match').'</p>';
+			}
+			elseif($error_code & ERORR_NEW_PASSWORD_FAIL) {
+				echo '<p class="error"></p>';
+			}
+			echo '
+		</div>
+		</div>
+		<a class="alert-close" href="#" onclick="$(this).parent().fadeOut(250, function() { $(this).css({opacity:0}).animate({height: 0}, 100, function() { $(this).remove(); }); }); return false;">'.WoW_Locale::GetString('template_account_password_reset_error_close').'</a>
+		<span class="clear"><!-- --></span>
+		</div>';
+		}
+		?>  
       <div id="page-header">
         <span class="float-right"><span class="form-req">*</span><?php echo WoW_Locale::GetString('template_account_password_reset_required_fields'); ?></span>
         <h2 class="subcategory"><?php echo WoW_Locale::GetString('template_account_password_reset_title'); ?></h2>

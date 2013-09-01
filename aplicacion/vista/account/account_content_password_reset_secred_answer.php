@@ -1,25 +1,25 @@
 <div id="layout-middle">
   <div class="wrapper">
     <div id="content">
-<?php
-if(WoW_Account::GetLastErrorCode() != ERROR_NONE) {
-    echo '<div class="alert error closeable border-4 glow-shadow">
-<div class="alert-inner">
-<div class="alert-message">
-<p class="title"><strong>'.WoW_Locale::GetString('template_account_password_reset_error').'</strong></p>
-';
-    $error_code = WoW_Account::GetLastErrorCode();
-    if($error_code & ERORR_INVALID_PASSWORD_RECOVERY_ANSWER) {
-        echo '<p class="error.email.invalid">'.WoW_Locale::GetString('template_account_password_reset_error_answer').'</p>';
-    }
-    echo '
-</div>
-</div>
-<a class="alert-close" href="#" onclick="$(this).parent().fadeOut(250, function() { $(this).css({opacity:0}).animate({height: 0}, 100, function() { $(this).remove(); }); }); return false;">'.WoW_Locale::GetString('template_account_password_reset_error_close').'</a>
-<span class="clear"><!-- --></span>
-</div>';
-}
-?>  
+		<?php
+		if(WoW_Account::GetLastErrorCode() != ERROR_NONE) {
+			echo '<div class="alert error closeable border-4 glow-shadow">
+		<div class="alert-inner">
+		<div class="alert-message">
+		<p class="title"><strong>'.WoW_Locale::GetString('template_account_password_reset_error').'</strong></p>
+		';
+			$error_code = WoW_Account::GetLastErrorCode();
+			if($error_code & ERORR_INVALID_PASSWORD_RECOVERY_ANSWER) {
+				echo '<p class="error.email.invalid">'.WoW_Locale::GetString('template_account_password_reset_error_answer').'</p>';
+			}
+			echo '
+		</div>
+		</div>
+		<a class="alert-close" href="#" onclick="$(this).parent().fadeOut(250, function() { $(this).css({opacity:0}).animate({height: 0}, 100, function() { $(this).remove(); }); }); return false;">'.WoW_Locale::GetString('template_account_password_reset_error_close').'</a>
+		<span class="clear"><!-- --></span>
+		</div>';
+		}
+		?>  
       <div id="page-header">
         <h2 class="subcategory"><?php echo WoW_Locale::GetString('template_account_password_reset_retrieval'); ?></h2>
         <h3 class="headline"><?php echo WoW_Locale::GetString('login_help_title'); ?></h3>

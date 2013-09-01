@@ -1,5 +1,5 @@
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title><?php echo WoW_Locale::GetString('template_account_wow_title'); ?></title>
 		<meta name="description" content="<?php echo WoW_Locale::GetString('template_account_wow_meta'); ?>"/>
@@ -128,7 +128,7 @@
 		<div class="formTop">
 			<div class="formBottom">
 				<table class="accountInfo">
-<tr id="emailAddressRow" class="<?php echo WoW_Template::GetPageData('creation_error') ? 'invalid' : null; ?>">
+    <tr id="emailAddressRow" class="<?php echo WoW_Template::GetPageData('creation_error') ? 'invalid' : null; ?>">
 		<td class="leftCol">
 			<label for="emailAddress"><?php echo WoW_Locale::GetString('template_management_account_name'); ?></label>
 		</td>
@@ -219,4 +219,5 @@
 		ReturningUser.check();
 	</script>
 	</body>
-	</html>
+</html>
+
