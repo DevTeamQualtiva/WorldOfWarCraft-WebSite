@@ -59,7 +59,7 @@
             }
             echo sprintf('<div class="flag-card %s">
             <div class="wrapper">
-                <a href="%s">
+                <a href="race/%s">
                     <span class="class-name">%s</span>%s
                     <span class="class-desc">%s</span>
                 </a>

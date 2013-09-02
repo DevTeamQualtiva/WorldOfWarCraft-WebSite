@@ -71,23 +71,23 @@ if($race['location']) {
 		<div class="scroll-content">
 			<div class="wrapper">
 					<div class="feature-list">
-<?php
-if(isset($race['abilities']) && is_array($race['abilities'])) {
-    foreach($race['abilities'] as $ability) {
-        echo '
-        <div class="feature-item clear-after">
-            <span class="icon-frame-gloss float-left" style="background-image: url(' . WoW::GetWoWPath() . '/wow/icons/56/' . $ability['icon'] . ')">
-                <span class="frame"></span>
-            </span>
-            <div class="feature-wrapper">
-                <span class="feature-item-title">' . $ability['title'] . '</span>
-                <p class="feature-item-desc">' . $ability['text'] . '</p>
-            </div>
-            <span class="clear"><!-- --></span>
-        </div>';
-    }
-}
-?>
+					<?php
+					if(isset($race['abilities']) && is_array($race['abilities'])) {
+						foreach($race['abilities'] as $ability) {
+							echo '
+							<div class="feature-item clear-after">
+								<span class="icon-frame-gloss float-left" style="background-image: url(' . WoW::GetWoWPath() . '/wow/icons/56/' . $ability['icon'] . ')">
+									<span class="frame"></span>
+								</span>
+								<div class="feature-wrapper">
+									<span class="feature-item-title">' . $ability['title'] . '</span>
+									<p class="feature-item-desc">' . $ability['text'] . '</p>
+								</div>
+								<span class="clear"><!-- --></span>
+							</div>';
+						}
+					}
+					?>
 					</div>
 			</div>
 		</div>
@@ -100,33 +100,33 @@ if(isset($race['abilities']) && is_array($race['abilities'])) {
 		<div class="list-box">
 			<div class="wrapper">
 					<ul>
-<?php
-$class_masks = array(
-    'CLASS_MASK_WARRIOR', 'CLASS_MASK_PALADIN', 'CLASS_MASK_HUNTER', 'CLASS_MASK_ROGUE', 'CLASS_MASK_PRIEST',
-    'CLASS_MASK_DK', 'CLASS_MASK_SHAMAN', 'CLASS_MASK_MAGE', 'CLASS_MASK_WARLOCK', 'CLASS_MASK_DRUID'
-);
-foreach($class_masks as $mask) {
-    if($race['classes_flag'] & constant($mask)) {
-        $class_key = strtolower(substr($mask, 11));
-        if($class_key == 'dk') {
-            $class_key = 'death-knight';
-        }
-        $class_id = WoW_Utils::GetClassIDByKey($class_key);
-        if(!$class_id) {
-            continue;
-        }
-        echo '
-        <li>
-            <a href="../class/' . $class_key . '">
-                <span class="icon-frame frame-36 class-icon-36 class-icon-36-' . $class_key . '">
-                    <span class="frame"></span>
-                </span>
-                <span class="list-title">' . WoW_Locale::GetString('character_class_' . $class_id ) . '</span>
-            </a>
-        </li>';
-    }
-}
-?>
+						<?php
+						$class_masks = array(
+							'CLASS_MASK_WARRIOR', 'CLASS_MASK_PALADIN', 'CLASS_MASK_HUNTER', 'CLASS_MASK_ROGUE', 'CLASS_MASK_PRIEST',
+							'CLASS_MASK_DK', 'CLASS_MASK_SHAMAN', 'CLASS_MASK_MAGE', 'CLASS_MASK_WARLOCK', 'CLASS_MASK_DRUID', 'CLASS_MASK_MONK'
+						);
+						foreach($class_masks as $mask) {
+							if($race['classes_flag'] & constant($mask)) {
+								$class_key = strtolower(substr($mask, 12));
+								if($class_key == 'dk') {
+									$class_key = 'death-knight';
+								}
+								$class_id = WoW_Utils::GetClassIDByKey($class_key);
+								if(!$class_id) {
+									continue;
+								}
+								echo '
+								<li>
+									<a href="../class/' . $class_key . '">
+										<span class="icon-frame frame-36 class-icon-36 class-icon-36-' . $class_key . '">
+											<span class="frame"></span>
+										</span>
+										<span class="list-title">' . WoW_Locale::GetString('character_class_' . $class_id ) . '</span>
+									</a>
+								</li>';
+							}
+						}
+						?>
 					</ul>
         	<span class="clear"><!-- --></span>
         	<span class="clear"><!-- --></span>
@@ -187,42 +187,40 @@ foreach($class_masks as $mask) {
 						<span class="fansite-box-title"><?php echo WoW_Locale::GetString('template_game_class_more'); ?></span>
 						<p><?php echo sprintf(WoW_Locale::GetString('template_game_race_more_desc'), WoW_Locale::GetString('character_race_' . $race['id'])); ?></p>
 						<div id="sdgksdngklsdngl35"></div>
-	<script type="text/javascript">
-	//<![CDATA[
-							$(document).ready(function() {
-								Fansite.generate($('#sdgksdngklsdngl35'), "race|<?php echo $race['id'] . '|' . WoW_Locale::GetString('character_race_' . $race['id']); ?>");
-							});
-	//]]>
-	</script>
+						<script type="text/javascript">
+						//<![CDATA[
+												$(document).ready(function() {
+													Fansite.generate($('#sdgksdngklsdngl35'), "race|<?php echo $race['id'] . '|' . WoW_Locale::GetString('character_race_' . $race['id']); ?>");
+												});
+						//]]>
+						</script>
 					</div>
 				</div>
 			</div>
-	<span class="clear"><!-- --></span>
+			<span class="clear"><!-- --></span>
 
 			<div class="guide-page-nav">
 				<span class="current-guide-title"><?php echo WoW_Locale::GetString('character_race_' . $race['id']); ?></span>
-<?php
-if($race['id'] == RACE_DRAENEI) {
-    $nextRaceId = RACE_WORGEN;
-}
-elseif($race['id'] == RACE_WORGEN) {
-    $prevRaceId = RACE_DRAENEI;
-    $nextRaceId = RACE_HUMAN;
-}
-elseif($race['id'] == RACE_HUMAN) {
-    $prevRaceId = RACE_WORGEN;
-}
-if(!isset($prevRaceId)) {
-    $prevRaceId = $race['id'] - 1;
-}
-if(!isset($nextRaceId)) {
-    $nextRaceId = $race['id'] + 1;
-}
-?>
-<a class="ui-button next-race button1-next" href="<?php echo WoW_Utils::GetRaceKeyById($nextRaceId); ?>"><span><span><?php echo sprintf(WoW_Locale::GetString('template_game_race_next'), WoW_Locale::GetString('character_race_' . $nextRaceId)); ?></span></span></a>
-<a class="ui-button previous-race button1-previous" href="<?php echo WoW_Utils::GetRaceKeyById($prevRaceId); ?>"><span><span><?php echo sprintf(WoW_Locale::GetString('template_game_race_prev'), WoW_Locale::GetString('character_race_' . $prevRaceId)); ?></span></span></a>
-
-
+				<?php
+				if($race['id'] == RACE_DRAENEI) {
+					$nextRaceId = RACE_WORGEN;
+				}
+				elseif($race['id'] == RACE_WORGEN) {
+					$prevRaceId = RACE_DRAENEI;
+					$nextRaceId = RACE_HUMAN;
+				}
+				elseif($race['id'] == RACE_HUMAN) {
+					$prevRaceId = RACE_WORGEN;
+				}
+				if(!isset($prevRaceId)) {
+					$prevRaceId = $race['id'] - 1;
+				}
+				if(!isset($nextRaceId)) {
+					$nextRaceId = $race['id'] + 1;
+				}
+				?>
+				<a class="ui-button next-race button1-next" href="<?php echo WoW_Utils::GetRaceKeyById($nextRaceId); ?>"><span><span><?php echo sprintf(WoW_Locale::GetString('template_game_race_next'), WoW_Locale::GetString('character_race_' . $nextRaceId)); ?></span></span></a>
+				<a class="ui-button previous-race button1-previous" href="<?php echo WoW_Utils::GetRaceKeyById($prevRaceId); ?>"><span><span><?php echo sprintf(WoW_Locale::GetString('template_game_race_prev'), WoW_Locale::GetString('character_race_' . $prevRaceId)); ?></span></span></a>
 			</div>
         </div>
 	</div>

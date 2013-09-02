@@ -41,9 +41,9 @@ Class Data_Races {
             'key' => 'night-elf'
         ),
         5 => array(
-            'modeldata_1' => 'scourge',
-            'modeldata_2' => 'sc',
-            'key' => 'forsaken'
+            'modeldata_1' => 'undead',
+            'modeldata_2' => 'un',
+            'key' => 'undead'
         ),
         6 => array(
             'modeldata_1' => 'tauren',
@@ -79,6 +79,11 @@ Class Data_Races {
             'modeldata_1' => 'worgen',
             'modeldata_2' => 'wo',
             'key' => 'worgen'
+        ),
+        24 => array(
+            'modeldata_1' => 'pandaren',
+            'modeldata_2' => 'pa',
+            'key' => 'pandaren'
         )
     );
 }

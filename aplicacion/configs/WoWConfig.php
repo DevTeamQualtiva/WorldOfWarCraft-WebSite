@@ -40,24 +40,33 @@ Class WoWConfig {
     public static $WoW_Path          = '';
 	
 	/** 
-	 * Your Expansion for Default - Tu Expansion por defecto
+	 * Your Expansion for Default "Register"
+	 * Tu Expansion por defecto "Registro"
 	 * 0 - Classic, 1 - Burning Crusade, 2 - Wrath, 3 - Cataclysm, 4 - Mists Of Pandaria 
 	 **/
     public static $DefaultExpansion  = 4;
 	
 	/**
-	 * Disable site? true/false
+	 * Disable site? on maintenance page
 	 * Deshabilitar La Pagina Web y ponerla en mantenimiento
 	 *        true or false
 	 **/
     public static $Maintenance       = false;
 	
 	/**
-	 * Twitter account name (displayed on maintenance page). Leave it blank if you don't use any.
-	 * Tu cuenta de Twiter
-     *	PD: No modificar si no poseen una:
+	 * Twitter account name. Leave it blank if you don't use any.
+	 * Nombre de tu cuenta de Twiter
+     * PD: No modificar si no poseen una:
 	 **/
     public static $TwitterAccount    = 'YOUR TWITTER';
+
+    /**
+     * Facebook account name. Leave it blank if you don't use any.
+     * Nombre de tu cuenta de Facebook
+     * PD: No modificar si no poseen una:
+     * TODAVIA NO FUNCIONA - THIS NOT COMPLETE
+     **/
+    public static $FacebookAccount    = 'YOUR FACEBOOK';
 
 	/**
      * Try to detect realms statuses when building account's character list?
@@ -77,7 +86,7 @@ Class WoWConfig {
      * Structure:
      *      id - realm ID (should be the same as array index)
      *      name - Realm Name
-     *      type - Realm type (can be SERVER_MANGOS or SERVER_TRINITY, depends on your server core. Note that this is a constant!)
+     *      type - Realm type (can be SERVER_MANGOS, SERVER_TRINITY, SERVER_APOCALYPSECORE, depends on your server core. Note that this is a constant!)
      * You can create unlimited realms
 	 * Warning! WoWConfig::$Realms array size MUST BE equal to DatabaseConfig::$world and DatabaseConfig::$characters size!
      **/

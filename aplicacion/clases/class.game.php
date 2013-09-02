@@ -106,6 +106,10 @@ Class WoW_Game {
             return false;
         }
         $zones_data = array(
+            EXPANSION_MOP => array(
+                'dungeons' => array(),
+                'raids' => array()
+            ),
             EXPANSION_CATA => array(
                 'dungeons' => array(),
                 'raids' => array()
@@ -129,6 +133,7 @@ Class WoW_Game {
                 case EXPANSION_BC:
                 case EXPANSION_WRATH:
                 case EXPANSION_CATA:
+                case EXPANSION_MOP:
                     if($zone['flags'] <= 0) {
                         WoW_Log::WriteError('%s : instance %d (zoneID: %d, name: "%s") has no flags setted!', __METHOD__, $zone['zone_id'], $zone['name']);
                         continue;
@@ -140,7 +145,7 @@ Class WoW_Game {
                         $zone['dungeonGroupName'] = $zone['dungeonGroupNameOriginal'];
                     }
                     if($zone['flags'] & INSTANCE_FLAG_DUNGEON) {
-                        if($zone['flags'] & INSTANCE_FLAG_REVAMPED && $zone['flags'] & INSTANCE_FLAG_CATA_REVAMP) {
+                        if($zone['flags'] & INSTANCE_FLAG_REVAMPED && $zone['flags'] & INSTANCE_FLAG_MOP_REVAMP) {
                             $zones_data[$zone['expansion']]['dungeons'][] = $zone;
                             // Add to classic roster
                             $zones_data[EXPANSION_CLASSIC]['dungeons'][] = $zone;
@@ -167,7 +172,7 @@ Class WoW_Game {
         if(!is_array(self::$m_zone)) {
             return false;
         }
-        if(self::$m_zone['expansion'] < EXPANSION_CLASSIC || self::$m_zone['expansion'] > EXPANSION_CATA) {
+        if(self::$m_zone['expansion'] < EXPANSION_CLASSIC || self::$m_zone['expansion'] > EXPANSION_MOP) {
             WoW_Log::WriteError('%s : instance %d (zone key: "%s") has wrong expansionID (%d)!', __METHOD__, self::$m_zone['zone_id'], self::$m_zone['zone_key'], self::$m_zone['expansion']);
             return false;
         }

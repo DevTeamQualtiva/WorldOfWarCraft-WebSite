@@ -20,8 +20,11 @@
  **/
 
 Class DatabaseConfig {
-    
-    public static $MySQLExtension = 'mysql'; // 'mysql' or 'mysqli'
+
+    /**
+     * Use 'mysql' or 'mysqli'
+     **/    
+    public static $MySQLExtension = 'mysql';
 
     /**
      * World database configuration.

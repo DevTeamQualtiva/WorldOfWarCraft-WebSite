@@ -47,6 +47,9 @@ Class Data_Classes {
         9 => array(
             'key' => 'warlock'
         ),
+        10 => array(
+            'key' => 'monk'
+        ),
         11 => array(
             'key' => 'druid'
         )

@@ -139,12 +139,12 @@ World of Warcraft
 			
 			<ul class="navigation">
                     <?php
-                    for($i = 3; $i >= 0; --$i) {
+                    for($i = 4; $i >= 0; --$i) {
                         echo sprintf('<li>
 						<a href="javascript:;"
 						   id="nav-%d"
 						   onclick="WikiDirectory.view(this, %d);"
-						   class="expansion-%d'.(($i == 3) ? ' nav-active' : '').'">
+						   class="expansion-%d'.(($i == 4) ? ' nav-active' : '').'">
 							%s
 						</a>
 					</li>

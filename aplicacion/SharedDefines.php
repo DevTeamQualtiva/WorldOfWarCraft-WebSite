@@ -76,6 +76,7 @@ define('RACE_MASK_WORGEN',   2048);
 define('RACE_MASK_PANDAREN', 4096);
 
 /* Factions */
+define('FACTION_NEUTRAL',  2);
 define('FACTION_HORDE',    1);
 define('FACTION_ALLIANCE', 0);
 
@@ -882,9 +883,10 @@ define('ITEM_QUALITY_ARTEFACT',  6);
 define('ITEM_QUALITY_HEIRLOOM',  7);
 
 /** Server Types **/
-define('UNK_SERVER',     0);
-define('SERVER_MANGOS',  1);
-define('SERVER_TRINITY', 2);
+define('UNK_SERVER',     		0);
+define('SERVER_MANGOS',  		1);
+define('SERVER_TRINITY', 		2);
+define('SERVER_APOCALYPSECORE', 3);
 
 /** Guild Bank Rights **/
 define('GUILD_BANK_RIGHT_VIEW_TAB',    0x01);

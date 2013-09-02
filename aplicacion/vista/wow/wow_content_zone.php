@@ -211,7 +211,7 @@ World of Warcraft
     if($zone_info['expansion'] > EXPANSION_CLASSIC) {
         echo sprintf('<span class="expansion-name color-ex%d">
 		<a href="%s/wow/game/patch-notes/%s" class="color-ex%d">%s %s%s</a></span>', $zone_info['expansion'], WoW::GetWoWPath(), null, $zone_info['expansion'], WoW_Locale::GetString('template_zone_expansion_required'), WoW_Locale::GetString('template_expansion_' . $zone_info['expansion']),
-        ($zone_info['flags'] & INSTANCE_FLAG_REVAMPED && $zone_info['flags'] & INSTANCE_FLAG_CATA_REVAMP) ? sprintf(' (%s)', WoW_Locale::GetString('template_item_heroic')) : null
+        ($zone_info['flags'] & INSTANCE_FLAG_REVAMPED && $zone_info['flags'] & INSTANCE_FLAG_MOP_REVAMP) ? sprintf(' (%s)', WoW_Locale::GetString('template_item_heroic')) : null
         );
     }
     ?>

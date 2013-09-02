@@ -47,6 +47,7 @@ $WoW_Locale = array(
     'character_class_7' => 'Chaman',
     'character_class_8' => 'Mago',
     'character_class_9' => 'Brujo',
+    'character_class_10' => 'Monje',
     'character_class_11' => 'Druida',
     
     'character_race_1' => 'Humano',
@@ -61,6 +62,7 @@ $WoW_Locale = array(
     'character_race_10' => 'Elfo de Sangre',
     'character_race_11' => 'Draenei',
     'character_race_22' => 'Worgen',
+    'character_race_24' => 'Pandaren',
     
     'character_race_1_decl' => 'Humano',
     'character_race_2_decl' => 'Orco',
@@ -74,6 +76,7 @@ $WoW_Locale = array(
     'character_race_10_decl' => 'Elfo de Sangre',
     'character_race_11_decl' => 'Draenei',
     'character_race_22_decl' => 'Worgen',
+    'character_race_24_decl' => 'Pandaren',
     
     'reputation_rank_0' => 'Hated',
     'reputation_rank_1' => 'Hostile',
@@ -86,6 +89,7 @@ $WoW_Locale = array(
     
     'faction_alliance' => 'Alianza',
     'faction_horde' => 'Horda',
+    'faction_neutral' => 'Neutral',
     
     'creature_type_1' => 'Beast',
     'creature_type_2' => 'Dragonkin',
@@ -1520,7 +1524,21 @@ $WoW_Locale = array(
     'template_game_race_orc_info' => 'Unlike the other races of the Horde, orcs are not native to Azeroth. Initially, they lived as shamanic clans on the lush world of Draenor.',
     'template_game_race_tauren_info' => 'The peaceful tauren—known in their own tongue as the shu’halo—have long dwelled in Kalimdor, striving to preserve the balance of nature at the behest of their goddess, the Earth Mother.',
     'template_game_race_troll_info' => 'The savage trolls of Azeroth are infamous for their cruelty, dark mysticism, and seething hatred for all other races.',
-    'template_game_race_forsaken_info' => 'When the Lich King’s grasp on his vast armies faltered after the Third War, a contingent of undead broke free of their master’s iron will.',
+    'template_game_race_undead_info' => 'When the Lich King’s grasp on his vast armies faltered after the Third War, a contingent of undead broke free of their master’s iron will.',
+    'template_game_race_pandaren_info' => 'The wise pandaren embrace harmony, and lead full lives of food, family and fights on Pandaria. A few leave their home to side with the Horde and act decisively to protect themselves and others.',
+	'template_game_race_worgen' => 'Worgen',
+    'template_game_race_draenei' => 'Draenei',
+    'template_game_race_dwarf' => 'Dwarf',
+    'template_game_race_gnome' => 'Gnome',
+    'template_game_race_human' => 'Human',
+    'template_game_race_night-elf' => 'Night Elf',
+    'template_game_race_goblin' => 'Goblin',
+    'template_game_race_blood-elf' => 'Blood Elf',
+    'template_game_race_orc' => 'orc',
+    'template_game_race_tauren' => 'Tauren',
+    'template_game_race_troll' => 'troll',
+    'template_game_race_undead' => 'Undead',
+    'template_game_race_pandaren' => 'Pandaren',
     'template_game_race_location' => 'Location:',
     'template_game_race_homecity' => 'Homecity:',
     'template_game_race_mount' => 'Mount:',
@@ -1535,7 +1553,7 @@ $WoW_Locale = array(
     'template_class_role_healer' => 'Healer',
     'template_class_role_tank' => 'Tank',
     
-    'template_game_class_index' => 'Classes',
+    'template_game_class_index' => 'Clases',
     'template_game_class_intro' => 'This new and improved class guide contains more information about each of World of Warcraft’s classes with a description of their abilities, playstyles, and history in the world of Azeroth.',
     
     'template_game_classes_title' => 'Classes of World of Warcraft',
@@ -1568,8 +1586,8 @@ $WoW_Locale = array(
     'template_game_class_more_desc' => 'Learn more about the Warrior on the following fansites.',
     'template_game_class_viewall' => 'View all',
     
-    'template_menu_game_factions' => 'Factions',
-    'template_menu_game_factions_intro' => 'Azeroth is a fractious and war-stricken world, and standing alone can be deadly. To survive and prosper, members of all races gather together along cultural and ideological lines. Each of these factions holds to a unique philosophy, and they often disagree with one another – violently. Yet, despite the danger, allegiance to a faction never goes unnoticed; those heroes who are willing to risk taking sides can expect handsome rewards.',
+    'template_menu_game_factions' => 'Facciones',
+    'template_menu_game_factions_intro' => 'Azeroth es un mundo difícil y asolado por la guerra, donde estar solo puede ser mortal. Para sobrevivir y prosperar, los miembros de todas las razas se juntan entre líneas culturales e ideológicas. Cada una de estas facciones tiene una filosofía única y por lo general tienen desacuerdos violentos. Sin embargo, pese al peligro, la lealtad hacia una facción nunca pasa desapercibida. Aquellos héroes que se arriesguen a elegir un bando podrán obtener magníficas recompensas.',
     'template_menu_game_factions_' => '',
     
     'template_account_password_reset_title' => 'Reset Your Password',
