@@ -60,23 +60,23 @@ if(WoW_Account::IsLoggedIn() && WoW_Account::IsHaveActiveCharacter()) {
 	<div class="sidebar-content">
 		<ul class="social-media">
 			<li class="atom-feed">
-				<a href="/wow/es/feed/news" target="_blank"></a>
+				<a href="/wow/es/feed" target="_blank"></a>
 			</li>
-				<li class="facebook">
-					<a href="Your URL / Tu URL Facebook" title="World of Warcraft en Facebook"></a>
-				</li>
-				<li class="vk">
-					<a href="" title=""></a>
-				</li>
-				<li class="twitter">
-					<a href="Your URL / Tu URL Twitter" title="World of Warcraft en Twitter"></a>
-				</li>
-				<li class="youtube">
-					<a href="Your URL / Tu URL Yotube" title="World of Warcraft en Youtube"></a>
-				</li>
-				<li class="reddit">
-					<a href="Your URL / Tu URL Reddit" title="World of Warcraft on reddit"></a>
-				</li>
+			<li class="facebook">
+				<a href="https://www.facebook.com/<?php echo WoWConfig::$FacebookAccount ?>" title="World of Warcraft en Facebook"></a>
+			</li>
+			<li class="vk">
+				<a href="" title=""></a>
+			</li>
+			<li class="twitter">
+				<a href="http://twitter.com/<?php echo WoWConfig::$TwitterAccount ?>" title="World of Warcraft en Twitter"></a>
+			</li>
+			<li class="youtube">
+				<a href="http://www.youtube.com/user/<?php echo WoWConfig::$YoutubeAccount ?>" title="World of Warcraft en Youtube"></a>
+			</li>
+			<li class="reddit">
+				<a href="http://www.reddit.com/r/<?php echo WoWConfig::$RedditAccount ?>" title="World of Warcraft on reddit"></a>
+			</li>
 		<span class="clear"><!-- --></span>
 		</ul>
 	</div>

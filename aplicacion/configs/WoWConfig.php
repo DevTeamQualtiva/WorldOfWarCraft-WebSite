@@ -63,10 +63,23 @@ Class WoWConfig {
     /**
      * Facebook account name. Leave it blank if you don't use any.
      * Nombre de tu cuenta de Facebook
-     * PD: No modificar si no poseen una:
-     * TODAVIA NO FUNCIONA - THIS NOT COMPLETE
+     * PD: No modificar si no poseen una.
      **/
     public static $FacebookAccount    = 'YOUR FACEBOOK';
+
+    /**
+     * YouTube Channel name. Leave it blank if you don't use any.
+     * Nombre de tu Canal de Youtube
+     * PD: No modificar si no poseen una.
+     **/
+    public static $YoutubeAccount    = 'YOUR YOUTUBE CHANNEL';
+
+    /**
+     * Reddit account name. Leave it blank if you don't use any.
+     * Nombre de tu cuenta de Reddit
+     * PD: No modificar si no poseen una.
+     **/
+    public static $RedditAccount    = 'YOUR REDDIT';
 
 	/**
      * Try to detect realms statuses when building account's character list?

@@ -38,12 +38,11 @@
 							<form action="<?php echo WoW::GetWoWPath(); ?>/wow/search?q=" method="get">
 								<input type="hidden" name="f" value="wowguild" />
 								<input type="text" id="wowguild" alt="Nombre" name="q" />
-									<button
-										class="ui-button button1" type="submit">
-										<span>
-											<span><?php echo WoW_locale::GetString('template_community_search'); ?></span>
-										</span>
-									</button>
+								<button class="ui-button button1" type="submit">
+									<span>
+										<span><?php echo WoW_locale::GetString('template_community_search'); ?></span>
+									</span>
+								</button>
 							</form>
 						</div>
 					</div>
@@ -151,7 +150,7 @@
 		</div>
 			
 			<div id="right">
-			<div class="sidebar-module " id="sidebar-auction-house">
+			<div class="sidebar-module" id="sidebar-auction-house">
 				<div class="sidebar-title">
 			        <h3 class="category title-auction-house"><?php echo WoW_locale::GetString('template_community_auction_house'); ?></h3>
 				</div>
@@ -177,30 +176,30 @@
 					</ul>
 				</div>
 			</div>
-			    <div class="sidebar-module " id="sidebar-social-media">
+			    <div class="sidebar-module" id="sidebar-social-media">
 					<div class="sidebar-title">
 			            <h3 class="category title-social-media"><?php echo WoW_locale::GetString('template_community_social_titulo')?></h3>
 					</div>
 				<div class="sidebar-content">
 					<ul class="social-media">
 						<li class="atom-feed">
-							<a href="../feed/newshtml.html" target="_blank"></a>
+							<a href="../feed/" target="_blank"></a>
 						</li>
 							<li class="facebook">
-								<a href="http://www.facebook.com/ApocalypseCore" title="World of Warcraft en Facebook"></a>
+								<a href="https://www.facebook.com/<?php echo WoWConfig::$FacebookAccount ?>" title="World of Warcraft en Facebook"></a>
 							</li>
 							<li class="twitter">
-								<a href="http://twitter.com/ApocalypseCore" title="World of Warcraft en Twitter"></a>
+								<a href="http://twitter.com/<?php echo WoWConfig::$TwitterAccount ?>" title="World of Warcraft en Twitter"></a>
 							</li>
 							<li class="youtube">
-								<a href="http://www.youtube.com/ApocalypseCore" title="World of Warcraft en Youtube"></a>
+								<a href="http://www.youtube.com/user/<?php echo WoWConfig::$YoutubeAccount ?>" title="World of Warcraft en Youtube"></a>
 							</li>
 			            <span class="clear"><!-- --></span>
 					</ul>
 				</div>
 			</div>
 				
-			<div class="sidebar-module " id="sidebar-blizzard-community">
+			<div class="sidebar-module" id="sidebar-blizzard-community">
 				<div class="sidebar-title">
 			        <h3 class="category title-blizzard-community"><?php echo WoW_locale::GetString('template_community_contenido_blizzard')?></h3>
 				</div>
