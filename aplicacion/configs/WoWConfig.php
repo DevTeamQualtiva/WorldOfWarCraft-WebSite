@@ -51,7 +51,15 @@ Class WoWConfig {
 	 *        true or false
 	 **/
     public static $Maintenance       = false;
-	
+
+    /**
+     * Your Server name.
+     * For example: server name = 'World of Warcraft'
+     * Nombre de tu servidor
+     * Por Ejemplo: nombre del servidor = 'World of Warcraft'
+     **/
+    public static $ServerName    = 'YOUR SERVER NAME';
+
 	/**
 	 * Twitter account name. Leave it blank if you don't use any.
 	 * Nombre de tu cuenta de Twiter

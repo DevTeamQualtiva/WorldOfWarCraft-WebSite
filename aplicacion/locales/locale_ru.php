@@ -1154,9 +1154,9 @@ $WoW_Locale = array(
     'template_auction_buyout_per_unit' => 'Выкупная цена за предмет:',
     'template_auction_browse' => 'Поиск',
     
-    'template_forums_blizztracker_title' => 'Последние сообщения Blizzard',
+    'template_forums_blizztracker_title' => 'Последние сообщения '. WoWConfig::$ServerName .'',
     'template_forums_all_blizz_posts' => '(Все)',
-    'template_forums_blizztracker_all' => 'Все сообщения Blizzard',
+    'template_forums_blizztracker_all' => 'Все сообщения '. WoWConfig::$ServerName .'',
     'template_forums_in' => 'в',
     'template_forums_my_realms' => 'Мои игровые миры',
     'template_forums_all_realms' => 'Все игровые миры',
@@ -1868,5 +1868,13 @@ $WoW_Locale = array(
     'template_community_screenshot' => 'Capturas de pantalla',
     'template_community_screenshot_fan' => 'Fondos de Fans',
     'template_community_send' => 'Enviar',
+
+/**
+ * Redes Sociales
+ **/
+    'social_facebook' => ' on Facebook',
+    'social_Twitter'  => ' on Twitter',
+    'social_youtube'  => ' on Youtube',
+    'social_reddit'   => ' on Reddit',
 );
 ?>

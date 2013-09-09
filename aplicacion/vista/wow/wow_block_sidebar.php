@@ -4,7 +4,7 @@ $sidebar_data = "'sotd', 'forums'";
 ?>
 <?php
 if(WoW_Account::IsLoggedIn() && WoW_Account::IsHaveActiveCharacter()) {
-    $sidebar_data = "'auctions','guild-news','friends','forums','sotd'";
+    $sidebar_data = "'auctions','guild-news','friends','forums','sotd','under-dev','social-media'";
 ?>
 
 <div class="sidebar-module" id="sidebar-auctions">
@@ -63,19 +63,19 @@ if(WoW_Account::IsLoggedIn() && WoW_Account::IsHaveActiveCharacter()) {
 				<a href="/wow/es/feed" target="_blank"></a>
 			</li>
 			<li class="facebook">
-				<a href="https://www.facebook.com/<?php echo WoWConfig::$FacebookAccount ?>" title="World of Warcraft en Facebook"></a>
+				<a href="https://www.facebook.com/<?php echo WoWConfig::$FacebookAccount ?>" title="<?php echo WoWConfig::$ServerName ?><?php echo WoW_Locale::GetString('social_facebook'); ?>"></a>
 			</li>
 			<li class="vk">
 				<a href="" title=""></a>
 			</li>
 			<li class="twitter">
-				<a href="http://twitter.com/<?php echo WoWConfig::$TwitterAccount ?>" title="World of Warcraft en Twitter"></a>
+				<a href="http://www.twitter.com/<?php echo WoWConfig::$TwitterAccount ?>" title="<?php echo WoWConfig::$ServerName ?><?php echo WoW_Locale::GetString('social_Twitter'); ?>"></a>
 			</li>
 			<li class="youtube">
-				<a href="http://www.youtube.com/user/<?php echo WoWConfig::$YoutubeAccount ?>" title="World of Warcraft en Youtube"></a>
+				<a href="http://www.youtube.com/user/<?php echo WoWConfig::$YoutubeAccount ?>" title="<?php echo WoWConfig::$ServerName ?><?php echo WoW_Locale::GetString('social_youtube'); ?>"></a>
 			</li>
 			<li class="reddit">
-				<a href="http://www.reddit.com/r/<?php echo WoWConfig::$RedditAccount ?>" title="World of Warcraft on reddit"></a>
+				<a href="http://www.reddit.com/r/<?php echo WoWConfig::$RedditAccount ?>" title="<?php echo WoWConfig::$ServerName ?><?php echo WoW_Locale::GetString('social_reddit'); ?>"></a>
 			</li>
 		<span class="clear"><!-- --></span>
 		</ul>

@@ -1154,9 +1154,9 @@ $WoW_Locale = array(
     'template_auction_buyout_per_unit' => 'Buyout per unit:',
     'template_auction_browse' => 'Browse',
     
-    'template_forums_blizztracker_title' => 'MENSAJES DE BLIZZARD MÁS RECIENTES',
+    'template_forums_blizztracker_title' => 'Mensajes de '. WoWConfig::$ServerName .' Más Recientes',
     'template_forums_all_blizz_posts' => '(Ver todo)',
-    'template_forums_blizztracker_all' => 'Todos los mensajes de Blizzard',
+    'template_forums_blizztracker_all' => 'Todos los mensajes de '. WoWConfig::$ServerName .'',
     'template_forums_in' => 'in',
     'template_forums_my_realms' => 'My Realms',
     'template_forums_all_realms' => 'All Realms',
@@ -1887,5 +1887,13 @@ The Battle.net Account Team<br />
     'template_community_screenshot' => 'Capturas de pantalla',
     'template_community_screenshot_fan' => 'Fondos de Fans',
     'template_community_send' => 'Enviar',
+
+/**
+ * Redes Sociales
+ **/
+    'social_facebook' => ' en Facebook',
+    'social_Twitter'  => ' en Twitter',
+    'social_youtube'  => ' en Youtube',
+    'social_reddit'   => ' en reddit',
 );
 ?>
