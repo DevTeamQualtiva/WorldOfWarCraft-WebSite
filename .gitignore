@@ -1,4 +1,5 @@
-﻿
+﻿.DS_Store
+
 estatico/_debug/tmp.dbg
-includes/configs/WoWConfig.php
-includes/configs/DatabaseConfig.php
+aplicacion/configs/WoWConfig.php
+aplicacion/configs/DatabaseConfig.php

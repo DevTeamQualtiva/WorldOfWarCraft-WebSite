@@ -1,15 +1,19 @@
-## Apocalypse Core Team
-
+## Apocalypse Core Team 
+	
 WebSite Battle.net<br>
 En desarrollo proyecto continuo commits diarios<br>
 Desarrolladores Activos
 
 # ¿Quiénes Somos?
-<br>
 ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s para servidores privados de World Of WarCraft.
++ [Shadez](https://github.com/Shadez/)
++ [One](https://github.com/oneluiz/)
++ [Yasha](https://github.com/)
 
 [ApocalypseCore](http://apocalypsecore.tk/)
- 
+<br/>
+[Foros](http://apocalypsecore.tk/foro) Soon - Pronto
+
 ## Version actual: v2
 
 #Cambios para esta revisión
@@ -20,8 +24,27 @@ ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s pa
 #Cambios siempre activos
 + Actulización del SlideShow
 
-# ![logo](http://apocalypsecore.tk/images/ac.png) 
+# ![logo](http://apocalypsecore.tk/images/ac.png)
 <br>
-# ApocalypseCore
+## License 
+
+(The GNU License)
+
+		= Apocalypse Core Team -- General information =
+
+	Copyright (C) 2013 (http://apocalypsecore.tk/) ApocalypseCore Team
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 + &copy; 2013 Blizzard Entertainment, Inc. All rights reserved
