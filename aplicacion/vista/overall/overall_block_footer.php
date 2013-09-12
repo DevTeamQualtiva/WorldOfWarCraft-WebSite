@@ -6,12 +6,12 @@
 <a href="http://eu.battle.net/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
 </h3>
 <ul>
-<li><a href="http://eu.battle.net/what-is/"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
-<li><a href="https://eu.battle.net/account/management/get-a-game.html"><?php echo WoW_Locale::GetString('template_footer_home_link2'); ?></a></li>
-<li><a href="http://eu.battle.net/sc2/community/esports/"><?php echo WoW_Locale::GetString('template_footer_home_link3'); ?></a></li>
-<li><a href="https://eu.battle.net/account/management/?lnk=3"><?php echo WoW_Locale::GetString('template_footer_home_link4'); ?></a></li>
-<li><a href="http://eu.blizzard.com/support/"><?php echo WoW_Locale::GetString('template_footer_home_link5'); ?></a></li>
-<li><a href="http://eu.battle.net/realid/"><?php echo WoW_Locale::GetString('template_footer_home_link6'); ?></a></li>
+<li><a href="http://eu.battle.net/what-is/" data-action="Battle.net Home - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
+<li><a href="https://eu.battle.net/account/management/get-a-game.html" data-action="Battle.net Home - Comprar juegos"><?php echo WoW_Locale::GetString('template_footer_home_link2'); ?></a></li>
+<li><a href="https://eu.battle.net/account/management/" data-action="Battle.net Home - Cuenta"><?php echo WoW_Locale::GetString('template_footer_home_link3'); ?></a></li>
+<li><a href="http://eu.blizzard.com/support/" data-action="Battle.net Home - Soporte"><?php echo WoW_Locale::GetString('template_footer_home_link4'); ?></a></li>
+<li><a href="http://eu.battle.net/realid/" data-action="Battle.net Home - ID Real "><?php echo WoW_Locale::GetString('template_footer_home_link5'); ?></a></li>
+<li><a href="http://us.battle.net/battletag/" data-action="Battle.net Home - BattleTag"><?php echo WoW_Locale::GetString('template_footer_home_link6'); ?></a></li>
 </ul>
 </div>
 <div class="column">
@@ -67,7 +67,7 @@ BnetAds.init('#footer-ad', '300x100');
 <span><?php echo sprintf('%s - %s', WoW_Locale::GetString('locale_region'), WoW_Locale::GetString('locale_name')); ?></span>
 </a>
 <?php echo WoW_Locale::GetString('copyright_bottom_title'); ?>
-<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Condiciones de Uso</a>
+<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use"><?php echo WoW_Locale::GetString('copyright_bottom_tos'); ?></a>
 <a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/legal/" tabindex="100" data-action="Footer - Legal"><?php echo WoW_Locale::GetString('copyright_bottom_legal'); ?></a>
 <a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy"><?php echo WoW_Locale::GetString('copyright_bottom_privacy'); ?></a>
 <a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement"><?php echo WoW_Locale::GetString('copyright_bottom_copyright'); ?></a>
