@@ -282,6 +282,7 @@ $WoW_Locale = array(
     'login_error_wrong_username_or_password_title' => 'The username or password is incorrect. Please try again.',
     'login_error_invalid_password_format_title' => 'Password invalid.',
     'copyright_bottom_title' => '&copy; 2013 Blizzard Entertainment, Inc. All rights reserved',
+	'copyright_bottom_tos' => 'Terms of Use',
     'copyright_bottom_legal' => 'Legal',
 	'copyright_bottom_privacy' => 'Privacy Policy',
 	'copyright_bottom_copyright' => 'Copyright Infringement',

@@ -67,9 +67,10 @@ BnetAds.init('#footer-ad', '300x100');
 <span><?php echo sprintf('%s - %s', WoW_Locale::GetString('locale_region'), WoW_Locale::GetString('locale_name')); ?></span>
 </a>
 <?php echo WoW_Locale::GetString('copyright_bottom_title'); ?>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/legal/" tabindex="100"><?php echo WoW_Locale::GetString('copyright_bottom_legal'); ?></a>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/privacy.html" tabindex="100"><?php echo WoW_Locale::GetString('copyright_bottom_privacy'); ?></a>
-<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/infringementnotice.html" tabindex="100"><?php echo WoW_Locale::GetString('copyright_bottom_copyright'); ?></a>
+<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="100" data-action="Footer - Terms of Use">Condiciones de Uso</a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/legal/" tabindex="100" data-action="Footer - Legal"><?php echo WoW_Locale::GetString('copyright_bottom_legal'); ?></a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/privacy.html" tabindex="100" data-action="Footer - Privacy Policy"><?php echo WoW_Locale::GetString('copyright_bottom_privacy'); ?></a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/infringementnotice.html" tabindex="100" data-action="Footer - Copyright Infringement"><?php echo WoW_Locale::GetString('copyright_bottom_copyright'); ?></a>
 </div>
 <div id="international"></div>
 <?php
