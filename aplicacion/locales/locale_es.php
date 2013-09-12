@@ -145,7 +145,7 @@ $WoW_Locale = array(
     'template_bn_got_account' => '¿Ya tienes una cuenta?',
     'template_bn_log_in' => 'Inicia sesión',
     'template_bn_what_is_caption' => '¡Únete a <strong>millones de jugadores</strong> en línea y descubre las experiencias de juego más ÉPICAS… de todos los tiempos! <span>Más información</span>',
-    'template_servicebar_auth_caption' => '<a href="?login" onclick="return Login.open(\'' . WoW::GetWoWPath()  . '/login/login.frag\')">Iniciar sesión</a> o <a href="' . WoW::GetWoWPath() . '/account/creation/tos.html">Crea una cuenta</a>',
+    'template_servicebar_auth_caption' => '<a href="?login" onclick="return Login.open(\'' . WoW::GetWoWPath()  . '/login/login.frag\')">Iniciar sesión</a> o <a href="' . WoW::GetWoWPath() . '/account/creation/tos.html">Crear una cuenta</a>',
     'template_servicebar_account' => 'CUENTA',
     'template_servicebar_support' => 'ASISTENCIA',
     'template_servicebar_explore' => 'EXPLORAR',
