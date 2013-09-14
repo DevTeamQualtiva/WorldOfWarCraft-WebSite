@@ -1561,7 +1561,6 @@ var Locale = {
      *
      * @param toggler
      * @param path
-     * @param contextPath
      */
     openMenu: function(toggler, path, contextPath) {
         var node = $('#international');
@@ -1611,6 +1610,7 @@ var Locale = {
 	 */
 	display: function() {
 		var node = $('#international');
+
 		node.slideDown('fast', function() {
 			$(this).css('display', 'block');
 		});

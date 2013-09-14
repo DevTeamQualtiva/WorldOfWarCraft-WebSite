@@ -106,75 +106,68 @@
 				<div class="parchment-bottom">
 					<div class="parchment-top">
 						<div class="parchment-top-smoothener">
-	<form id="signUpForm" name="signUpForm" class="signUpForm" action="." method="post"
-		onsubmit="return FormValidation.validateForm(this);">
+							<form id="signUpForm" name="signUpForm" class="signUpForm" action="." method="post" onsubmit="return FormValidation.validateForm(this);">
+								<h1 class="formHeader"><?php echo WoW_Locale::GetString('tempalte_account_wow_creation'); ?></h1>
+								<div class="relative">
+									<div id="formValidation" class="messageBox" style="<?php echo WoW_Template::GetPageData('creation_error') ? null : 'display:none;'; ?>">
+										<div class="background">
+											<ul id="errorList">
+												<li id="error.email.unavailable.trialSignup"><?php echo WoW_Locale::GetString('template_account_wow_err3'); ?></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="formBackground">
+									<div class="formTop">
+										<div class="formBottom">
+											<table class="accountInfo">
+												<tr id="emailAddressRow" class="<?php echo WoW_Template::GetPageData('creation_error') ? 'invalid' : null; ?>">
+													<td class="leftCol">
+														<label for="emailAddress"><?php echo WoW_Locale::GetString('template_management_account_name'); ?></label>
+													</td>
+													<td class="rightCol">
+													<input type="text" id="emailAddress" name="emailAddress" value="<?php echo isset($_POST['emailAddress']) ? $_POST['emailAddress'] : null; ?>" class='text validate required emailMatch <?php echo WoW_Template::GetPageData('creation_error') ? 'emailUnavailable emailInvalid' : null; ?>' onclick='$("#accountNote").show();' onfocus='$("#accountNote").show();' onblur='$("#accountNote").hide();FormValidation.validateField(this, event);PasswordValidation.validate(event)' maxlength='320' />
 
-		<h1 class="formHeader"><?php echo WoW_Locale::GetString('tempalte_account_wow_creation'); ?></h1>
+														<div class="validField"><!-- --></div>
+														<div class="clear"><!-- --></div>
+														<div id="accountNote" class="messageBox" style="display:none">
+															<div class="arrowLeft"><!-- --></div>
+															<div class="background">
+																<p>
+																	<strong><?php echo WoW_Locale::GetString('template_account_wow_emailHint'); ?></strong>
+																</p>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr id="passwordRow" class="">
+													<td class="leftCol">
+														<label for="password"><?php echo WoW_Locale::GetString('password_title'); ?></label>
+													</td>
+													<td class="rightCol">
+														<input type="password" id="password" name="password" value="" class='text validate required password' onkeyup='FormValidation.validateField(this, event);' onblur='FormValidation.validateField(this, event);' maxlength='16' />
 
-
-		<div class="relative">
-
-
-	<div id="formValidation" class="messageBox" style="<?php echo WoW_Template::GetPageData('creation_error') ? null : 'display:none;'; ?>">
-		<div class="background">
-			<ul id="errorList">
-                <li id="error.email.unavailable.trialSignup"><?php echo WoW_Locale::GetString('template_account_wow_err3'); ?></li>
-			</ul>
-		</div>
-	</div>
-		</div>
-
-	<div class="formBackground">
-		<div class="formTop">
-			<div class="formBottom">
-				<table class="accountInfo">
-    <tr id="emailAddressRow" class="<?php echo WoW_Template::GetPageData('creation_error') ? 'invalid' : null; ?>">
-		<td class="leftCol">
-			<label for="emailAddress"><?php echo WoW_Locale::GetString('template_management_account_name'); ?></label>
-		</td>
-		<td class="rightCol">
-    <input type="text" id="emailAddress" name="emailAddress" value="<?php echo isset($_POST['emailAddress']) ? $_POST['emailAddress'] : null; ?>" class='text validate required emailMatch <?php echo WoW_Template::GetPageData('creation_error') ? 'emailUnavailable emailInvalid' : null; ?>' onclick='$("#accountNote").show();' onfocus='$("#accountNote").show();' onblur='$("#accountNote").hide();FormValidation.validateField(this, event);PasswordValidation.validate(event)' maxlength='320'    />
-
-			<div class="validField"><!-- --></div>
-			<div class="clear"><!-- --></div>
-			<div id="accountNote" class="messageBox" style="display:none">
-				<div class="arrowLeft"><!-- --></div>
-				<div class="background">
-					<p>
-						<strong><?php echo WoW_Locale::GetString('template_account_wow_emailHint'); ?></strong>
-					</p>
-				</div>
-			</div>
-		</td>
-	</tr>
-	<tr id="passwordRow" class="">
-		<td class="leftCol">
-			<label for="password"><?php echo WoW_Locale::GetString('password_title'); ?></label>
-		</td>
-		<td class="rightCol">
-    <input type="password" id="password" name="password" value="" class='text validate required password' onkeyup='FormValidation.validateField(this, event);' onblur='FormValidation.validateField(this, event);' maxlength='16'    />
-
-			<div class="validField"><!-- --></div>
-			<div class="clear"><!-- --></div>
-		</td>
-	</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-		<div class="clear"><!-- --></div>
-		<div id="captchaExtension">
-			<table class="accountInfo">
-	<tr>
-		<td class="rightCol" colspan="2">
-			<input id="prepopulate" name="prepopulate" type="hidden" value="false" />
-			<input name="regionRef" type="hidden" value=""/>
-			<input id="btnSubmit" type="submit" class="submit" value="<?php echo WoW_Locale::GetString('template_account_wow_submit'); ?>" />
-		</td>
-	</tr>
-			</table>
-		</div>
-	</form>
+														<div class="validField"><!-- --></div>
+														<div class="clear"><!-- --></div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="clear"><!-- --></div>
+								<div id="captchaExtension">
+									<table class="accountInfo">
+										<tr>
+											<td class="rightCol" colspan="2">
+												<input id="prepopulate" name="prepopulate" type="hidden" value="false" />
+												<input name="regionRef" type="hidden" value=""/>
+												<input id="btnSubmit" type="submit" class="submit" value="<?php echo WoW_Locale::GetString('template_account_wow_submit'); ?>" />
+											</td>
+										</tr>
+									</table>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
