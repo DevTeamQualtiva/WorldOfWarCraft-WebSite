@@ -1,0 +1,56 @@
+.content-trail { position: absolute; z-index: 10; }
+
+#mop-digital-deluxe {}
+#mop-digital-deluxe .pre-purchase-header { background: url(../../images/mop/digital-deluxe-header-bg.jpg) no-repeat; display: block; height: 649px; left: 10px; position: relative; width: 974px; }
+#mop-digital-deluxe .digital-deluxe-edition-text { color: #ecc252; left: 320px;	font: 18px 'Palatino Linotype', serif; letter-spacing: 0.3em; position: relative; text-shadow: 0 0 2px #4d1b16, 1px 1px 10px rgba(0,0,0,0.9); text-transform: uppercase; top: 330px; }
+#mop-digital-deluxe .pre-purchase-container { display: block; height: 245px; left: 371px; position: relative; top: 380px; width: 554px; }
+#mop-digital-deluxe .pre-purchase-container .pre-purchase-description { color: #a4704e; font-size: 14px; line-height: 1.8; margin: 0; padding: 20px 35px; position: absolute; text-align: left; }
+#mop-digital-deluxe .pre-purchase-container .pre-purchase-now { left: 220px; position: relative; top: 179px; }
+#mop-digital-deluxe .pre-purchase-now span {}
+#mop-digital-deluxe .pre-purchase-now span span { font-weight: bold; }
+#mop-digital-deluxe .mists-of-panderia-game-box { position: absolute; top: -150px; left: 0; }
+
+#mop-digital-deluxe .in-game-rewards { background: url(../../images/mop/digital-deluxe-rewards-bg.jpg) no-repeat; height: 1800px; }
+
+#mop-digital-deluxe .rewards { display: block; position: relative; width: 100%; }
+#mop-digital-deluxe .reward-details { height: 130px; position: absolute; width: 499px; }
+#mop-digital-deluxe .reward-details .reward-heading { color: #f5ebd1; font-size: 18px; line-height: 1.25; margin: 10px 45px 5px 90px; }
+#mop-digital-deluxe .reward-details .reward-description { color: #efc9a0; display: block; font-size: 12px; line-height: 2; margin: 5px 70px 5px 90px; }
+
+#mop-digital-deluxe .wow-rewards { position: relative; }
+#mop-digital-deluxe .wow-rewards .reward-details { background: url(../../images/mop/digital-deluxe-wow-icon.png) no-repeat 10px 20px; left: 20px; top: 100px; }
+#mop-digital-deluxe .wow-rewards .reward-details .reward-heading {}
+#mop-digital-deluxe .wow-rewards .reward-details .reward-description {}
+
+#mop-digital-deluxe .wow-rewards .quilen-mount {}
+#mop-digital-deluxe .wow-rewards .quilen-mount .reward-heading { margin-right: 40px; }
+#mop-digital-deluxe .wow-rewards #mount-canvas-flash { position: absolute; top: -2px; right: -2px; }
+#mop-digital-deluxe .wow-rewards .quilen-mount .fallback { background: url(../../images/mop/digital-deluxe-wow-mount.jpg) no-repeat; display: block; height: 435px; position: absolute; right: -2px; top: 2px; width: 518px; }
+
+#mop-digital-deluxe .wow-rewards .quilen-pet {}
+#mop-digital-deluxe .wow-rewards .quilen-pet .reward-details { left: 495px; position: absolute; top: 440px; }
+#mop-digital-deluxe .wow-rewards .quilen-pet .reward-heading {}
+#mop-digital-deluxe .wow-rewards .quilen-pet .reward-description {}
+#mop-digital-deluxe .wow-rewards #pet { left: 30px; position: absolute; top: 271px; }
+#mop-digital-deluxe .wow-rewards .quilen-pet .fallback { background: url(../../images/mop/digital-deluxe-wow-pet.jpg) no-repeat -29px -2px; display: block; height: 381px; width: 464px; }
+
+#mop-digital-deluxe .d3-rewards { position: relative; }
+#mop-digital-deluxe .d3-rewards .reward-details { background: url(../../images/mop/digital-deluxe-d3-icon.png) no-repeat 10px 20px; left: 20px; top: 720px; }
+#mop-digital-deluxe .d3-rewards .reward-details .reward-heading { margin: 10px 5px 5px 100px; }
+#mop-digital-deluxe .d3-rewards .reward-details .reward-description { margin: 5px 70px 5px 100px; }
+
+#mop-digital-deluxe .sc2-rewards { position: relative; }
+#mop-digital-deluxe .sc2-rewards .reward-details { background: url(../../images/mop/digital-deluxe-sc2-icon.png) no-repeat 10px 20px; left: 480px; top: 1050px; }
+#mop-digital-deluxe .sc2-rewards .reward-deatils .reward-heading {}
+#mop-digital-deluxe .sc2-rewards .reward-deatils .reward-description {}
+
+#mop-digital-deluxe .pre-purchase-footer { position: relative; text-align: center; top: 1250px; }
+#mop-digital-deluxe .pre-purchase-footer .pre-purchase-now { margin: 30px 0; }
+
+#mop-digital-deluxe .collectors-edition-link { background: url(../../images/mop/digital-deluxe-footer-collectors-edition.jpg) no-repeat 10px 0; height: 244px; position: relative; top: 1250px; width: 994px; }
+#mop-digital-deluxe .collectors-edition-link .ce-link { background: url(../../images/mop/digital-deluxe-footer-arrow.gif) no-repeat 260px 25px; display: block; height: 70px; left: 352px; position: absolute; top: 105px; width: 290px; }
+#mop-digital-deluxe .collectors-edition-link .ce-link:hover { color: #fff; background-position: 260px -22px; }
+#mop-digital-deluxe .collectors-edition-link .also-available-text { display: block; font: 12px Arial, sans-serif; margin: 15px 0 0 20px; }
+#mop-digital-deluxe .collectors-edition-link .collectors-edition-text { color: #f5ebd1; font: 18px Arial, sans-serif; margin: 15px 0 0 20px; text-transform: uppercase; }
+
+.digital-deluxe .comment-section { margin-top: -180px; position: relative; }

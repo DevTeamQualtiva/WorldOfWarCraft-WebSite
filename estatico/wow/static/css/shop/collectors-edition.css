@@ -1,0 +1,31 @@
+.collectors-edition #content .content-top { background: url("../../images/shop/collectors-edition/bg-top.jpg") no-repeat 0 0; }
+.collectors-edition #content .container-bottom { background: url("../../images/shop/collectors-edition/bg-bottom.jpg") no-repeat 0 0; height:1565px; padding:35px}
+.collectors-edition h3 { font-weight:bold; font-size:18px; color:#f5ebd1 }
+
+.summary-div { position:relative; margin:35px 35px 0 ; height:1161px; }
+.summary-div .page-titles { width:500px; height:270px; float:left; color:#efe3d2 }
+.summary-div .page-titles span { font: normal 52px/60px "Palatino Linotype", Serif; }
+.summary-div .page-titles p {color:#a4704e; font-size:13px; margin:14px 0 35px 0; width:450px; line-height:2em}
+.summary-div .button-top { float:right; margin-right:-39px }
+.summary-div .exclusive { margin-top:400px }
+.summary-div .exclusive ul { width:425px; margin-top:15px; line-height:1.8em; }
+.summary-div .exclusive li { background: url("../../images/shop/collectors-edition/gam-icons.jpg") no-repeat 0 0; padding-bottom:10px; padding-left:90px; }
+.summary-div .exclusive .em { font-size:14px; color:#fff }
+.summary-div .exclusive .wow { background-position: 0 8px }
+.summary-div .exclusive .d3 { background-position: 0 -198px }
+.summary-div .exclusive .sc2 { background-position: 0 -428px }
+
+.container-bottom .container-left { width:420px; height:270px; margin-top:50px }
+.container-bottom .container-right { margin-left:490px;  height:270px; margin-top:50px }
+.container-bottom .sound-track { margin-top:100px }
+
+.available-retailshop { text-align:center; color:#874d25; font-weight:bold; font-size:13px; margin:35px 0 50px }
+
+.ui-button.digital-delux span { padding: 0 0 0 22px; }
+.ui-button.digital-delux em { font-style:normal; display:block; color:#A4704E; text-transform:none; margin-top:19px; font-size: 12px;  }
+.ui-button.digital-delux:hover em { color:#fff }
+.button4.digital-delux span { background-image: url("../../images/shop/collectors-edition/button-deluxe.png"); background-position: 0 0; background-repeat: no-repeat; height: 79px; line-height:1.2em}
+.button4.digital-delux span span { background-position: right -79px; padding:0 55px 0 0; text-align:left }
+
+.button4.digital-delux:hover span { background-position: 0 -158px }
+.button4.digital-delux:hover span span { background-position: right -237px;  }

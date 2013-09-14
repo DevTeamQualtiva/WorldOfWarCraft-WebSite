@@ -18,15 +18,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-class Services extends Controller {
+class Shop extends Controller {
 
 	public function main() {
 		WoW_Template::SetPageData('body_class', sprintf('%s  services-home', WoW_Locale::GetLocale(LOCALE_DOUBLE)));
 		WoW_Template::SetTemplateTheme('wow');
-		$url_data = WoW::GetUrlData('services');
+		$url_data = WoW::GetUrlData('shop');
 		if(empty($url_data['action1'])) {
-            WoW_Template::SetPageIndex('services');
-            WoW_Template::SetPageData('page', 'services');
+            WoW_Template::SetPageIndex('shop');
+            WoW_Template::SetPageData('page', 'shop');
         }else{
 			WoW_Template::ErrorPage(404);
 		}

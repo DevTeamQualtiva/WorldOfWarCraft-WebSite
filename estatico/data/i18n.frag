@@ -1,4 +1,4 @@
-	<div xmlns="http://www.w3.org/1999/xhtml" id="international">
+	<div id="international">
 		<div class="column">
 			<h3>Americas</h3>
             <ul>

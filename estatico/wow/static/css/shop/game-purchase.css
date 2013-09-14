@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+.game-purchase #content  .content-top { background: url("../../images/shop/game-purchase/bg-top.jpg") 0 0 no-repeat; color:#b39265}
+.game-purchase  h4 { font-size:20px; color:#e2c7a3; font-weight:normal; }
+
+.game-purchase .summary-div { position:relative; margin:50px 50px 0 50px; height:460px; }
+.game-purchase .summary-div .page-titles { font-size:14px; color:#ffa800; height:390px; position:relative;}
+.game-purchase .summary-div .page-titles span { font-size:52px; line-height:60px; color:#efe3d2; width:600px; display:block; font-family:"Palatino Linotype", Serif; }
+.game-purchase .summary-div .page-titles .quick-links { position: absolute; right: 30px; top: 155px; border-radius: 8px; background: rgba(0,0,0, .5); padding: 10px 16px; border: 1px solid #3d1f15; }
+.game-purchase .summary-div .page-titles .quick-links ul { padding-left: 16px; list-style-type:disc; }
+.game-purchase .page-sub-titles { font-size:22px; color:#efe3d2; text-transform:uppercase; font-weight:bold }
+.game-purchase .page-titles p,
+.game-purchase .page-sub-titles p { color: #B79855; font-size: 16px; line-height: 30px; width: 500px; text-transform:none; font-weight:normal }
+
+.game-purchase .box { background: url("../../images/shop/game-purchase/bg-game-box.jpg") 0 0 no-repeat; height:384px; padding: 30px 50px 0; }
+.game-purchase .box .game-box { background: url("../../images/shop/game-purchase/game-boxes-mop.png") no-repeat scroll 0 0 transparent; float: left; height: 367px; width: 334px; }
+.game-purchase .battle-chest .game-box { background-position: 0 0; }
+.game-purchase .lich-king .game-box { background-position: -17px -397px; }
+.game-purchase .cataclysm .game-box { background-position: -17px -800px; }
+.game-purchase .mists-of-pandaria .game-box { background-position: -17px -1210px; }
+.game-purchase .box .box-desc { width:550px;  float:right; color:#b39265; font-size:13px; margin-top:35px }
+.game-purchase .box .box-desc  .sub-title { display:block; color:#714d2a; font-size:17px }
+.game-purchase .box .box-desc ul { margin:10px 0 30px }
+.game-purchase .box .box-desc li:first-child { margin-top:10px }
+.game-purchase .box .box-desc li { font-weight:bold; background: url("../../images/icons/bullet2.gif") no-repeat 0 5px; padding-left:20px; margin-left:15px }
+.game-purchase .box .box-desc li a{ background: url("../../images/icons/goto-fansite.gif") no-repeat right 3px; color:#ffb100; padding-right:18px }
+.game-purchase .box .box-desc li a:hover { background-position:right -18px }
+.game-purchase .button2 span { font-size:12px }
+.game-purchase .button2 span { padding: 0 0 0 15px; }
+.game-purchase .button2 span span { padding: 0 15px 0 0; }
+
+.game-purchase .table-feature { background:url("../../images/shop/game-purchase/bg-table.jpg") 0 bottom no-repeat; padding:0 50px 40px; }
+.game-purchase .box-feature { height:532px; opacity: .95; color: #b79855; margin: 20px auto 0; padding: 25px; background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;-moz-box-shadow: #0d0703 0 0 5px; -webkit-box-shadow: #0d0703 0 0 5px; box-shadow: #0d0703 0 0 5px; }
+.game-purchase .box-feature .title { font-size:20px; color:#e2c7a3; font-family:arial }
+.game-purchase table { width:100%; line-height:40px; font-size:13px; color:#b39265; }
+.game-purchase table th,
+.game-purchase table tr { border-bottom:1px solid #462b19; }
+.game-purchase table .logo { height:80px; width:190px; }
+.game-purchase table .logo,
+.game-purchase table td span{ background: url("../../images/shop/game-purchase/box-logos-mop.png") 0 0 no-repeat; padding-left: 20px;}
+.game-purchase table th.battle-chest { background-position:center -8px }
+.game-purchase table th.lich-king { background-position:center -93px }
+.game-purchase table th.cataclysm { background-position:center -180px }
+.game-purchase table th.mists-of-pandaria { background-position:center -267px }
+
+.game-purchase table td span { display:block; width:15px; height:15px; margin:0 auto }
+.game-purchase table td,
+.game-purchase table tr { border-bottom:1px solid #462b19; padding-left: 20px;}
+.game-purchase table tr.alternate{ border-bottom:1px solid #462b19; background-color: #301C0D; padding-left: 20px;}
+.game-purchase table td.battle-chest span { background-position:-5px -366px }
+.game-purchase table td.lich-king span{ background-position:-60px -300px }
+.game-purchase table td.cataclysm span{ background-position:-80px -366px }
+.game-purchase table td.mists-of-pandaria span{ background-position:-118px -366px }
+
+.game-purchase .options { background:url("../../images/shop/game-purchase/bg-options.jpg") 0 top no-repeat; padding:30px 50px 100px 50px; }
+.game-purchase .options .left { width:500px; float:left }
+.game-purchase .options .right { float:right }
+.game-purchase .options h4 { margin:40px 0 30px }
+.game-purchase .options p { line-height:2em }
+.game-purchase .compare-box { width:267px; opacity: .95; color: #b79855; margin: 50px auto 0; padding: 25px; background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;-moz-box-shadow: #0d0703 0 0 5px; -webkit-box-shadow: #0d0703 0 0 5px; box-shadow: #0d0703 0 0 5px; }
+.game-purchase .compare-box h4 { margin:0 }
+.game-purchase .options .ui-button { margin:10px 0 0 17px }
+.game-purchase .options .button4 span { width:187px; }
+.game-purchase .options .button4.button-top { margin-top:30px }
+
+.game-purchase .compare { font-size:16px; color:#da9500; margin-top:10px; }
+.game-purchase .compare span { font-size:10px }
+.game-purchase .compare .under-line { border-bottom:1px dotted #da9500; display:inline-block; width:65px; margin:0 10px; }
+.game-purchase .compare .under-line.short { width:57px; }
+.game-purchase .compare-box .billed { display:block; font-size:11px; color:#5b3d21; text-align:right; height:12px }
+
+.game-purchase .options .subs { background:url("../../images/shop/game-purchase/bg-card.jpg") right top no-repeat;  }
+.game-purchase .options .subs p { width:600px }
+.game-purchase .options .subs .payment { margin:50px 0 0 -70px }
+.game-purchase .options .subs .payment-method   { display:block; float:left; font-size:11px; margin:0 0 30px 50px; min-height: 59px; padding-bottom:20px; padding-left:105px; position: relative; width:320px; }
+.game-purchase .options .subs .payment-method h6{ font-weight:normal; font-size:14px; color:#e2c7a3 }
+.game-purchase .options .subs .payment-method p { width:100%; line-height:1.8em; margin:5px 0 0 }
+.game-purchase .options .subs .payment-method span { font-style:italic; color:#714d2a; }
+
+.game-purchase .options .subs .icon-thumb { background:url("../../images/shop/game-purchase/payment-method.jpg") 0 0 no-repeat;position:absolute; height: 84px; left: 0; min-height: 59px; top:0; width:100px; }
+.game-purchase .options .subs .paypal .icon-thumb{ background-position: 0 -10px; }
+.game-purchase .options .subs .direct-debit .icon-thumb{ background-position: 0 -113px; }
+.game-purchase .options .subs .t-online .icon-thumb{ background-position: 0 -216px; }
+.game-purchase .options .subs .elv .icon-thumb{ background-position: 0 -319px; }
+.game-purchase .options .subs .giorpay .icon-thumb{ background-position: 0 -422px;}
+.game-purchase .options .subs .webmoney .icon-thumb{ background-position: 0 -525px; }
+.game-purchase .options .subs .bank-transfer .icon-thumb { background-position: 0 -628px; }
+.game-purchase .options .subs .qiwi .icon-thumb{ background-position: 0 -731px; }
+
+.game-purchase .options .subs .visa .icon-thumb{ background-position: -111px -10px; }
+.game-purchase .options .subs .amex .icon-thumb{ background-position: -111px -113px; }
+.game-purchase .options .subs .master .icon-thumb{ background-position: -111px -216px; }
+.game-purchase .options .subs .oxxo .icon-thumb{ background-position: -111px -319px; }
+.game-purchase .options .subs .seven-eleven .icon-thumb{ background-position: -111px -422px; }
+.game-purchase .options .subs .dinero .icon-thumb{ background-position: -111px -525px; }
+.game-purchase .options .subs .paco-facil .icon-thumb{ background-position: -111px -628px; }
+.game-purchase .options .subs .rapipago .icon-thumb{ background-position: -111px -731px; }
+.game-purchase .options .subs .servipag .icon-thumb{ background-position: -222px -10px; }
+.game-purchase .options .subs .presto .icon-thumb{ background-position: -222px -113px; }
+.game-purchase .options .subs .scotiabank .icon-thumb{ background-position: -222px -216px; }
+.game-purchase .options .subs .bbva .icon-thumb{ background-position: -222px -319px; }
+.game-purchase .options .subs .santander .icon-thumb{ background-position: -222px -422px; }
+.game-purchase .options .subs .hsbc .icon-thumb{ background-position: -222px -525px; }
+.game-purchase .options .subs .aura .icon-thumb{ background-position: -222px -628px; }
+.game-purchase .options .subs .hipercard .icon-thumb{ background-position: -222px -731px; }
+.game-purchase .options .subs .boleto .icon-thumb{ background-position: -333px -10px; }
+.game-purchase .options .subs .bradesco .icon-thumb{ background-position: -333px -113px; }
+.game-purchase .options .subs .banco .icon-thumb{ background-position: -333px -216px; }
+.game-purchase .options .subs .oi-paggo .icon-thumb{ background-position: -333px -319px; }
+
+.game-box .sticker { background:url("../../images/shop/game-purchase/sticker-en-gb.png") -5px -15px no-repeat; position:absolute; height: 90px; width:100px; top: 210px; left: 192px; display: block; }
+
+/* Locale overrides */
+.game-purchase .boxes-europe .box { background: url("../../images/shop/game-purchase/bg-game-box.jpg") 0 -32px no-repeat; height:351px; padding:0px 50px 0 50px; }
+/*.game-purchase .boxes-europe .box .game-box {  background: url("../../images/shop/game-purchase/game-boxes-eu.png") 0 0 no-repeat; float: left; position: relative; }*/
+.game-purchase .boxes-europe .box .game-box { background: url("../../images/shop/game-purchase/game-boxes-mop-eu.png") 0 0 no-repeat; float: left; height: 367px; position: relative; width: 334px; }
+.game-purchase .boxes-europe .lich-king .game-box { background-position: -17px -397px; }
+.game-purchase .boxes-europe .cataclysm .game-box { background-position: -17px -800px; }
+.game-purchase .boxes-europe .mists-of-pandaria .game-box { background-position: -17px -1210px; }
+
+/*de-de*/
+.de-de .game-purchase .compare-box { height: 315px;}
+.de-de .sticker { background-image:url("../../images/shop/game-purchase/sticker-de-de.png"); }
+
+/*es-es*/
+.es-es .game-purchase .compare-box { height: 345px; }
+.es-es .button4 span span { font-size: 13px; }
+.es-es .sticker { background-image:url("../../images/shop/game-purchase/sticker-es-es.png"); }
+
+/*es-mx*/
+.es-mx .game-purchase .la-price { width:180px; font-size:11px; font-style:italic; margin:15px 0 }
+.es-mx .game-purchase .box .box-desc { margin-top:0 }
+.es-mx .game-purchase .options .subs { background:url("../../images/shop/game-purchase/bg-dragon.jpg") right top no-repeat;  }
+.es-mx .game-purchase .compare .under-line { width:92px; }
+.es-mx .game-purchase .compare .under-line.short { width:85px; }
+.es-mx .game-purchase .compare .price { width:85px; display:inline-block; position:relative; top:22px; font-size:13px; text-align:left }
+.es-mx .game-purchase .options .subs .payment-method h6 { text-transform:uppercase }
+
+/*fr-fr*/
+.fr-fr .game-purchase .compare-box { height: 315px;  }
+.fr-fr .button4 span span { font-size: 13px; }
+.fr-fr .sticker { background-image:url("../../images/shop/game-purchase/sticker-fr-fr.png"); }
+
+/*it-it*/
+.it-it .button4 span span { font-size: 14px; }
+.it-it .sticker { background-image:url("../../images/shop/game-purchase/sticker-it-it.png"); }
+
+/*pt-br*/
+.pt-br .game-purchase .options .subs { background:url("../../images/shop/game-purchase/bg-dragon.jpg") right top no-repeat;  }
+.pt-br .game-purchase .compare .under-line { width:125px; }
+.pt-br .game-purchase .compare .under-line.short { width:117px; }
+.pt-br .game-purchase .valid-brazil { color:#5b3d21; text-align:center; font-size:11px; margin-top:10px }
+.pt-br .game-purchase .box { background-position:0 bottom; padding-left:0}
+.pt-br .game-purchase .box .game-box { background: url("../../images/shop/game-purchase/game-boxes-mop-pt.png") no-repeat 0 0; height:380px}
+.pt-br .game-purchase .battle-chest .game-box { background-position: -90px -40px; }
+.pt-br .game-purchase .lich-king .game-box { background-position: -90px -500px; }
+.pt-br .game-purchase .cataclysm .game-box { background-position: -90px -980px; }
+.pt-br .game-purchase .mists-of-pandaria .game-box { background-position: -90px -1450px; }
+
+/*pt-pt*/
+.pt-pt .button4 span span { font-size: 13px; }
+
+/*ru-ru*/
+.ru-ru .button4 span span { font-size: 13px; }
+.ru-ru .sticker { background-image:url("../../images/shop/game-purchase/sticker-ru-ru.png"); }
+
+/*zh-tw*/440px
+.zh-tw .game-purchase .page-titles { height:370px }
+.zh-tw .game-purchase .page-titles p { font-size:25px; width:490px; margin-top:50px }
+.zh-tw .game-purchase .page-titles p.white { color:#fff }
+.zh-tw .game-purchase .page-sub-titles { font-size:42px }
+.zh-tw .game-purchase .box { padding:10px 50px 0 0; height:371px }
+.zh-tw .game-purchase .box .game-box { background: url("../../images/shop/game-purchase/game-box-tw.png") no-repeat 0 0; float: left; height: 322px; width: 360px; }
+.zh-tw .game-purchase h4 { font-size:29px; font-weight:bold; }
+.zh-tw .game-purchase .box .box-desc { margin-top:0 }
+.zh-tw .game-purchase .box .box-desc ul { font-size:17px; }
+.zh-tw .game-purchase .button-wrapper { position:relative; top:-25px; left:230px }
+.zh-tw .game-purchase .button4 span { font-size:23px; font-weight:bold; color:#ffae00 }
+.zh-tw .game-purchase .options .page-sub-titles p { width:100% }
+.zh-tw .game-purchase .options .page-sub-titles h5 { font-size:20px }
+.zh-tw .game-purchase .box-feature { height:700px; opacity: .95; color: #b79855; margin: 30px auto 0; padding: 30px; background: #211309 url("../../images/wiki/box-bg.jpg") 0 0 no-repeat; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;-moz-box-shadow: #0d0703 0 0 5px; -webkit-box-shadow: #0d0703 0 0 5px; box-shadow: #0d0703 0 0 5px; position:relative; font-size:20px }
+.zh-tw .game-purchase .options .tw-game-amount { background: url("../../images/shop/game-purchase/bg-tw-amont.png") no-repeat center 40px; height:315px  }
+.zh-tw .game-purchase .options .amount-desc { font-size:20px; padding:0 260px 0 70px; line-height:1.5em}
+.zh-tw .game-purchase .options .amount-desc p { line-height:1.5em }
+.zh-tw .game-purchase .options .logo { background: url("../../images/shop/game-purchase/logo.png") no-repeat center 0; width:342px; height:221px; position:absolute; top:-160px; right:-50px }
+.zh-tw .game-purchase .amount-table { width:400px; display:inline-block; margin-bottom:40px }
+.zh-tw .game-purchase .table-title { font-weight:bold; margin-bottom:15px }
+.zh-tw .game-purchase table { font-size:20px; width:370px; text-align:right}
+.zh-tw .game-purchase table .amount { width:250px; text-align:left }
+.zh-tw .game-purchase table td { padding-left:0 }

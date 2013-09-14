@@ -36,6 +36,12 @@ class WoW_Layout {
                 'skip_path' => false
             ),
             array(
+                'path' => '/local-common/css/common-game-site.min.css',
+                'version' => 15,
+                'browser' => false,
+                'skip_path' => false
+            ),
+            array(
                 'path' => '/local-common/css/common-ie.css',
                 'version' => 15,
                 'browser' => 'IE',
@@ -1085,10 +1091,10 @@ class WoW_Layout {
                     )
                 );
                 break;
-			case 'services':
+			case 'shop':
 				$css_data_page = array(
 					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/services-index.css',
+						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/shop-index.css',
 						'version' => 10,
 						'browser' => false,
 					),
