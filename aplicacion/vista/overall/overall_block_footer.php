@@ -77,16 +77,23 @@
 if(WoW_Template::GetTemplateTheme() == 'wow') {
     echo'<div id="legal">
 			<div id="legal-ratings" class="png-fix">
+				<a rel="nofollow" class="truste-link" href="http://privacy-policy.truste.com/click-with-confidence/ctv/en/us.battle.net/seal_m" target="_blank">
+					<img class="legal-image" src="' . WoW::GetWoWPath() . '/wow/static/images/legal/seal_m.png" alt="Validar certificado de privacidad TRUSTe"/>
+				</a>
 				<a href="http://www.pegi.info/" onclick="return Core.open(this);">
-				<img class="legal-image" alt="" src="' . WoW::GetWoWPath() . '/wow/static/local-common/images/legal/eu/pegi-wow.png" />
+					<img class="legal-image" alt="" src="' . WoW::GetWoWPath() . '/wow/static/local-common/images/legal/eu/pegi-wow.png" />
 				</a>
 			</div>
 			<div id="blizzard" class="png-fix">
-				<a href="http://blizzard.com" tabindex="100"><img src="' . WoW::GetWoWPath() . '/wow/static/local-common/images/logos/blizz-wow.png" alt="" /></a>
+				<a href="http://blizzard.com" tabindex="100">
+					<img src="' . WoW::GetWoWPath() . '/wow/static/local-common/images/logos/blizz-wow.png" alt="" />
+				</a>
 			</div>
 			<center>
 				<div id="acore" class="png-fix">
-					<a href="http://www.apocalypsecore.tk" tabindex="100"><img src="' . WoW::GetWoWPath() . '/estatico/cms/Acdocs/logo/aclogo.png" alt="" title="ApocalypseCore DeVTeam"/></a>
+					<a href="http://www.apocalypsecore.tk" onclick="return Core.open(this);">
+						<img class="legal-image" src="' . WoW::GetWoWPath() . '/estatico/cms/Acdocs/logo/aclogo.png" alt="World Of WarCraft CMS" title="ApocalypseCore DeVTeam"/>
+					</a>
 				</div>
 			</center>
 			<span class="clear"><!-- --></span>
