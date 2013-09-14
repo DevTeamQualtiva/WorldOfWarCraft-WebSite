@@ -1142,17 +1142,17 @@ $WoW_Locale = array(
     
     'template_auction_title_time_3' => 'Greater than 24 hours',
     'template_auction_text_time_3' => 'Very long',
-    
+
     'template_auction_error_text' => 'This account is logged into the game. You can still browse the Auction House, but you must log off from the game to use other features such as bidding on or listing auctions.',
     'template_auction_error_back' => 'Back',
     'template_auction_error_title' => 'Error',
-    
+
     'template_auction_you_are_the_seller' => 'You are the seller!',
     'template_auction_no_bids' => 'No bids',
     'template_auction_price_per_unit' => 'Price per unit:',
     'template_auction_buyout_per_unit' => 'Buyout per unit:',
     'template_auction_browse' => 'Browse',
-    
+
     'template_forums_blizztracker_title' => 'Latest '. WoWConfig::$ServerName .' Posts',
     'template_forums_all_blizz_posts' => '(View all)',
     'template_forums_blizztracker_all' => 'All '. WoWConfig::$ServerName .' Posts',
@@ -1160,31 +1160,33 @@ $WoW_Locale = array(
     'template_forums_my_realms' => 'My Realms',
     'template_forums_all_realms' => 'All Realms',
     'template_forums_popular_threads' => 'Popular Topics',
-    'template_forums_forum_rules' => 'Click here to view the Forums Code of Conduct.',
-    
+    'template_forums_forum_rules' => 'Click',
+    'template_forums_forum_rules2' => ' here ',
+    'template_forums_forum_rules3' => 'to view the Forums Code of Conduct.',
+
     'template_forums_type_simple' => 'Simple',
     'template_forums_type_advanced' => 'Advanced',
     'template_forums_create_thread' => 'Create Thread',
-    
+
     'template_forums_table_thread' => 'Subject',
     'template_forums_table_author' => 'Author',
     'template_forums_table_views' => 'Views',
     'template_forums_table_replies' => 'Replies',
     'template_forums_table_last_post' => 'Last Poster',
-    
+
     'template_forums_first_blizz_post' => 'First Blizzard Post',
     'template_forums_views_replies_category' => '%d views/ %d replies',
     'template_forums_last_reply' => 'Last post',
-    
+
     'template_zones_desc' => 'From its undiscovered corners to its most prominent landmarks, the world of Warcraft is filled with mystery, peril, and, most of all, conflict. Cities teem with backstabbing mercenaries and greedy politicians, dark caverns hold ancient and terrible secrets, and warzones play host to generations-old clashes between armies. Few would dare explore these distant and dangerous places; fewer still would expect to return. You are one of those few.',
     'template_zones_dungeons' => 'Dungeons',
     'template_zones_raids' => 'Raids',
-    
+
     'template_zones_heroic_mode_available' => 'Heroic mode available (%d)',
     'template_zones_normal_mode_available' => 'Normal mode available (%d-%d)',
     'template_zones_heroic_mode_only' => 'Heroic only',
     'template_zones_since_patch' => '(new in patch %s)',
-    
+
     'template_zone_dungeon' => 'Dungeon',
     'template_zone_raid' => 'Raid',
     'template_zone_type' => 'Type:',
@@ -1198,19 +1200,19 @@ $WoW_Locale = array(
     'template_zone_bosses' => 'Bosses',
     'template_zone_expansion_required' => 'Requires',
     'template_zone_introduced_in_patch' => 'Introduced in patch:',
-    
+
     'template_menu_game_guide_what_is_wow' => 'Beginner’s Guide',
     'template_menu_game_guide_getting_started' => 'Chapter I: Getting Started',
     'template_menu_game_guide_how_to_play' => 'Chapter II: How to Play',
     'template_menu_game_guide_playing_together' => 'Chapter III: Playing Together',
     'template_menu_game_guide_late_game' => 'Chapter IV: The Late Game',
-    
+
     'template_menu_game_chapter_what-is-wow' => '<em class="chapter-mark">What is</em>World of Warcraft',
     'template_menu_game_chapter_getting-started' => '<em class="chapter-mark">Chapter I</em>Getting Started',
     'template_menu_game_chapter_how-to-play' => '<em class="chapter-mark">Chapter II</em>How to Play',
     'template_menu_game_chapter_playing-together' => '<em class="chapter-mark">Chapter III</em>Playing Together',
     'template_menu_game_chapter_late-game' => '<em class="chapter-mark">Chapter IV</em>The Late Game',
-    
+
     'template_guide_title' => 'World of Warcraft</a><em>Beginner’s Guide</em>',
     'template_guide_what_is_wow_title' => '<h4>What is <br/>World of Warcraft</h4>',
     'template_guide_what_is_wow_intro' => '<p>What is World of Warcraft? World of Warcraft is an online game where players from around the world assume the roles of heroic fantasy characters and explore a virtual world full of mystery, magic, and endless adventure. So much for the short answer! If you’re still looking for a better understanding of what World of Warcraft is, this page and the Beginner’s Guide are the right place to start.</p><p>So, what is this game? Among other things,<br/>World of Warcraft is…</p>',
@@ -1326,7 +1328,7 @@ $WoW_Locale = array(
     'template_guide_getting_started_step4_info' => '<p>Once you’ve picked a race and a class, it’s time to make adjustments to your character’s appearance. Feel free to switch between male and female; the sexes are treated equally in every regard in World of Warcraft, so playing as a man or a woman is a purely cosmetic choice.</p><p>Each race has additional visual traits you can adjust, such as earrings, tattoos, hair style, and more. You can choose from several different ornate beard styles for a dwarf, for example, or choose between horns of varying lengths and shapes for a tauren character. If you’re in a hurry, you can use the ‘randomize’ button to have the game generate a few random configurations until you see one you like, or you can fine-tune your character’s appearance yourself.</p><p>Lastly, you need to pick a name for your character. Keep in mind that offensive names are not allowed; as a matter of etiquette, please choose an appropriate name. Some names will have already been taken by other players, so explore different name options until you find one you’re happy with.</p>',
     'template_guide_getting_started_step5_title' => 'Step 5: Enter the World of Warcraft',
     'template_guide_getting_started_step5_info' => '<p>Congratulations, you’ve created your first character! Review your choices, and if you’re happy with them, click the button to set foot in a world of mighty heroes and high adventure. Your journey is about to begin….</p>',
-    
+
     'template_guide_how_to_play_title' => '<h4>Chapter II<br />How To Play</h4>',
     'template_guide_how_to_play_intro' => '<p>World of Warcraft follows one of Blizzard Entertainment’s primary design mantras: Easy to learn, difficult to master. The core gameplay concepts are intuitive and simple by design, so once you’ve picked up on the basics, you’ll be slaughtering monsters and saving princesses in no time. To help you get started, here’s a primer on World of Warcraft gameplay. </p>',
     'template_guide_how_to_play_ui' => 'UI Overview',
@@ -1495,13 +1497,13 @@ $WoW_Locale = array(
     'template_guide_late_game_pvp_world_desc' => 'The simplest form of Player-vs.-Player (PvP) combat in World of Warcraft is free-form, open world PvP. Anytime you run into another player of the opposite faction and you’re both flagged for PvP, either one of you can attack the other. Some areas are PvP hotbeds where players clash frequently, while other places are relatively quiet. On PvP realms, you will automatically be flagged for PvP almost everywhere you go, but on Normal realms you are safe from attacks by other players unless you willingly flag yourself for PvP.',
     'template_guide_late_game_finale' => 'What’s Next?',
     'template_guide_late_game_finale_desc' => 'We’ve barely scratched the surface of what World of Warcraft has to offer. From the sun-baked shores of Tanaris to the snow-capped mountains of Dun Morogh, from the shattered realm of Outland to the Light-forsaken depth of Icecrown glacier, there’s a whole universe out there for you to explore. Gather your allies. Hone your skills. Dive into a fantasy universe unlike any other.<br/><br/>The World of Warcraft awaits!',
-    
+
     'template_guide_nav_title' => 'What is World of Warcraft',
     'template_guide_nav_i' => 'Chapter I: Getting Started',
     'template_guide_nav_ii' => 'Chapter II: How to Play',
     'template_guide_nav_iii' => 'Chapter III: Playing Together',
     'template_guide_nav_iv' => 'Chapter IV: The Late Game',
-	
+
 	'template_game_race_index' => 'Races',
     'template_game_race_intro' => 'Azeroth is home to dozens of unique and interesting races. In this section, you will be able to learn more about the background of the game’s playable races, their homelands, and much more.',
 	'template_game_races_title' => 'Races of World of Warcraft',
@@ -1546,16 +1548,16 @@ $WoW_Locale = array(
 	'template_game_race_homecity_location' => 'Location &amp; Homecity:',
 	'template_game_race_prev' => 'Prev. race: %s',
 	'template_game_race_next' => 'Next race: %s',
-    
+
     'template_class_role_melee' => 'Melee Damage Dealer',
     'template_class_role_ranged' => 'Ranged Physical Damage Dealer',
     'template_class_role_caster' => 'Ranged Magic Damage Dealer',
     'template_class_role_healer' => 'Healer',
     'template_class_role_tank' => 'Tank',
-    
+
     'template_game_class_index' => 'Classes',
     'template_game_class_intro' => 'This new and improved class guide contains more information about each of World of Warcraft’s classes with a description of their abilities, playstyles, and history in the world of Azeroth.',
-    
+
     'template_game_classes_title' => 'Classes of World of Warcraft',
     'template_game_class_information' => '%s Information',
     'template_game_class_talents' => '%s Talents',
@@ -1568,7 +1570,7 @@ $WoW_Locale = array(
     'template_game_class_bars' => 'Standard Bars',
     'template_game_class_armor' => 'Available Armor',
     'template_game_class_weapons' => 'Available Weapons',
-	
+
 	'template_game_class_warrior_info' => 'For as long as war has raged, heroes from every race have aimed to master the art of battle. Warriors combine strength, leadership, and a vast knowledge of arms and armor to wreak havoc in glorious combat.',
 	'template_game_class_paladin_info' => 'This is the call of the paladin: to protect the weak, to bring justice to the unjust, and to vanquish evil from the darkest corners of the world.',
 	'template_game_class_hunter_info' => 'From an early age the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become hunters.',

@@ -1142,17 +1142,17 @@ $WoW_Locale = array(
     
     'template_auction_title_time_3' => 'Greater than 24 hours',
     'template_auction_text_time_3' => 'Very long',
-    
+
     'template_auction_error_text' => 'This account is logged into the game. You can still browse the Auction House, but you must log off from the game to use other features such as bidding on or listing auctions.',
     'template_auction_error_back' => 'Back',
     'template_auction_error_title' => 'Error',
-    
+
     'template_auction_you_are_the_seller' => 'You are the seller!',
     'template_auction_no_bids' => 'No bids',
     'template_auction_price_per_unit' => 'Price per unit:',
     'template_auction_buyout_per_unit' => 'Buyout per unit:',
     'template_auction_browse' => 'Browse',
-    
+
     'template_forums_blizztracker_title' => 'Mensajes de '. WoWConfig::$ServerName .' Más Recientes',
     'template_forums_all_blizz_posts' => '(Ver todo)',
     'template_forums_blizztracker_all' => 'Todos los mensajes de '. WoWConfig::$ServerName .'',
@@ -1160,22 +1160,24 @@ $WoW_Locale = array(
     'template_forums_my_realms' => 'My Realms',
     'template_forums_all_realms' => 'All Realms',
     'template_forums_popular_threads' => 'TEMAS POPULARES',
-    'template_forums_forum_rules' => 'Haz clic aquí para ver el Código de Conducta de los foros.',
-    
+    'template_forums_forum_rules' => 'Haz clic',
+    'template_forums_forum_rules2' => ' aquí ',
+    'template_forums_forum_rules3' => 'para ver el Código de Conducta de los foros.',
+
     'template_forums_type_simple' => 'Simple',
     'template_forums_type_advanced' => 'Advanced',
     'template_forums_create_thread' => 'Create Thread',
-    
+
     'template_forums_table_thread' => 'Subject',
     'template_forums_table_author' => 'Author',
     'template_forums_table_views' => 'Views',
     'template_forums_table_replies' => 'Replies',
     'template_forums_table_last_post' => 'Last Poster',
-    
+
     'template_forums_first_blizz_post' => 'First Blizzard Post',
     'template_forums_views_replies_category' => '%d views/ %d replies',
     'template_forums_last_reply' => 'Last post',
-    
+
     'template_zones_desc' => 'From its undiscovered corners to its most prominent landmarks, the world of Warcraft is filled with mystery, peril, and, most of all, conflict. Cities teem with backstabbing mercenaries and greedy politicians, dark caverns hold ancient and terrible secrets, and warzones play host to generations-old clashes between armies. Few would dare explore these distant and dangerous places; fewer still would expect to return. You are one of those few.',
     'template_zones_dungeons' => 'Dungeons',
     'template_zones_raids' => 'Raids',

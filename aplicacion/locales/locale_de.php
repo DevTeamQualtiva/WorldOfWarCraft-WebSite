@@ -1156,7 +1156,9 @@ $WoW_Locale = array(
     'template_forums_my_realms' => 'My Realms',
     'template_forums_all_realms' => 'All Realms',
     'template_forums_popular_threads' => 'Popular Topics',
-    'template_forums_forum_rules' => 'Click here to view the Forums Code of Conduct.',
+    'template_forums_forum_rules' => 'Click',
+    'template_forums_forum_rules2' => ' here ',
+    'template_forums_forum_rules3' => 'to view the Forums Code of Conduct.',
     
     'template_forums_type_simple' => 'Simple',
     'template_forums_type_advanced' => 'Advanced',

@@ -1163,7 +1163,9 @@ $WoW_Locale = array(
     'template_forums_my_realms' => 'Мои игровые миры',
     'template_forums_all_realms' => 'Все игровые миры',
     'template_forums_popular_threads' => 'Популярные темы',
-    'template_forums_forum_rules' => 'Правила форумов',
+    'template_forums_forum_rules' => 'Click',
+    'template_forums_forum_rules2' => ' here ',
+    'template_forums_forum_rules3' => 'to view the Forums Code of Conduct.',
     
     'template_forums_type_simple' => 'Простой',
     'template_forums_type_advanced' => 'Расширенный',
