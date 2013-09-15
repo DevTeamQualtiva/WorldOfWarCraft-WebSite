@@ -18,6 +18,9 @@ ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s pa
 Use of this CMS is at your own risk.
 Since it is in development.
 
+#Server Requirements
+PHP version 5.2.4 or newer.
+
 #Cambios para esta revisión
 + Estilo de la web WoW, Battle.net y Account
 + Media, Community
