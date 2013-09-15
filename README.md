@@ -15,6 +15,8 @@ ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s pa
 [Foros](http://apocalypsecore.tk/foro) Soon - Pronto
 
 ## Version actual: v2
+Use of this CMS is at your own risk.
+Since it is in development.
 
 #Cambios para esta revisión
 + Estilo de la web WoW, Battle.net y Account
