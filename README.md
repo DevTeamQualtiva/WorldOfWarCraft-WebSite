@@ -6,7 +6,7 @@ Desarrolladores Activos
 
 # ¿Quiénes Somos?
 ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s para servidores privados de World Of WarCraft.
-+ [Shadez](https://github.com/Shadez/)
++ [Shadez](https://github.com/Shadez/) source 
 + [One](https://github.com/oneluiz/)
 + [Yasha](https://github.com/Zoldycks)
 
