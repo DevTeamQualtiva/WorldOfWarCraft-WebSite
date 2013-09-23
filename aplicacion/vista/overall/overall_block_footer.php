@@ -1,6 +1,6 @@
 <!-- START: Footer -->
 <div id="footer">
-	<div id="sitemap">
+	<div id="sitemap" <?php echo WoW_Template::GetTemplateTheme() == 'wow' ? ' class="promotions"' : null; ?>>
 		<div class="column">
 			<h3 class="bnet">
 				<a href="http://eu.battle.net/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
@@ -50,16 +50,31 @@
 				<li><a href="http://eu.battle.net/security/help"><?php echo WoW_Locale::GetString('template_footer_support_link4'); ?></a></li>
 			</ul>
 		</div>
-		<div id="footer-ad">
+<?php
+if(WoW_Template::GetTemplateTheme() == 'wow') {
+    echo'<div id="footer-promotions">
 			<div class="sidebar-content"></div>
-			<script type="text/javascript">
-			//<![CDATA[
-			$(function() {
-			BnetAds.init('#footer-ad', '300x100');
-			});
-			//]]>
-			</script>
-		</div>
+				<div id="sidebar-marketing" class="sidebar-module">
+					<div class="bnet-offer">'; ?>
+					<!-- -->
+						<div class="bnet-offer-bg">
+							<a href="<?php echo WoW::GetWoWPath(); ?>/account/landing.xml" target="_blank" id="ad3023837" class="bnet-offer-image" onclick="BnetAds.trackEvent('campaignId:3023837 - imgId:3023042', 'WoWtrialLatAm', 'wow', true);">
+							<img src="<?php echo WoW::GetWoWPath(); ?>/cms/ad_300x100/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>.jpg" width="300" height="100" alt=""/>
+							</a>
+						</div>
+					<script type="text/javascript">
+					//<![CDATA[
+					if(typeof (BnetAds.addEvent) != "undefined" )
+					BnetAds.addEvent(window, 'load', function(){ BnetAds.trackEvent('campaignId:3023837 - imgId:3023042', 'WoWtrialLatAm', 'wow'); } );
+					else
+					BnetAds.trackEvent('3023837', 'WoWtrialLatAm', 'wow');
+					//]]>
+					</script>
+				<?php  echo'</div>
+			</div>
+		</div>';
+}
+?>
 	<span class="clear"><!-- --></span>
 	</div>
 <div id="copyright">
