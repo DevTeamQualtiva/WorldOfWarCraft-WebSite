@@ -396,7 +396,11 @@ Class WoW_Template {
                 $path_search_data = $url_data;
                 break;
         }
-        echo '<ol class="ui-breadcrumb">';
+ /*
+  * BUG!!! Need Rewritten and Reworked script...
+  * Need This <span class="breadcrumb-arrow"></span>
+  */
+       echo '<ol class="ui-breadcrumb">';
         $path_data = '';
         for($i = 0; $i < count($path_search_data); ++$i) {
             if($i == count($path_search_data)-1) {

@@ -1097,44 +1097,9 @@ class WoW_Layout {
 						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/shop-index.css',
 						'version' => 10,
 						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/collectors-edition.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/digital-deluxe.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/game-purchase.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/mobile-armory.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/recruit-a-friend.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/scroll-of-resurrection.css',
-						'version' => 10,
-						'browser' => false,
-					),
-					array(
-						'path' => WoW::GetWoWPath() . '/wow/static/css/shop/vas.css',
-						'version' => 10,
-						'browser' => false,
-					),
-				);
-				break;
+					)
+                );
+                break;
             case 'zones':
                 $css_data_page =array(
                     array(
