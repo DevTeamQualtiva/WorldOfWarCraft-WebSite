@@ -18,66 +18,70 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  **/
 
-Class DatabaseConfig {
+ Class DatabaseConfig {
+	/**
+	 * Usar 'mysql' ó 'mysqli'
+	 * Use 'mysql' or 'mysqli'
+	 **/
+	public static $MySQLExtension = 'mysql';
 
-    /**
-     * Use 'mysql' or 'mysqli'
-     **/    
-    public static $MySQLExtension = 'mysql';
+	/**
+	 * World database configuration.
+	 * Configuración Base de datos Mundo.
+	 * @access public
+	 **/
+	public static $world = array(
+		'host'      => 'localhost',
+		'user'      => 'root',
+		'password'  => 'Your PASS / TU CONTRASEÑA',
+		'db_name'   => 'world',
+		'charset'   => 'UTF8',
+		'db_prefix' => ''
+	);
 
-    /**
-     * World database configuration.
-     * @access public
-     **/
-    public static $world = array(
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'Your PASS / TU CONTRASEÑA',
-        'db_name'   => 'world',
-        'charset'   => 'UTF8',
-        'db_prefix' => ''
-    );
-    
-    /**
-     * Characters databases configuration.
-     * Primary key (1, 2, etc.) is RealmID.
-     * @access public
-     **/
-    public static $characters = array(
-        1 => array(
-            'host'      => 'localhost',
-            'user'      => 'root',
-            'password'  => 'Your PASS / TU CONTRASEÑA',
-            'db_name'   => 'characters',
-            'charset'   => 'UTF8',
-            'db_prefix' => ''
-        )
-    );
-    
-    /**
-     * Realms & accounts database configuration.
-     * @access public
-     **/
-    public static $realm = array(
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'Your PASS / TU CONTRASEÑA',
-        'db_name'   => 'auth',
-        'charset'   => 'UTF8',
-        'db_prefix' => ''
-    );
-    
-    /**
-     * WoW database configuration.
-     * @access public
-     **/
-    public static $wow = array(
-        'host'      => 'localhost',
-        'user'      => 'root',
-        'password'  => 'Your PASS / TU CONTRASEÑA',
-        'db_name'   => 'Battle',
-        'charset'   => 'UTF8',
-        'db_prefix' => 'wow'
-    );
-}
+	/**
+	 * Characters databases configuration.
+	 * Configuración Base de datos Personajes
+	 * Primary key (1, 2, etc.) is RealmID.
+	 * @access public
+	 **/
+	public static $characters = array(
+		1 => array(
+			'host'      => 'localhost',
+			'user'      => 'root',
+			'password'  => 'Your PASS / TU CONTRASEÑA',
+			'db_name'   => 'characters',
+			'charset'   => 'UTF8',
+			'db_prefix' => ''
+		)
+	);
+
+	/**
+	 * Realms & accounts database configuration.
+	 * Configuración Base de datos de cuentas y Reinos
+	 * @access public
+	 **/
+	public static $realm = array(
+		'host'      => 'localhost',
+		'user'      => 'root',
+		'password'  => 'Your PASS / TU CONTRASEÑA',
+		'db_name'   => 'auth',
+		'charset'   => 'UTF8',
+		'db_prefix' => ''
+	);
+
+	/**
+	 * WoW CMS database configuration.
+	 * Configuración Base de datos WoW CMS
+	 * @access public
+	 **/
+	public static $wow = array(
+		'host'      => 'localhost',
+		'user'      => 'root',
+		'password'  => 'Your PASS / TU CONTRASEÑA',
+		'db_name'   => 'Battle',
+		'charset'   => 'UTF8',
+		'db_prefix' => 'wow'
+	);
+ }
 ?>
