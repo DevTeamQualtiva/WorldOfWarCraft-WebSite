@@ -1,4 +1,4 @@
-<head>
+<head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <title><?php echo WoW_Layout::GetPageTitle() != null ? WoW_Layout::GetPageTitle() : 'Battle.net'; ?></title>
 <meta content="false" http-equiv="imagetoolbar" />
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
@@ -8,12 +8,23 @@
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/core.js"></script>
 <script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/tooltip.js"></script>
+<!--[if IE]> <link rel="stylesheet" type="text/css" media="all" href="/static/css/bnet-ie.css" />
+<![endif]-->
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/static/css/bnet-ie6.css" />
+<![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/static/css/bnet-ie7.css" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="all" href="../static/css/locale/<?php echo WoW_Locale::GetLocale(LOCALE_DOUBLE); ?>.css" />
 <!--[if IE 6]> <script type="text/javascript">
 //<![CDATA[
 try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
 //]]>
 </script>
 <![endif]-->
+<meta name="description" content="<?php echo WoW_Locale::GetString('template_bn_description'); ?>" />
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/third-party.js"></script>
+<script type="text/javascript" src="<?php echo WoW::GetWoWPath(); ?>/static/local-common/js/common-game-site.min.js"></script>
+<script type="text/javascript">
 <script type="text/javascript">
 //<![CDATA[
 Core.staticUrl = '<?php echo WoW::GetWoWPath(); ?>/static';
@@ -27,7 +38,5 @@ Flash.videoBase = '<?php echo WoW::GetWoWPath(); ?>/wow/media/videos';
 Flash.ratingImage = '<?php echo WoW::GetWoWPath(); ?>/wow/player/rating-pegi.jpg';
 //]]>
 </script>
-<meta name="title" content="Battle.net" />
-<meta name="description" content="<?php echo WoW_Locale::GetString('template_bn_description'); ?>" />
-<link rel="image_src" href="<?php echo WoW::GetWoWPath(); ?>/static/local-common/images/logos/blizz-sc2.png" />
+<meta name="robots" content="NOODP" />
 </head>

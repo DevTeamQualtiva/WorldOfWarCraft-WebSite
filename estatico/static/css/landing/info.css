@@ -4,7 +4,8 @@
 body.digital-purchase,
 body.open-beta { background: url("../../images/bg/digital-purchase.jpg") 50% 0 no-repeat; }
 body.presale { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
-body.wow-account { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
+body.wow-account { background: url("../../images/bg/mop.jpg") 50% 0 no-repeat; }
+body.browser-upgrade { background: url("../../images/bg/browser-upgrade.jpg") -31px 0 no-repeat; }
 
 /* open beta */
 #open-beta-header { font-size:16px; color:#bfbfbf; padding-right: 375px; padding-bottom: 25px; }
@@ -77,7 +78,7 @@ body.wow-account { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
 #what-is-bnet #info-cloud { min-height: 285px; padding: 50px 550px 0 0; background: url("../../images/landings/what-is-bnet/bg-cloud.png") 105% -25px no-repeat; }
 #what-is-bnet #info-media { min-height: 265px; padding: 50px 0 0 550px; background: url("../../images/landings/what-is-bnet/bg-media.png") 0 -15px no-repeat; }
 #what-is-bnet #info-modding { min-height: 285px; padding: 50px 550px 0 0; background: url("../../images/landings/what-is-bnet/bg-modding.png") 105% -25px no-repeat; }
-#what-is-bnet #info-connect { min-height: 265px; padding: 50px 0 0 550px; background: url("../../images/landings/what-is-bnet/bg-connect.png") 0 0 no-repeat; }
+#what-is-bnet #info-connect { min-height: 265px; padding: 50px 0 0 550px; background: url("../../images/landings/what-is-bnet/battletag-connect.jpg") 0 0 no-repeat; }
 #what-is-bnet #info-parental { background: url("../../images/landings/what-is-bnet/bg-parental.png") 0 0 no-repeat; }
 #what-is-bnet #info-contests { background: url("../../images/landings/what-is-bnet/bg-contests.png") 0 0 no-repeat; }
 #what-is-bnet #info-more { background: url("../../images/landings/what-is-bnet/bg-more.png") 0 0 no-repeat; }
@@ -122,19 +123,46 @@ body.wow-account { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
 /* Real-ID */
 #realid, #faq { color: #a2b0c2; font-size: 13px; padding: 50px 0; }
 #realid h2, #faq h2 { font-size:60px; color:#fff; letter-spacing:-2px;  margin: 0 0 25px 0; }
-#realid h3 { font-size:20px; letter-spacing:-1px; color:#74b9d6; margin:0 }
+#realid h3 { font-size:26px; letter-spacing:-1px; color:#fff; margin:0; padding-bottom:5px }
+#realid h3.first-headline { color:#74b9d6 }
 #realid .intro p { margin: .5em 0 1em; line-height: 1.8em}
-#realid .realid-features {line-height:1.8em; margin-top: 20px;}
+#realid .realid-features { line-height:1.8em; margin-top: 20px;}
+#realid .realid-features .button1 { margin:10px 0 30px }
 #realid .realid-features h2 {font-size:26px; color:letter-spacing:-1px; color:#fff; font-weight:bold; padding:0 5px 0 0; display: block; margin-bottom: 8px;}
-#realid .realid-features .odd, 
+#realid .realid-features .odd,
 #realid .realid-features .even { width: 450px; padding: 60px 0}
 #realid .realid-features .odd { padding-left:300px}
 #realid .realid-features .even { padding-left:500px}
 #realid #real-names { background: url(../../images/landings/real-id/real_names.png) 50px 50% no-repeat; }
 #realid #cross-game-chat { background: url("../../images/landings/real-id/cross_game_chat.png") 200px 50% no-repeat; }
+#realid #cross-game-chat.odd { background-position:50px 50% }
 #realid #rich-presence { background: url("../../images/landings/real-id/rich_presence.png") 50px 50% no-repeat; }
+#realid #rich-presence.even { background-position:290px 50% }
 #realid #broadcasts { background: url("../../images/landings/real-id/broadcasts.png") 200px 50% no-repeat; }
 #realid #all-chars { background: url("../../images/landings/real-id/all_chars.png") 50px 50% no-repeat; }
+#realid #all-chars.even { background-position:250px 50% }
+#realid #the-future { background: url("../../images/landings/real-id/the-future.jpg") 50px 50% no-repeat; }
+
+.social-community { padding:50px 0 0 }
+.social-community h2 { font-size: 60px; color: white; letter-spacing: -2px; margin:0 0 25px 0 }
+.social-community p { color:#86a2b6; line-height:2em; font-size:13px }
+.social-community p strong { color:#FFF; font-weight:normal }
+.social-community p a { color:#00adeb }
+.social-community p a:hover { color:#fff }
+
+.social-community .toggle-buttons { height:126px; margin:40px 0 0 }
+.social-community .toggle-buttons li { height:126px; display:block; float:left }
+.social-community .toggle-buttons a { text-align:center; display:block; width:434px; height:96px; padding:6px 0 24px; background:url(../../images/social-community/battletag-buttons.png) 0 -126px no-repeat; color:#b2bac7; font-size:36px; line-height:92px }
+.fr-fr .social-community .toggle-buttons a { font-size:24px }
+.de-de .social-community .toggle-buttons a { font-size:25px }
+.ru-ru .social-community .toggle-buttons a { font-size:28px }
+.ie6 .social-community .toggle-buttons a { background-image:url(../../images/social-community/battletag-buttons.gif) }
+.social-community .toggle-buttons a:hover { background-position:0 -253px }
+.social-community .toggle-buttons a.active,
+.social-community .toggle-buttons a.active:hover { background-position:0 0 }
+.social-community .toggle-buttons a strong { color:#00adeb }
+
+
 
 /* FAQ */
 .rcol, .lcol { width:45%; float: right;}
@@ -145,7 +173,7 @@ body.wow-account { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
 
 
 /* sc2 product info only KR, TW*/
-.primary { width:990px; padding-bottom:25px; background:url('/static/images/landings/kr-sc2request/sc2.jpg') no-repeat; overflow:hidden; font-size:12px; }
+.primary { width:990px; padding-bottom:25px; background:url('../../images/landings/kr-sc2request/sc2.jpg') no-repeat; overflow:hidden; font-size:12px; }
 .primary .header { border-bottom:1px solid #B2B0AF; height:48px; overflow:hidden; padding:11px 0 0 56px; position:relative; width:880px; }
 h3.headline { font-family:Malgun Gothic,AppleGothic,Dotum,'Trebuchet MS',Arial,sans-serif; font-size:24px; font-weight:normal; letter-spacing:0; line-height:40px; color:#212121; }
 .primary .header img { border-right:1px solid #B2B0AF; left:0; position:absolute; top:11px; }
@@ -154,41 +182,41 @@ h3.headline { font-family:Malgun Gothic,AppleGothic,Dotum,'Trebuchet MS',Arial,s
 .box-left { padding:20px 0 0 45px; width:400px }
 .float-left { float:left }
 .float-right { float:right; padding-right:70px; top:0; left:0 }
-.box-left .top-box { width:393px; height:80px; background:url('/static/images/landings/kr-sc2request/kr-bg-1.jpg') no-repeat; }
-.box-left .top-box .unlimited { background:url('/static/images/landings/kr-sc2request/icon-unlimited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
-.box-left .top-box .limited { background:url('/static/images/landings/kr-sc2request/icon-limited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box { width:393px; height:80px; background:url('../../images/landings/kr-sc2request/kr-bg-1.jpg') no-repeat; }
+.box-left .top-box .unlimited { background:url('../../images/landings/kr-sc2request/icon-unlimited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box .limited { background:url('../../images/landings/kr-sc2request/icon-limited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
 .box-left .top-box .unlimited span, .box-left .top-box .limited span { font-size:18px; font-weight:bold }
 
-.box-left .bottom-box { margin-left:-4px }  
-.box-left .bottom-box .top { background:url('/static/images/landings/kr-sc2request/kr-bg-2-top.jpg') no-repeat; width:399px; height:11px; overflow:hidden; }
-.box-left .bottom-box .middle { background:url('/static/images/landings/kr-sc2request/kr-bg-2-middle.jpg') repeat-y; width:399px; padding:10px 10px }
-.box-left .bottom-box .middle .box { background:url('/static/images/landings/kr-sc2request/box.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px }
-.box-left .bottom-box .middle .digital { background:url('/static/images/landings/kr-sc2request/digital.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
-.box-left .bottom-box .middle .day-start { background:url('/static/images/landings/kr-sc2request/1d-starter-tw.jpg') no-repeat top left; padding-left:115px; width:250px;  }
+.box-left .bottom-box { margin-left:-4px }
+.box-left .bottom-box .top { background:url('../../images/landings/kr-sc2request/kr-bg-2-top.jpg') no-repeat; width:399px; height:11px; overflow:hidden; }
+.box-left .bottom-box .middle { background:url('../../images/landings/kr-sc2request/kr-bg-2-middle.jpg') repeat-y; width:399px; padding:10px 10px }
+.box-left .bottom-box .middle .box { background:url('../../images/landings/kr-sc2request/box.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px }
+.box-left .bottom-box .middle .digital { background:url('../../images/landings/kr-sc2request/digital.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
+.box-left .bottom-box .middle .day-start { background:url('../../images/landings/kr-sc2request/1d-starter-tw.jpg') no-repeat top left; padding-left:115px; width:250px;  }
 
-.box-left .bottom-box .middle .month { background:url('/static/images/landings/kr-sc2request/30d.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px; }
-.box-left .bottom-box .middle .month-digital { background:url('/static/images/landings/kr-sc2request/30d-digital-tw.jpg') no-repeat top left; padding-left:115px; padding-bottom:5px; width:250px; }
-.box-left .bottom-box .middle .day { background:url('/static/images/landings/kr-sc2request/1d.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
-.box-left .bottom-box .middle .day-digital { background:url('/static/images/landings/kr-sc2request/1d-digital-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
-.box-left .bottom-box .middle .threedays { background:url('/static/images/landings/kr-sc2request/3d-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
-.box-left .bottom-box .middle .dvd { background:url('/static/images/landings/kr-sc2request/dvd.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:50px; }
-.box-left .bottom-box .middle .wow { background:url('/static/images/landings/kr-sc2request/wow.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
+.box-left .bottom-box .middle .month { background:url('../../images/landings/kr-sc2request/30d.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px; }
+.box-left .bottom-box .middle .month-digital { background:url('../../images/landings/kr-sc2request/30d-digital-tw.jpg') no-repeat top left; padding-left:115px; padding-bottom:5px; width:250px; }
+.box-left .bottom-box .middle .day { background:url('../../images/landings/kr-sc2request/1d.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .day-digital { background:url('../../images/landings/kr-sc2request/1d-digital-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .threedays { background:url('../../images/landings/kr-sc2request/3d-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .dvd { background:url('../../images/landings/kr-sc2request/dvd.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:50px; }
+.box-left .bottom-box .middle .wow { background:url('../../images/landings/kr-sc2request/wow.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
 
-.box-left .bottom-box .middle .title { color:#0072a3; font-size:16px; font-weight:bold; letter-spacing:-.05em; } 
+.box-left .bottom-box .middle .title { color:#0072a3; font-size:16px; font-weight:bold; letter-spacing:-.05em; }
 .box-left .bottom-box .middle .title span { color:#000; font-size:12px; letter-spacing:0; }
-.box-left .bottom-box .middle ul { background:url('/static/images/landings/kr-sc2request/list.gif') no-repeat 0 4px; margin-left:10px; margin-top:10px; padding-left:10px; }
+.box-left .bottom-box .middle ul { background:url('../../images/landings/kr-sc2request/list.gif') no-repeat 0 4px; margin-left:10px; margin-top:10px; padding-left:10px; }
 .box-left .bottom-box .middle ul li { margin-top:10px; font-size:11px; }
 .box-left .bottom-box .middle ul li span{ color:#999 }
-.box-left .bottom-box .middle .line { background:url('/static/images/landings/kr-sc2request/cross-line.gif') no-repeat; width:375px; height:2px; padding:5px  0}
-.box-left .bottom-box .middle .button { background:url('/static/images/landings/kr-sc2request/button-bg.jpg') no-repeat; display:block; width:149px; height:20px; margin:20px 0 0 105px; padding-top:5px; color:#fff; font-size:11px; text-align:center; }
+.box-left .bottom-box .middle .line { background:url('../../images/landings/kr-sc2request/cross-line.gif') no-repeat; width:375px; height:2px; padding:5px  0}
+.box-left .bottom-box .middle .button { background:url('../../images/landings/kr-sc2request/button-bg.jpg') no-repeat; display:block; width:149px; height:20px; margin:20px 0 0 105px; padding-top:5px; color:#fff; font-size:11px; text-align:center; }
 .box-left .bottom-box .middle .button span.buy-wow { letter-spacing:-1px; }
-.box-left .bottom-box .bottom { background:url('/static/images/landings/kr-sc2request/kr-bg-2-bottom.jpg') no-repeat; width:399px; height:10px; }
+.box-left .bottom-box .bottom { background:url('../../images/landings/kr-sc2request/kr-bg-2-bottom.jpg') no-repeat; width:399px; height:10px; }
 
-.box-left .bottom-box .wow-purchase { letter-spacing:-0.5px} 
+.box-left .bottom-box .wow-purchase { letter-spacing:-0.5px}
 
 .download-box { margin:50px 0 0 0 }
 .download-box p.down-desc { font-family:Malgun Gothic, AppleGothic, Dotum, "Trebuchet MS", Arial, sans-serif; font-size:15px; letter-spacing:-1px; font-weight:bold; margin-left:5px; color:#6a6a6a }
-.download-box .download-button { background:url('/static/images/landings/kr-sc2request/download-button.jpg') no-repeat; width:315px; height:67px; margin-left:45px }
+.download-box .download-button { background:url('../../images/landings/kr-sc2request/download-button.jpg') no-repeat; width:315px; height:67px; margin-left:45px }
 .download-box .download-button a { float:left; display:inline-block; height:67px; }
 .download-box .download-button a.pc { width:157px; }
 .download-box .download-button a.mac { width:158px; }
@@ -197,15 +225,15 @@ h3.headline { font-family:Malgun Gothic,AppleGothic,Dotum,'Trebuchet MS',Arial,s
 .zh-tw .box-left .bottom-box .middle ul li { font-size:12px }
 
 /* cataclysm product info only TW*/
-.cmt-tw { background: url('/static/images/landings/wow-product/wow-c.png') no-repeat scroll right top transparent; height: 1300px; }
+.cmt-tw { background: url('../../images/landings/wow-product/wow-c.png') no-repeat scroll right top transparent; height: 1300px; }
 .cmt-tw .title { color:#b92700 !important}
-.box-left .top-box .point-card { background:url('/static/images/landings/wow-product/icon-timecard.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box .point-card { background:url('../../images/landings/wow-product/icon-timecard.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
 .box-left .top-box .point-wrapper { height:540px }
-.box-left .bottom-box .middle .product { background:url('/static/images/landings/wow-product/product-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
-.box-left .bottom-box .middle .point-card-150 { background:url('/static/images/landings/wow-product/point-150-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
-.box-left .bottom-box .middle .point-card-300 { background:url('/static/images/landings/wow-product/point-300-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
-.box-left .bottom-box .middle .time-card-30d { background:url('/static/images/landings/wow-product/time-30d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
-.box-left .bottom-box .middle .time-card-90d { background:url('/static/images/landings/wow-product/time-90d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .product { background:url('../../images/landings/wow-product/product-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .point-card-150 { background:url('../../images/landings/wow-product/point-150-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .point-card-300 { background:url('../../images/landings/wow-product/point-300-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .time-card-30d { background:url('../../images/landings/wow-product/time-30d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .time-card-90d { background:url('../../images/landings/wow-product/time-90d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
 .box-left .bottom-box .middle .cmt li{ margin-top:4px; font-size:12px; color:#000}
 .box-left .bottom-box div.time-card { height:440px }
 p.intro-desc { font-size:14px; }
@@ -256,3 +284,141 @@ p.intro-desc span { font-weight:bold; color:#b92700 }
 .display-guide .guide-case p { font-size: 14px; font-weight: bold; color: #000; letter-spacing: -0.1em; }
 .display-guide .guide-case ul li { color: #000; }
 .display-guide .guide-case .button { margin-top: 20px; text-align: center; }
+
+
+/* Browser Upgrade Promotion - KR, CN */
+.browser-upgrade h1#logo { display:none; }
+.browser-upgrade div.search-bar { display:none; }
+.browser-upgrade #layout-middle .wrapper { width:1100px; }
+.browser-upgrade #layout-bottom { position:relative; }
+
+#browser-upgrade-header { height: 235px; padding: 0 100px 0px 0px; }
+#browser-upgrade-header h2 { color:#fff; font:normal 28px 'Malgun Gothic', Dotum, AppleGothic;}
+#browser-upgrade-header .header-top { background:url("../../images/landings/browser-upgrade/bg-sides.png") repeat-x center bottom; }
+
+#browser-upgrade-header .header-title { height: 63px; margin-top:10px; background:url("../../images/landings/browser-upgrade/en-us/header-title.html") no-repeat; }
+#browser-upgrade-header .header-warning { height: 68px; margin-top:25px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/en-us/btn-warning.png") no-repeat;}
+#browser-upgrade-header .header-good { height: 68px; margin-top:25px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/en-us/btn-good.png") no-repeat;}
+#browser-upgrade-header .header-subscript{ height: 68px; margin-left:270px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/en-us/header-subscript.png") no-repeat; }
+
+.browser-container { position:relative; width:100%; padding-bottom:50px; overflow:hidden; font-size:12px; }
+.browser-container .newest-browser-title { padding-left:35px; font:normal 28px 'Malgun Gothic', Dotum, AppleGothic; color:#393939; }
+
+.newest-browser { position:relative; width:100%; height:81px; margin-top:33px; background-color:#e4e2e1; overflow:hidden; }
+.newest-browser ul { float:left; padding-left:20px; }
+.newest-browser ul li { list-style-type:none; float:left; }
+.newest-browser ul li span { display:block; width:78px; display:block; height:81px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/icon.jpg") no-repeat; text-indent:-1000em; overflow:hidden; cursor:pointer; }
+.newest-browser ul .explore span { background-position:0px -78px; }
+.newest-browser ul .explore span.on { background-position:0px 11px; }
+.newest-browser ul .firefox span { background-position:-85px -78px; }
+.newest-browser ul .firefox span.on { background-position:-85px 11px; }
+.newest-browser ul .chrome span { background-position:-170px -78px; }
+.newest-browser ul .chrome span.on { background-position:-170px 11px; }
+.newest-browser ul .safari span { background-position:-250px -78px; }
+.newest-browser ul .safari span.on { background-position:-250px 11px; }
+.newest-browser ul .opera span { background-position:-330px -78px; }
+.newest-browser ul .opera span.on { background-position:-330px 11px; }
+.newest-browser .download-browser { float:left; display:inline; margin-left:20px; padding:15px 0 0; text-align:left; }
+.newest-browser .download-browser .link { display:none; font-size:14px; font-weight:bold; color:#0072a3; }
+.newest-browser .download-browser .link .go-download { display:inline-block; width:93px; height:24px; margin-left:7px; }
+.newest-browser .download-browser .link .go-download span { display:inline-block; width:93px; height:24px; padding:0; background:url("http://us.battle.net/static/images/landings/browser-upgrade/download-bg.gif") no-repeat; line-height:23px; text-align:center; vertical-align:middle; }
+.newest-browser .download-browser .link .go-download:hover span { padding:0; background-position:0 -24px; }
+.newest-browser .download-browser .link .go-download span span { padding:0; background:none; color:#fff; }
+.newest-browser .download-browser .link .go-download:hover span span { background:none; color:#fff; }
+.newest-browser .download-browser .link .desc { display:block; margin:10px 0 0; font-size:12px; font-weight:normal; color:#4a4a4a; }
+
+#browser-contents { position:relative; width:100%; margin-top:27px; background-color:#e4e2e1; overflow:hidden; }
+#browser-contents .content-tab { width:100%; background-color:#d3d1ce; overflow:hidden; }
+#browser-contents .content-tab li { list-style-type:none; float:left; }
+#browser-contents .content-tab li a { display:block; height:34px; padding-top:28px; cursor:pointer; font:bold 20px 'Malgun Gothic', Dotum, AppleGothic; color:#00649e; vertical-align:middle; }
+#browser-contents .content-tab li a.tap1 { width:465px; margin-left:-1px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap1bg_on.jpg") no-repeat; }
+#browser-contents .content-tab li a.tap2 { width:637px; margin-left:-5px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2bg_off.jpg") no-repeat; font-size:15px; color:#787878; }
+#browser-contents .content-tab li a.tap3 { width:419px; margin-left:-1px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap1bg_off.jpg") no-repeat; font-size:15px; color:#787878; }
+#browser-contents .content-tab li a.tap4 { width:683px; margin-left:-5px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2bg_on.jpg") no-repeat; }
+
+#browser-contents .tap1-text1 { padding-left:95px; }
+#browser-contents .tap1-text2 { font-size:16px; }
+#browser-contents .tap2-text1 { padding-left:130px; }
+
+.browser-article { display:none; position:relative; width:100%; }
+.browser-article .browser-info-box { position:relative; padding:30px 27px 30px 70px; }
+
+.browser-article .desc-indent { margin-top:-40px; margin-left:100px; font-weight:normal; font-size:12px; color:#2e2e2e; width:520px; }
+.browser-article .desc-indent strong { font-weight:bold; color:#007ca5; }
+.browser-article .desc-indent p { padding-left:20px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/point.gif") no-repeat; }
+.browser-article .desc-indent p span { font-weight:normal; color:#007ca5; }
+.browser-article .desc-indent-2 { margin-top:-40px; margin-left:100px; font-weight:normal; font-size:12px; color:#2e2e2e; width:350px; }
+
+.browser-article h4 { height:78px; padding-left:85px; font:bold 20px 'Malgun Gothic', Dotum, AppleGothic; color:#4a4a4a; }
+.browser-article h4 span { color:#007ca5; }
+
+.browser-article .problem-1 { height:254px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap1_img1.jpg") right no-repeat; }
+.browser-article .problem-1 h4 { padding-top:60px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 60px no-repeat; }
+.browser-article .problem-2 { padding-left:125px; height:280px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/en-us/tap1_img2.jpg") right no-repeat; }
+.browser-article .problem-2 h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 -70px no-repeat; }
+
+.browser-article .problem-3 { margin-top:-40px; height:350px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap1_img3.jpg") right no-repeat; }
+.browser-article .problem-3 h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 -140px no-repeat; }
+
+.browser-article h3.title { padding-top:30px; font:bold 27px 'Malgun Gothic', Dotum, AppleGothic; color:#333; text-align: center; }
+.browser-article .performance { height:190px; padding-top:50px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_img1.jpg") right top no-repeat; }
+.browser-article .performance h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 0 no-repeat; }
+.browser-article .security { padding-left:125px; height:170px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_img2.jpg") right top no-repeat; }
+.browser-article .security h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 -70px no-repeat; }
+.browser-article .interface { height:190px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_img3.jpg") right top no-repeat; }
+.browser-article .interface h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 -140px no-repeat; }
+.browser-article .experience { padding-left:125px; height:170px; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_img4.jpg") right top no-repeat; }
+.browser-article .experience h4 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/num.gif") 0 -210px no-repeat; }
+
+.browser-article .explore-source { padding:5px 5px 30px; background-color:#d3d1ce; text-align:right; }
+.browser-article .explore-source a { font-size:11px; color:#2e2e2e; }
+
+.browser-article .report-forums { width:100%; background-color:#e4e2e1; padding:12px 0 20px 30px; }
+.browser-article .report-forums h3 { padding-left:50px; padding-top:5px; height:40px; font-weight:bold; background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_icon1.jpg") no-repeat; font-size:16px; text-align:left; }
+.browser-article .report-forums p { display:inline; }
+.browser-article .report-forums p a { margin-left:50px; padding:3px 0 5px 25px; font-size:12px; color:#007ca5; font-weight:bold; text-decoration:underline; }
+.browser-article .report-forums p a.wow { background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_icon2.jpg") no-repeat; }
+.browser-article .report-forums p a.sc2 { background:url("http://us.battle.net/static/images/landings/browser-upgrade/tap2_icon3.jpg") no-repeat; }
+
+/* IE7 Retirement - KR */
+.ie7-retirement { background-color:#01080d; }
+.ie7-retirement #info-header { position:relative; background:#01080d url("http://us.battle.net/static/images/landings/ie7-retirement/header-bg.jpg") center top no-repeat; }
+.ie7-retirement .header { position:relative; width:1002px; height:302px; margin:0 auto; background:#01080d url("http://us.battle.net/static/images/landings/ie7-retirement/header-bg.jpg") center top no-repeat; }
+.ie7-retirement .header .status { position:absolute; left:25px; top:192px; width:244px; height:68px; }
+.ie7-retirement .header .status .good { background:url("http://us.battle.net/static/images/landings/ie7-retirement/msg-good.jpg") no-repeat; }
+.ie7-retirement .header .status .bad { background:url("http://us.battle.net/static/images/landings/ie7-retirement/msg-warning.jpg") no-repeat; }
+.ie7-retirement #info-content { background:#01080d url("http://us.battle.net/static/images/landings/ie7-retirement/content-bg.jpg") center top no-repeat; }
+.ie7-retirement #info-content .content { width:1002px; margin:0 auto; padding:24px 0 60px; background:#01080d url("http://us.battle.net/static/images/landings/ie7-retirement/content-bg.jpg") center top no-repeat; }
+.ie7-retirement #info-footer { background:url("http://us.battle.net/static/images/landings/ie7-retirement/footer-bg.jpg") center top no-repeat; }
+.ie7-retirement .footer { width:1002px; height:130px; margin:0 auto; padding-top:30px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/footer-bg.jpg") center top no-repeat; }
+.ie7-retirement .footer .blizzard { display:block; width:142px; height:74px; margin:0 auto; background:url("http://us.battle.net/static/images/landings/ie7-retirement/logo-blizzard.gif") no-repeat; }
+
+.ie7-retirement .title { width:233px; height:26px; margin:0 0 5px 19px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/tit-browser.png") no-repeat; }
+.ie7-retirement .browsers { width:963px; height:85px; margin:0 auto 8px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/box-browsers-bg.jpg") no-repeat; }
+.ie7-retirement .forum { width:963px; height:85px; margin:0 auto 30px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/box-forum-bg.jpg") no-repeat; }
+.ie7-retirement .forum ul { padding:50px 0 0 213px; }
+.ie7-retirement .forum ul li { float:left; }
+.ie7-retirement .forum ul li a { display:block; padding:0 0 0 32px; background-position:8px 2px; background-repeat:no-repeat; font:bold 12px/2.1em 'Dotum'; color:#007ca5; text-decoration:underline; }
+.ie7-retirement .forum ul li.wow a { background-image:url("http://us.battle.net/static/images/landings/ie7-retirement/icon-wow.gif"); }
+.ie7-retirement .forum ul li.sc2 a { background-image:url("http://us.battle.net/static/images/landings/ie7-retirement/icon-sc2.gif"); }
+
+.ie7-retirement .browsers ul { float:left; padding:1px 0 1px 15px; }
+.ie7-retirement .browsers ul li { list-style-type:none; float:left; }
+.ie7-retirement .browsers ul li span { display:block; width:82px; height:83px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/icon-browser.jpg") no-repeat; text-indent:-1000em; overflow:hidden; cursor:pointer; }
+.ie7-retirement .browsers ul .explore span { background-position:0px -83px; }
+.ie7-retirement .browsers ul .explore span.on { background-position:0px 0px; }
+.ie7-retirement .browsers ul .firefox span { background-position:-82px -83px; }
+.ie7-retirement .browsers ul .firefox span.on { background-position:-82px 0px; }
+.ie7-retirement .browsers ul .chrome span { background-position:-164px -83px; }
+.ie7-retirement .browsers ul .chrome span.on { background-position:-164px 0px; }
+.ie7-retirement .browsers ul .safari span { background-position:-246px -83px; }
+.ie7-retirement .browsers ul .safari span.on { background-position:-246px 0px; }
+.ie7-retirement .browsers .download { float:left; display:inline; margin-left:15px; padding:22px 0 0; text-align:left; }
+.ie7-retirement .browsers .download .link { display:none; font-size:14px; font-weight:bold; color:#fff; }
+.ie7-retirement .browsers .download .link .go-download { display:inline-block; width:93px; height:24px; margin:-3px 0 0 7px; overflow:hidden; }
+.ie7-retirement .browsers .download .link .go-download span { display:inline-block; width:93px; height:24px; padding:0; background:url("http://us.battle.net/static/images/landings/ie7-retirement/btn-download.gif") no-repeat; line-height:23px; text-align:center; vertical-align:middle; }
+.ie7-retirement .browsers .download .link .go-download:hover span { padding:0; background-position:0 -24px; }
+.ie7-retirement .browsers .download .link .go-download span span { padding:0; background:none; font:bold 12px/2.3em 'Dotum'; color:#fff; }
+.ie7-retirement .browsers .download .link .go-download:hover span span { background:none; color:#fff; }
+.ie7-retirement .browsers .download .link .desc { display:block; margin:7px 0 0; font-size:12px; font-weight:normal; color:#7eadcc; }
+.ie7-retirement .hate-ie7 { height:286px; background:url("http://us.battle.net/static/images/landings/ie7-retirement/hate-ie7.jpg") center top no-repeat; }

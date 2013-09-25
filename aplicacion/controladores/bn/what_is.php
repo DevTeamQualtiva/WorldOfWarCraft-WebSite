@@ -25,7 +25,6 @@ Class What_is extends Controller {
         WoW_Template::SetPageIndex('landing');
         WoW_Template::SetPageData('landing', 'what_is');
         WoW_Template::LoadTemplate('page_landing');
-        WoW_Template::LoadTemplate('page_index');
     }
 }
 

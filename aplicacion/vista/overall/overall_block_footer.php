@@ -3,15 +3,15 @@
 	<div id="sitemap" <?php echo WoW_Template::GetTemplateTheme() == 'wow' ? ' class="promotions"' : null; ?>>
 		<div class="column">
 			<h3 class="bnet">
-				<a href="http://eu.battle.net/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
+				<a href="<?php echo WoW::GetWoWPath(); ?>" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
 			</h3>
 			<ul>
-				<li><a href="http://eu.battle.net/what-is/" data-action="Battle.net Home - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/get-a-game.html" data-action="Battle.net Home - Comprar juegos"><?php echo WoW_Locale::GetString('template_footer_home_link2'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/" data-action="Battle.net Home - Cuenta"><?php echo WoW_Locale::GetString('template_footer_home_link3'); ?></a></li>
-				<li><a href="http://eu.blizzard.com/support/" data-action="Battle.net Home - Soporte"><?php echo WoW_Locale::GetString('template_footer_home_link4'); ?></a></li>
-				<li><a href="http://eu.battle.net/realid/" data-action="Battle.net Home - ID Real "><?php echo WoW_Locale::GetString('template_footer_home_link5'); ?></a></li>
-				<li><a href="http://us.battle.net/battletag/" data-action="Battle.net Home - BattleTag"><?php echo WoW_Locale::GetString('template_footer_home_link6'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?><?php echo WoW_Locale::GetLocale(); ?>/what-is/" data-action="Battle.net Home - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/get-a-game.html" data-action="Battle.net Home - Comprar juegos"><?php echo WoW_Locale::GetString('template_footer_home_link2'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/" data-action="Battle.net Home - Cuenta"><?php echo WoW_Locale::GetString('template_footer_home_link3'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/support/" data-action="Battle.net Home - Soporte"><?php echo WoW_Locale::GetString('template_footer_home_link4'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/realid/" data-action="Battle.net Home - ID Real "><?php echo WoW_Locale::GetString('template_footer_home_link5'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/battletag/" data-action="Battle.net Home - BattleTag"><?php echo WoW_Locale::GetString('template_footer_home_link6'); ?></a></li>
 			</ul>
 		</div>
 		<div class="column">
@@ -20,34 +20,34 @@
 			</h3>
 			<ul>
 				<li><a href="http://eu.battle.net/sc2/"><?php echo WoW_Locale::GetString('template_footer_games_link1'); ?></a></li>
-				<li><a href="http://eu.battle.net/wow/"><?php echo WoW_Locale::GetString('template_footer_games_link2'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/wow/"><?php echo WoW_Locale::GetString('template_footer_games_link2'); ?></a></li>
 				<li><a href="http://eu.battle.net/games/d3"><?php echo WoW_Locale::GetString('template_footer_games_link3'); ?></a></li>
 				<li><a href="http://eu.battle.net/games/classic"><?php echo WoW_Locale::GetString('template_footer_games_link4'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/download/"><?php echo WoW_Locale::GetString('template_footer_games_link5'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/download/"><?php echo WoW_Locale::GetString('template_footer_games_link5'); ?></a></li>
 			</ul>
 		</div>
 		<div class="column">
 			<h3 class="account">
-				<a href="https://eu.battle.net/account/management/?lnk=4" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_account_title'); ?></a>
+				<a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=4" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_account_title'); ?></a>
 			</h3>
 			<ul>
-				<li><a href="https://eu.battle.net/account/support/password-reset.html"><?php echo WoW_Locale::GetString('template_footer_account_link1'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/creation/tos.html"><?php echo WoW_Locale::GetString('template_footer_account_link2'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/?lnk=5"><?php echo WoW_Locale::GetString('template_footer_account_link3'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/authenticator.html"><?php echo WoW_Locale::GetString('template_footer_account_link4'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/add-game.html"><?php echo WoW_Locale::GetString('template_footer_account_link5'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/management/redemption/redeem.html"><?php echo WoW_Locale::GetString('template_footer_account_link6'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/support/password-reset.html"><?php echo WoW_Locale::GetString('template_footer_account_link1'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/creation/tos.html"><?php echo WoW_Locale::GetString('template_footer_account_link2'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/?lnk=5"><?php echo WoW_Locale::GetString('template_footer_account_link3'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/authenticator.html"><?php echo WoW_Locale::GetString('template_footer_account_link4'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/add-game.html"><?php echo WoW_Locale::GetString('template_footer_account_link5'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/redemption/redeem.html"><?php echo WoW_Locale::GetString('template_footer_account_link6'); ?></a></li>
 			</ul>
 		</div>
 		<div class="column">
 			<h3 class="support">
-				<a href="http://eu.blizzard.com/support/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_support_title'); ?></a>
+				<a href="<?php echo WoW::GetWoWPath(); ?>/support/" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_support_title'); ?></a>
 			</h3>
 			<ul>
-				<li><a href="http://eu.blizzard.com/support/"><?php echo WoW_Locale::GetString('template_footer_support_link1'); ?></a></li>
-				<li><a href="https://eu.battle.net/account/parental-controls/index.html"><?php echo WoW_Locale::GetString('template_footer_support_link2'); ?></a></li>
-				<li><a href="http://eu.battle.net/security/"><?php echo WoW_Locale::GetString('template_footer_support_link3'); ?></a></li>
-				<li><a href="http://eu.battle.net/security/help"><?php echo WoW_Locale::GetString('template_footer_support_link4'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/support/"><?php echo WoW_Locale::GetString('template_footer_support_link1'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/parental-controls/index.html"><?php echo WoW_Locale::GetString('template_footer_support_link2'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/security/"><?php echo WoW_Locale::GetString('template_footer_support_link3'); ?></a></li>
+				<li><a href="<?php echo WoW::GetWoWPath(); ?>/security/help"><?php echo WoW_Locale::GetString('template_footer_support_link4'); ?></a></li>
 			</ul>
 		</div>
 <?php

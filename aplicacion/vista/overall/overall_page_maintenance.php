@@ -512,7 +512,7 @@
 
         <div class="footer" id="ru-ru:footer" style="display: none;">
 
-            <span class="copyright">© Blizzard Entertainment, 2011 г.<br />Все права защищены</span>
+            <span class="copyright">© Blizzard Entertainment, 2013 г.<br />Все права защищены</span>
 
             <span class="legal">
                 <a target="_blank" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="2">Пользовательское соглашение</a>
