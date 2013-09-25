@@ -23,6 +23,12 @@
 $WoW_Locale = array(
     'locale_name' => 'Español (AL)',
     'locale_region' => 'América',
+    'locale_region_america' => 'América',
+    'locale_region_euro' => 'Europa',
+    'locale_region_korea' => 'Corea',
+    'locale_region_taiwan' => 'Taiwán',
+    'locale_region_china' => 'China',
+    'locale_region_sa' => 'Sureste de Asia',
     'template_title' => 'World of Warcraft',
 
     'expansion_0' => 'World of Warcraft&reg;',
