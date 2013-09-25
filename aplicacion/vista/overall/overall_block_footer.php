@@ -3,10 +3,10 @@
 	<div id="sitemap" <?php echo WoW_Template::GetTemplateTheme() == 'wow' ? ' class="promotions"' : null; ?>>
 		<div class="column">
 			<h3 class="bnet">
-				<a href="<?php echo WoW::GetWoWPath(); ?>" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
+				<a href="<?php echo WoWConfig::$YourDomain ?>" tabindex="100"><?php echo WoW_Locale::GetString('template_footer_home_title'); ?></a>
 			</h3>
 			<ul>
-				<li><a href="<?php echo WoW::GetWoWPath(); ?><?php echo WoW_Locale::GetLocale(); ?>/what-is/" data-action="Battle.net Home - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
+				<li><a href="<?php echo WoWConfig::$YourDomain ?><?php echo WoW_Locale::GetLocale(); ?>/what-is/" data-action="Battle.net Home - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_footer_home_link1'); ?></a></li>
 				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/get-a-game.html" data-action="Battle.net Home - Comprar juegos"><?php echo WoW_Locale::GetString('template_footer_home_link2'); ?></a></li>
 				<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/" data-action="Battle.net Home - Cuenta"><?php echo WoW_Locale::GetString('template_footer_home_link3'); ?></a></li>
 				<li><a href="<?php echo WoW::GetWoWPath(); ?>/support/" data-action="Battle.net Home - Soporte"><?php echo WoW_Locale::GetString('template_footer_home_link4'); ?></a></li>

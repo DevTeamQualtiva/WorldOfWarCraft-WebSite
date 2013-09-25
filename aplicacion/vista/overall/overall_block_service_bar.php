@@ -64,7 +64,7 @@
 					<div class="explore-links">
 						<h2 class="explore-caption"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_title'); ?></h2>
 						<ul>
-							<li><a href="<?php echo WoW::GetWoWPath(); ?><?php echo WoW_Locale::GetLocale(); ?>/what-is/" tabindex="55" data-action="Explore - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_link1'); ?></a></li>
+							<li><a href="<?php echo WoWConfig::$YourDomain ?><?php echo WoW_Locale::GetLocale(); ?>/what-is/" tabindex="55" data-action="Explore - ¿Qué es Battle.net?"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_link1'); ?></a></li>
 							<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/parental-controls/index.html" tabindex="55" data-action="Explore - Control parental"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_link2'); ?></a></li>
 							<li><a href="http://eu.battle.net/security/" tabindex="55" data-action="Explore - Seguridad de cuenta"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_link3'); ?></a></li>
 							<li><a href="<?php echo WoW::GetWoWPath(); ?>/account/management/add-game.html" tabindex="55" data-action="Explore - Agregar un juego"><?php echo WoW_Locale::GetString('template_servicebar_explore_menu_more_link4'); ?></a></li>
