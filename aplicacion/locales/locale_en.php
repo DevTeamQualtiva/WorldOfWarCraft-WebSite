@@ -24,19 +24,19 @@ $WoW_Locale = array(
     'locale_name' => 'English (EU)',
     'locale_region' => 'Europe',
     'template_title' => 'World of Warcraft',
-    
+
     'expansion_0' => 'World of Warcraft&reg;',
     'expansion_1' => 'World of Warcraft&reg;: the Burning Crusade',
     'expansion_2' => 'World of Warcraft&reg;: Wrath of the Lich King',
     'expansion_3' => 'World of Warcraft&reg;: Cataclysm',
     'expansion_4' => 'World of Warcraft&reg;: Mists Of Pandaria',
-    
+
     'template_expansion_0' => 'Classic',
     'template_expansion_1' => 'The Burning Crusade',
     'template_expansion_2' => 'Wrath of the Lich King',
     'template_expansion_3' => 'Cataclysm',
     'template_expansion_4' => 'Mists Of Pandaria',
-    
+
     'character_class_1' => 'Warrior',
     'character_class_2' => 'Paladin',
     'character_class_3' => 'Hunter',
@@ -48,7 +48,7 @@ $WoW_Locale = array(
     'character_class_9' => 'Warlock',
     'character_class_10' => 'Monk',
     'character_class_11' => 'Druid',
-    
+
     'character_race_1' => 'Human',
     'character_race_2' => 'Orc',
     'character_race_3' => 'Dwarf',
@@ -62,7 +62,7 @@ $WoW_Locale = array(
     'character_race_11' => 'Draenei',
     'character_race_22' => 'Worgen',
     'character_race_24' => 'Pandaren',
-    
+
     'character_race_1_decl' => 'Human',
     'character_race_2_decl' => 'Orc',
     'character_race_3_decl' => 'Dwarf',
@@ -76,7 +76,7 @@ $WoW_Locale = array(
     'character_race_11_decl' => 'Draenei',
     'character_race_22_decl' => 'Worgen',
     'character_race_24_decl' => 'Pandaren',
-    
+
     'reputation_rank_0' => 'Hated',
     'reputation_rank_1' => 'Hostile',
     'reputation_rank_2' => 'Unfriendly',
@@ -85,11 +85,11 @@ $WoW_Locale = array(
     'reputation_rank_5' => 'Honoured',
     'reputation_rank_6' => 'Revered',
     'reputation_rank_7' => 'Exalted',
-    
+
     'faction_alliance' => 'Alliance',
     'faction_horde' => 'Horde',
     'faction_neutral' => 'Neutral',
-    
+
     'creature_type_1' => 'Beast',
     'creature_type_2' => 'Dragonkin',
     'creature_type_3' => 'Demon',
@@ -100,7 +100,7 @@ $WoW_Locale = array(
     'creature_type_8' => 'Critter',
     'creature_type_9' => 'Mechanical',
     'creature_type_10' => 'Uncategorized',
-    
+
     'template_menu_game' => 'Game',
     'template_menu_items' => 'Items',
     'template_menu_forums' => 'Forums',

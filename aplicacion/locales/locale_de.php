@@ -21,7 +21,7 @@
  **/
 
 $WoW_Locale = array(
-    'locale_name' => 'English (EU)',
+    'locale_name' => 'Deutsch (EU)',
     'locale_region' => 'Europe',
     'template_title' => 'World of Warcraft',
     
