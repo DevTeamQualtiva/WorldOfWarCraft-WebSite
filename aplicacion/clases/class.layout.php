@@ -1333,6 +1333,8 @@ class WoW_Layout {
                 return sprintf('PvP - %s - ', WoW_Locale::GetString('template_menu_game'));
             case 'character_companions_mounts':
                 return sprintf('%s - %s - ', WoW_Locale::GetString('template_profile_' . WoW_Template::GetPageData('category') . 's'), WoW_Locale::GetString('template_menu_game'));
+            case 'shop':
+                return sprintf('%s - ', WoW_Locale::GetString('template_shop_title'));
             default:
                 return '';
         }

@@ -1882,5 +1882,9 @@ The Battle.net Account Team<br />
     'social_Twitter'  => ' on Twitter',
     'social_youtube'  => ' on Youtube',
     'social_reddit'   => ' on Reddit',
+/**
+ * Shop
+ **/
+    'template_shop_title' => 'Boutique',
 );
 ?>
