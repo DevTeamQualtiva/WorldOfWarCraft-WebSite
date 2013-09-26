@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<!-- Soporte para hml5 para internet explorer 8 y 9 -->
+<!--[if lt IE 9]>
+<script type="text/javascript">
+document.createElement("nav");
+document.createElement("header");
+document.createElement("footer");
+document.createElement("section");
+document.createElement("article");
+document.createElement("aside");
+document.createElement("hgroup");
+</script>
+<![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="es"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+
+<!-- Encabezado DOCUMENTACION
+================================================== -->
+<meta charset="utf-8">
+<title>Battle CMS World of Warcraft Community Site</title>
+<link rel="icon" type="image/png" href="../documentacion/static/images/logos/favicon.png" />
+
+<!-- CSS DOCUMENTACION
+================================================== -->
+<link rel="stylesheet" type="text/css" media="all" href="../documentacion/static/css/common.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../documentacion/static/css/bnet.css" />
+<link rel="stylesheet" type="text/css" media="all" href="../documentacion/static/css/info.css" />
+<style>
+code .link {
+ font-family: Monaco, Verdana, Sans-serif;
+ font-size: 12px;
+ background-color: #f9f9f9;
+ border: 1px solid #D0D0D0;
+ color: #002166;
+ display: block;
+ margin: 14px 0 14px 0;
+ padding: 12px 10px 12px 10px;
+}
+</style>
+<!-- Java Script
+================================================== -->
+<script type="text/javascript" src="../documentacion/static/js/BattleCMS.js"></script>
+
+</head>
+
+<body class="es-es landing-bnet">
+	<div id="wrapper" class="wrapper">
+		<div id="header">
+			<h1 id="logo"><a href="http://eu.battle.net/">Battle.net</a></h1>
+		</div>
+		<div id="what-is-bnet">
+        <p>Originally posted on <a href="http://getmangos.com/community/topic/16413/beta-world-of-warcraft-community-site/">getmangos.com</a></p>
+        <p>
+			<br />
+			Hello, it&#039;s me again with new project I want share with you
+			<br />
+			Please, welcome: <strong><a href="https://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite">World of Warcraft Community Site</a></strong>.
+		</p>
+		<p>This is PHP-written engine which allows you to browser WoW characters, guilds, items, etc.
+		<br />Currently only Spanish, Russian and English languages are supported.
+		</p>
+		<p>
+			<strong>Features:</strong>
+			<br />- <a href="http://us.battle.net/">Original</a> site design;
+			<br />- Maximum compliance with the original site (engine);
+			<br />- Works with 3.3.5a MaNGOS and Trinity Core servers (required server core to be patched with provided patch, more info in README);
+			<br />- Multi realms support
+		</p>
+		<p>
+			<strong>Implemented Features (or partly implemeted features):</strong>
+			<br />- Character profile (simple and advanced versions)
+			<br />- Character audit feature (advanced profile)
+			<br />- Character reputation
+			<br />- Character achievements
+			<br />- Character PvP info
+			<br />- Character Activity
+			<br />- Guild page
+			<br />- Guild roster (partly)
+			<br />- Item pages (partly)
+			<br />- News system (partly)
+			<br />- Account management (partly)
+			<br />- Some static pages
+			<br />- News system
+			<br />- Realms status
+		</p>
+		<p>
+			<strong>Will be Implemented:</strong>
+			<br />- News system (blogs) with comments support
+			<br />- Forums
+			<br />- Account management
+			<br />- Game guides and other static pages
+			<br />- Web auction
+			<br />- Web support for character services (race/faction change, customization, etc.)
+			<br />- Media system (screenshots, videos, texts)
+		</p>
+		<p>
+			<strong>Known Bugs:</strong>
+			<br />- Some issues with Internet Explorer browser
+			<br />- Character talents page is missing (read F.A.Q. section for more info)
+		</p>
+		<p>
+			<strong>System Requirements and Installation:</strong><br />
+			1. Download sources from <a href="https://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite">GitHub repo</a>
+			<code class="link"><a class="link">git clone git://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite.git</a></code><br />
+			2. Read <strong>INSTALL</strong> file and follow all steps described there.
+		</p>
+		<p>
+			<strong>Screenshots:</strong>
+			<br />
+			<a href="http://img69.imageshack.us/g/28224400.jpg/">ImageShack Gallery</a>
+		</p>
+		<p>
+			<strong>F.A.Q.:</strong>
+			<br />
+			<strong>Q.:</strong> What the ...?! Some pages are 404 and there&#039;s a lot of placeholders and wrong datas! Fix it pls!11
+			<br />
+			<strong>A.:</strong> Do not forget that this is a<strong> beta version</strong>. All missed features will be implemented soon.
+		</p>
+		<p>
+			<strong>Q.:</strong> I can&#039;t browse character page!
+			<br />
+			<strong>A.:</strong> Make sure that your server core was patched by provided patch and this character was saved in DB (armory_character_stats table in `characters` database). Also, read Debug Log <code class="link"><a class="link">http://site_url/_debug/</a></code>
+		</p>
+		<p>
+			<strong>Q.:</strong> Where is character&#039;s talents page?
+			<br />
+			<strong>A.:</strong> It&#039;s because of updated in Cataclysm talent trees: original site has only new trees and I haven&#039;t found any way to generate this trees manually.
+		</p>
+		<p>
+			<strong>Q.:</strong> Will character rendering feature be implemented?
+			<br />
+			<strong>A.:</strong> I hope so but I still have no information about how Blizzs do this. Seems that they&#039;re using some separate software to generate it and if it&#039;s true, this feature may not be implemented. At least at this moment.
+		</p>
+		<p>
+			<strong>Q.:</strong> How to log in profile manager with my game account?
+			<br />
+			<strong>A.:</strong> Before you can login, you need to create <strong>site</strong> account <code class="link"><a class="link">http://site_url/account/creation/tos.html)</a><code>. After it, you can login with this account and attach and/or create WoW Game Accounts.
+			<br />Let me explain what exactly &quot;attach&quot; and &quot;create&quot; terms are means.
+			<br />All examples suggests that you have BNet<span style="color: red"><strong>*</strong></span> account &quot;<strong>admin@example.org</strong>&quot;.
+			<br />
+		</p>
+		<ol class="decimal">
+			<li>
+				<p>You already have game account with username &quot;<strong>admin</strong>&quot; and password &quot;<strong>admin</strong>&quot;. If you want to merge it with BNet account, open <code class="link"><a class="link">http://site_url/account/management/wow-account-conversion.html</a></code> page and follow helper steps. If operation completed successfully, yout &quot;<strong>admin</strong>&quot; account will be available in games list of &quot;<strong>admin@example.org</strong>&quot; BNet account.
+				</p>
+			</li>
+			<li>
+				<p>You have no game accounts and want to create one. Open <code class="link"><a class="link">http://site_url/account/creation/wow/signup/index.xml</a></code> page and enter your new game account info. Created account will be merged with your BNet account &quot;admin@example.org&quot;. You need to be logged in BNet account to create WoW Game Account!
+				</p>
+			</li>
+		</ol>
+		<p>
+			<strong><span style="color: red">Note:</span>
+			MaNGOS and TrinityCore (and all other server emulators) does not supports BNet-like (email as username) accounts authentication, so username &quot;admin@example.org&quot; can be used only on BattleCMS site!</strong>
+		</p>
+		<p>
+			<strong>Related links:</strong>
+			<br />
+			<li><a href="http://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite/">Project page on GitHub</a></li>
+			<li><a href="http://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite/commits/master/">Commits history</a></li>
+			<li><a href="http://github.com/ApocalypseCoreteam/WorldOfWarCraft-WebSite/issues">Issues</a></li>
+		</p>
+		<p>
+			<strong>License:</strong>
+			<br />BattleCMS World of Warcraft Community Site was developed under GNU GENERAL PUBLIC LICENSE, so you can do anything with this sources (but you must leave original author&#039;s copyrights and publish project under GNU/GPL license too).
+			<br />
+			<strong>Warning: you are NOT allowed to remove any of Blizzard&#039;s copyrights from project files!</strong>
+		</p>
+		<p>
+			<span style="color: gray">World of Warcraft™, Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+			<br />
+			The data contained herein is proprietary to Blizzard Entertainment, Inc. You are granted a limited license to make personal use of the information contained herein for non-commercial purposes only.</span>
+		</p> 
+			<br />
+			<br />
+		</div>
+
+
+        <div class="footer">
+			<div class="lower-footer-wrapper">
+				<div class="lower-footer">
+					<div id="copyright">
+						<a href="javascript:;" tabindex="100" id="change-language">
+							<span>Americas – English (US) </span>
+						</a>
+						<span class="copyright">©2013 Blizzard Entertainment, Inc. All rights reserved</span>
+
+						<span class="legal-links">
+							<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="2">Terms of Use</a>
+							<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/legal/" tabindex="2">Legal</a>
+							<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/privacy.html" tabindex="2">Privacy Policy</a>
+							<a onclick="return Core.open(this);" href="http://us.blizzard.com/company/about/infringementnotice.html" tabindex="2">Copyright Infringement</a>
+						</span>
+
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+</body>
+</html>

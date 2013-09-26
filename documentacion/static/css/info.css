@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+.landing-bnet { background-color:#020202; }
+
+/* backgrounds */
+body.digital-purchase,
+body.open-beta { background: url("../../images/bg/digital-purchase.jpg") 50% 0 no-repeat; }
+body.presale { background: url("../../images/bg/cat.jpg") 50% 0 no-repeat; }
+body.wow-account { background: url("../../images/bg/mop.jpg") 50% 0 no-repeat; }
+body.browser-upgrade { background: url("../../images/bg/browser-upgrade.jpg") -31px 0 no-repeat; }
+
+/* open beta */
+#open-beta-header { font-size:16px; color:#bfbfbf; padding-right: 375px; padding-bottom: 25px; }
+#open-beta-header strong { font-size:24px; color:#FFF; }
+#open-beta-header span { color:#66fffa; }
+
+/* digital purchase */
+#digital-purchase-header { font-size:16px; color:#bfbfbf; height: 96px; padding: 0 375px 0 10px; }
+#digital-purchase-header strong { font-size: 36px; color:#FFF; }
+#digital-purchase-header span { color: #00c6ff; }
+#digital-purchase { height: 280px; padding: 35px; position: relative; background: url('../../images/landings/digital-purchase/bg.jpg') no-repeat 0 0; }
+#digital-purchase #game-box { position:absolute; top:-205px; right:35px; height:538px; width:323px; background:url("../../images/landings/digital-purchase/game-box2.jpg") no-repeat; }
+#digital-purchase .button-buynow { display:block; margin:20px 0 0 40px; height: 86px; width: 445px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow: #8c8c8b 0 0 15px; -webkit-box-shadow: #8c8c8b 0 0 15px; background-repeat: no-repeat; background-position: 0 0; }
+#digital-purchase .button-buynow:hover { background-position: 0 -86px; }
+
+/* columns */
+.columns-2,
+.columns-3 { overflow: hidden; }
+.column { float: left; }
+.columns-2 .column { width: 50%; }
+.columns-3 .column { width: 33.333%; }
+
+/* icons */
+.icon-external {
+	display: inline-block; padding-right: 20px; background: url("../../images/icons/link-icons.png") right 0 no-repeat;
+}
+.icon-external { background-position: right 2px; }
+.icon-external:hover,
+.icon-external:focus { background-position: right -38px; }
+
+/* digital presale */
+.digital-presale { padding: 60px 0; }
+.digital-presale acronym { border: 0; cursor: help; }
+.digital-presale .bottom { padding-bottom: 50px; background: url("../../images/landings/presale/bg-bottom.png") no-repeat bottom center; }
+.digital-presale .top { padding-top: 50px; background: url("../../images/landings/presale/bg-top.png") no-repeat top center; }
+
+.presale-steps { width: 950px; margin: 0 auto; padding: 190px 0 0 0; background-repeat: no-repeat; background-position: center top; }
+.presale-steps .summary { display: block; }
+.presale-steps .heading { padding-left: 50px; margin: 0; font-size: 24px; font-weight: bold; }
+.presale-steps .caption { padding-left: 50px; margin: 0; }
+
+.presale-faq { width: 880px; margin: 0 auto; }
+.presale-faq .header,
+.presale-faq .question,
+.presale-faq .answer { padding: 0 25px; color: #414a56; line-height: 1.25; }
+.presale-faq .header { font-size: 20px; margin: 0 0 1em 0; letter-spacing: -.04em; }
+.presale-faq .question { margin: 0 0 .25em 0; letter-spacing: -.04em; }
+.presale-faq .answer { margin: 0 0 2.5em 0; }
+.presale-faq .answer:last-child { margin-bottom: 0; }
+
+.digital-presale .section-buttons { text-align: center; }
+.digital-presale .button4 { margin: 0 0 .5em 0; }
+.digital-presale .ui-button span { text-transform: none; letter-spacing: -.04em; font-family: "Trebuchet MS",Arial,sans-serif }
+
+/* what is battle.net */
+#what-is-bnet { color: #a2b0c2; font-size: 13px }
+#what-is-bnet h2 { color: #fff; font-size: 24px; font-weight: normal; }
+#what-is-bnet .back-link { color: #2a3d45; font-size: 11px; padding-right: 15px; background: url("../../images/landings/what-is-bnet/back-arrow.gif") 100% 50% no-repeat; }
+#what-is-bnet .back-link:hover { text-decoration: underline }
+#what-is-bnet .cell { margin-bottom: 25px; }
+#what-is-bnet .cell p { line-height: 200% }
+#what-is-bnet .cell-col { width: 265px; margin: 30px; float: left; }
+#what-is-bnet .cell-col h3 { color: #fff; padding: 8px 0 8px 40px; }
+#what-is-bnet #intro { margin: 0; padding: 30px 65px; font-size: 16px; font-weight: bold; text-align: center; color: #91bfe5; text-shadow: #000 1px 1px; background: url("../../images/landings/what-is-bnet/bg-intro.png") 50% 100% no-repeat; }
+#what-is-bnet #intro h2 { color: #91bfe5; font-size: 36px; font-weight: bold; }
+#what-is-bnet #info-one-place { min-height: 275px; padding: 50px 575px 20px 0; background: url("../../images/landings/what-is-bnet/bg-one-place.png") 0 0 no-repeat; position:relative; }
+#what-is-bnet #info-one-place .button1 { position:absolute; bottom:0px; right:120px; }
+#what-is-bnet #info-social { min-height: 260px; padding: 50px 0 0 550px; background: url("../../images/landings/what-is-bnet/bg-social.jpg") -20px -15px no-repeat; }
+#what-is-bnet #info-update { min-height: 260px; padding: 50px 0 0 550px; background: url("../../images/landings/what-is-bnet/bg-update.png") 0 -15px no-repeat; }
+#what-is-bnet #info-play { min-height: 215px; padding: 50px 550px 0 0; background: url("../../images/landings/what-is-bnet/bg-community.jpg") 110% 60px no-repeat; }
+#what-is-bnet #info-community { min-height: 265px; padding: 50px 550px 0 0; background: url("../../images/landings/what-is-bnet/battletag-connect.jpg") right -103px no-repeat; }
+
+#what-is-bnet #info-parental { background: url("../../images/landings/what-is-bnet/bg-parental.png") 0 0 no-repeat; }
+#what-is-bnet #info-contests { background: url("../../images/landings/what-is-bnet/bg-contests.png") 0 0 no-repeat; }
+#what-is-bnet #info-more { background: url("../../images/landings/what-is-bnet/bg-more.png") 0 0 no-repeat; }
+
+/* account merge */
+.merge-links { margin: 30px 0 0 0; padding: 0 35px 40px 37px; min-height: 162px; overflow: hidden; background: url("../../images/landings/account-merge/bg-links-alt.jpg") 0 0 no-repeat; }
+.merge-links-lat { background: url("../../images/landings/account-merge/bg-links.jpg") 0 0 no-repeat; }
+.merge-link { width: 306px; overflow: hidden; float: left; text-align: center; font-size: 15px; line-height: 1.25; font-weight: bold; }
+.merge-link a { display: block; padding: 150px 10px 10px 10px; background: url("../../images/landings/account-merge/bg-links.jpg") 0 0 no-repeat; }
+.merge-link .merge-link-text { display: block; padding: 0 38px; }
+.merge-link-alt a { background: url("../../images/landings/account-merge/bg-links-alt.jpg") 0 0 no-repeat; }
+.merge-link.merge-link-create a { background-position: -35px 0; }
+.merge-link.merge-link-create a:hover,
+.merge-link.merge-link-create a:focus,
+.merge-link.merge-link-create a:active { background-position: -1025px 0; }
+.merge-link.merge-link-merge a { background-position: -343px 0; }
+.merge-link.merge-link-merge a:hover,
+.merge-link.merge-link-merge a:focus,
+.merge-link.merge-link-merge a:active { background-position: -1333px 0; }
+.merge-link.merge-link-upgrade a { background-position: -649px 0; }
+.merge-link.merge-link-upgrade a:hover,
+.merge-link.merge-link-upgrade a:focus,
+.merge-link.merge-link-upgrade a:active { background-position: -1639px 0; }
+.merge-link.merge-link-time a { background-position: -649px 0; }
+.merge-link.merge-link-time a:hover,
+.merge-link.merge-link-time a:focus,
+.merge-link.merge-link-time a:active { background-position: -1639px 0; }
+.merge-link a .merge-link-description,
+.merge-link a .merge-link-optional { color: #404040; }
+.merge-link a .merge-link-optional { font-size: 12px; font-weight: normal; font-style: normal; }
+.merge-link a:hover .merge-link-description,
+.merge-link a:focus .merge-link-description,
+.merge-link a:active .merge-link-description
+.merge-link a:hover .merge-link-optional,
+.merge-link a:focus .merge-link-optional,
+.merge-link a:active .merge-link-optional { color: #222; }
+
+.merge-info { overflow: hidden; margin: 0 0 2em 0; }
+.merge-section { float: left; width: 330px; }
+.merge-details { float: right; width: 600px; }
+
+/* Real-ID */
+#realid, #faq { color: #a2b0c2; font-size: 13px; padding: 50px 0; }
+#realid h2, #faq h2 { font-size:60px; color:#fff; letter-spacing:-2px;  margin: 0 0 25px 0; }
+#realid h3 { font-size:26px; letter-spacing:-1px; color:#fff; margin:0; padding-bottom:5px }
+#realid h3.first-headline { color:#74b9d6 }
+#realid .intro p { margin: .5em 0 1em; line-height: 1.8em}
+#realid .realid-features { line-height:1.8em; margin-top: 20px;}
+#realid .realid-features .button1 { margin:10px 0 30px }
+#realid .realid-features h2 {font-size:26px; color:letter-spacing:-1px; color:#fff; font-weight:bold; padding:0 5px 0 0; display: block; margin-bottom: 8px;}
+#realid .realid-features .odd,
+#realid .realid-features .even { width: 450px; padding: 60px 0}
+#realid .realid-features .odd { padding-left:300px}
+#realid .realid-features .even { padding-left:500px}
+#realid #real-names { background: url(../../images/landings/real-id/real_names.png) 50px 50% no-repeat; }
+#realid #cross-game-chat { background: url("../../images/landings/real-id/cross_game_chat.png") 200px 50% no-repeat; }
+#realid #cross-game-chat.odd { background-position:50px 50% }
+#realid #rich-presence { background: url("../../images/landings/real-id/rich_presence.png") 50px 50% no-repeat; }
+#realid #rich-presence.even { background-position:290px 50% }
+#realid #broadcasts { background: url("../../images/landings/real-id/broadcasts.png") 200px 50% no-repeat; }
+#realid #all-chars { background: url("../../images/landings/real-id/all_chars.png") 50px 50% no-repeat; }
+#realid #all-chars.even { background-position:250px 50% }
+#realid #the-future { background: url("../../images/landings/real-id/the-future.jpg") 50px 50% no-repeat; }
+
+.social-community { padding:50px 0 0 }
+.social-community h2 { font-size: 60px; color: white; letter-spacing: -2px; margin:0 0 25px 0 }
+.social-community p { color:#86a2b6; line-height:2em; font-size:13px }
+.social-community p strong { color:#FFF; font-weight:normal }
+.social-community p a { color:#00adeb }
+.social-community p a:hover { color:#fff }
+
+.social-community .toggle-buttons { height:126px; margin:40px 0 0 }
+.social-community .toggle-buttons li { height:126px; display:block; float:left }
+.social-community .toggle-buttons a { text-align:center; display:block; width:434px; height:96px; padding:6px 0 24px; background:url(../../images/social-community/battletag-buttons.png) 0 -126px no-repeat; color:#b2bac7; font-size:36px; line-height:92px }
+.fr-fr .social-community .toggle-buttons a { font-size:24px }
+.de-de .social-community .toggle-buttons a { font-size:25px }
+.ru-ru .social-community .toggle-buttons a { font-size:28px }
+.ie6 .social-community .toggle-buttons a { background-image:url(../../images/social-community/battletag-buttons.gif) }
+.social-community .toggle-buttons a:hover { background-position:0 -253px }
+.social-community .toggle-buttons a.active,
+.social-community .toggle-buttons a.active:hover { background-position:0 0 }
+.social-community .toggle-buttons a strong { color:#00adeb }
+
+
+
+/* FAQ */
+.rcol, .lcol { width:45%; float: right;}
+.lcol { float: left;}
+.faq-answer {line-height:1.8em}
+.faq-item { margin: 10px 0; padding-top: 20px; }
+.faq-question { color:#fff; font-size: 16px; font-weight: bold; }
+
+
+/* sc2 product info only KR, TW*/
+.primary { width:990px; padding-bottom:25px; background:url('../../images/landings/kr-sc2request/sc2.jpg') no-repeat; overflow:hidden; font-size:12px; }
+.primary .header { border-bottom:1px solid #B2B0AF; height:48px; overflow:hidden; padding:11px 0 0 56px; position:relative; width:880px; }
+h3.headline { font-family:Malgun Gothic,AppleGothic,Dotum,'Trebuchet MS',Arial,sans-serif; font-size:24px; font-weight:normal; letter-spacing:0; line-height:40px; color:#212121; }
+.primary .header img { border-right:1px solid #B2B0AF; left:0; position:absolute; top:11px; }
+.primary .desc { overflow:hidden; position:relative; width:990px; padding:20px 0 0 45px; color:#333; }
+
+.box-left { padding:20px 0 0 45px; width:400px }
+.float-left { float:left }
+.float-right { float:right; padding-right:70px; top:0; left:0 }
+.box-left .top-box { width:393px; height:80px; background:url('../../images/landings/kr-sc2request/kr-bg-1.jpg') no-repeat; }
+.box-left .top-box .unlimited { background:url('../../images/landings/kr-sc2request/icon-unlimited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box .limited { background:url('../../images/landings/kr-sc2request/icon-limited.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box .unlimited span, .box-left .top-box .limited span { font-size:18px; font-weight:bold }
+
+.box-left .bottom-box { margin-left:-4px }
+.box-left .bottom-box .top { background:url('../../images/landings/kr-sc2request/kr-bg-2-top.jpg') no-repeat; width:399px; height:11px; overflow:hidden; }
+.box-left .bottom-box .middle { background:url('../../images/landings/kr-sc2request/kr-bg-2-middle.jpg') repeat-y; width:399px; padding:10px 10px }
+.box-left .bottom-box .middle .box { background:url('../../images/landings/kr-sc2request/box.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px }
+.box-left .bottom-box .middle .digital { background:url('../../images/landings/kr-sc2request/digital.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
+.box-left .bottom-box .middle .day-start { background:url('../../images/landings/kr-sc2request/1d-starter-tw.jpg') no-repeat top left; padding-left:115px; width:250px;  }
+
+.box-left .bottom-box .middle .month { background:url('../../images/landings/kr-sc2request/30d.jpg') no-repeat top left; padding-left:115px; padding-bottom:20px; width:250px; }
+.box-left .bottom-box .middle .month-digital { background:url('../../images/landings/kr-sc2request/30d-digital-tw.jpg') no-repeat top left; padding-left:115px; padding-bottom:5px; width:250px; }
+.box-left .bottom-box .middle .day { background:url('../../images/landings/kr-sc2request/1d.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .day-digital { background:url('../../images/landings/kr-sc2request/1d-digital-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .threedays { background:url('../../images/landings/kr-sc2request/3d-tw.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:20px; }
+.box-left .bottom-box .middle .dvd { background:url('../../images/landings/kr-sc2request/dvd.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:50px; }
+.box-left .bottom-box .middle .wow { background:url('../../images/landings/kr-sc2request/wow.jpg') no-repeat top left; padding-left:115px; width:250px; padding-bottom:5px; }
+
+.box-left .bottom-box .middle .title { color:#0072a3; font-size:16px; font-weight:bold; letter-spacing:-.05em; }
+.box-left .bottom-box .middle .title span { color:#000; font-size:12px; letter-spacing:0; }
+.box-left .bottom-box .middle ul { background:url('../../images/landings/kr-sc2request/list.gif') no-repeat 0 4px; margin-left:10px; margin-top:10px; padding-left:10px; }
+.box-left .bottom-box .middle ul li { margin-top:10px; font-size:11px; }
+.box-left .bottom-box .middle ul li span{ color:#999 }
+.box-left .bottom-box .middle .line { background:url('../../images/landings/kr-sc2request/cross-line.gif') no-repeat; width:375px; height:2px; padding:5px  0}
+.box-left .bottom-box .middle .button { background:url('../../images/landings/kr-sc2request/button-bg.jpg') no-repeat; display:block; width:149px; height:20px; margin:20px 0 0 105px; padding-top:5px; color:#fff; font-size:11px; text-align:center; }
+.box-left .bottom-box .middle .button span.buy-wow { letter-spacing:-1px; }
+.box-left .bottom-box .bottom { background:url('../../images/landings/kr-sc2request/kr-bg-2-bottom.jpg') no-repeat; width:399px; height:10px; }
+
+.box-left .bottom-box .wow-purchase { letter-spacing:-0.5px}
+
+.download-box { margin:50px 0 0 0 }
+.download-box p.down-desc { font-family:Malgun Gothic, AppleGothic, Dotum, "Trebuchet MS", Arial, sans-serif; font-size:15px; letter-spacing:-1px; font-weight:bold; margin-left:5px; color:#6a6a6a }
+.download-box .download-button { background:url('../../images/landings/kr-sc2request/download-button.jpg') no-repeat; width:315px; height:67px; margin-left:45px }
+.download-box .download-button a { float:left; display:inline-block; height:67px; }
+.download-box .download-button a.pc { width:157px; }
+.download-box .download-button a.mac { width:158px; }
+
+.zh-tw .box-left .bottom-box .middle .digital { padding-bottom:20px; }
+.zh-tw .box-left .bottom-box .middle ul li { font-size:12px }
+
+/* cataclysm product info only TW*/
+.cmt-tw { background: url('../../images/landings/wow-product/wow-c.png') no-repeat scroll right top transparent; height: 1300px; }
+.cmt-tw .title { color:#b92700 !important}
+.box-left .top-box .point-card { background:url('../../images/landings/wow-product/icon-timecard.jpg') no-repeat top left; color:#fff; position:relative; top:15px; left:40px; height:45px; padding-left:80px; padding-top:9px }
+.box-left .top-box .point-wrapper { height:540px }
+.box-left .bottom-box .middle .product { background:url('../../images/landings/wow-product/product-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .point-card-150 { background:url('../../images/landings/wow-product/point-150-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .point-card-300 { background:url('../../images/landings/wow-product/point-300-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .time-card-30d { background:url('../../images/landings/wow-product/time-30d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .time-card-90d { background:url('../../images/landings/wow-product/time-90d-tw.jpg') no-repeat top left; padding-left:115px; width:260px;  }
+.box-left .bottom-box .middle .cmt li{ margin-top:4px; font-size:12px; color:#000}
+.box-left .bottom-box div.time-card { height:440px }
+p.intro-desc { font-size:14px; }
+p.intro-desc span { font-weight:bold; color:#b92700 }
+
+#digital-purchase-header {line-height:40px}
+#digital-purchase-header p { margin-top:0 }
+
+
+/* Battle.net Account Guide - only KR */
+#page-header-guide { border-bottom: #afadac 1px solid; padding-top: 30px; padding-bottom: 10px; }
+#page-header-guide h3.headline-guide { font-weight: normal; font-size: 30px; line-height: 34px; letter-spacing: -0.05em; font-family: 'Malgun Gothic', Dotum, Arial, sans-serif; color: #393939; }
+.wow-account #layout-bottom { position: relative; }
+.guide-account { padding: 0 0 60px 0; }
+.guide-account .ui-button span { text-transform: none; letter-spacing: -.04em; font-family: "Dotum", Arial,sans-serif; }
+
+.guide-steps { margin: 0 25px; padding: 190px 0 15px 0; background-image: url('../../images/landings/kr-account-guide/steps.jpg'); background-repeat: no-repeat; background-position: center top; }
+.guide-steps .column { width: 310px; }
+.guide-steps .heading { padding-left: 50px; margin: 0 0 .2em; font-size: 22px; font-weight: bold; font-family: "Malgun Gothic", Dotum, Arial,sans-serif; }
+.guide-steps .caption { padding-left: 50px; margin: 0; }
+.guide-steps .button { text-align: center; }
+.guide-steps .account-true { float: left; display:inline; margin-left: -23px; padding: 6px 0 0 50px; *padding-top: 12px; _padding-top: 12px; }
+.guide-steps .account-false { float: right; display:inline; margin-right: 22px; padding: 6px 0 0 0; *padding-top: 12px; _padding-top: 12px; }
+.guide-steps .account-true p, .guide-steps .account-false p { padding-left: 5px; }
+.guide-steps .account-true .ui-button, .guide-steps .account-false .ui-button { width: 127px; height: 38px; background: url("../../images/landings/kr-account-guide/btn-guide-small.jpg") no-repeat; }
+.guide-steps .account-true a:hover, .guide-steps .account-false a:hover { background-position: 0 -38px; }
+.guide-steps .account-true .ui-button span, .guide-steps .account-false .ui-button span { padding:0 0 0 10px; background: none; }
+.guide-steps .account-true .ui-button span span, .guide-steps .account-false .ui-button span span { padding:0 10px 0 0; background: none; }
+.section-decoration { height:165px; background: url("../../images/landings/kr-account-guide/bg-section.jpg") no-repeat center top; }
+.section-decoration p { padding: 75px 0 0 195px; font-size: 12px;  font-weight: bold; }
+.section-decoration ul { margin: 0 0 0 195px; }
+
+.guide-info { width: 928px; margin: 40px auto 0; padding-bottom:30px; background: #e0dfdd url("../../images/landings/kr-account-guide/bg-guide-bottom.jpg") no-repeat bottom center; }
+.guide-question { background: #e0dfdd url("../../images/landings/kr-account-guide/bg-guide-top.jpg") no-repeat top center; }
+.guide-question .header,
+.guide-question .question { padding: 0 45px; line-height: 1.40; }
+.guide-question .header { font-size: 22px; margin: 0 0 .5em 0; padding-top:1.5em; text-shadow: #fff 1px 0 3px; }
+.guide-question .question { margin: .5em 0 2em 0; letter-spacing: -.04em; font-size: 14px; color:#d16901; font-weight:bold; font-family: "Malgun Gothic", Dotum, Arial,sans-serif; }
+.guide-question .survey { position: relative; display: none; width: 841px; height: 74px; margin: 10px auto; background: url("../../images/landings/kr-account-guide/bg-survey.png") no-repeat top center; }
+.guide-question .survey h3 { position: relative; padding: 18px 0 0 28px; font-size: 14px; }
+.guide-question .survey p { position: relative; width: 570px; margin: 0; padding: 0 0 0 28px; font-size: 12px; }
+.guide-question .column2 h3 { padding: 8px 0 0 28px; font-size: 14px; }
+.guide-question .survey .option { position: absolute; right: 0; top: 27px; font-size :14px; font-weight: bold; }
+.guide-question .survey .option label { padding-right: 40px; }
+
+.display-guide { width:844px; margin:30px auto 0; background: #f3a900 url("../../images/landings/kr-account-guide/bg-display-bottom.jpg") no-repeat bottom center; }
+.display-guide .guide-case { display: none; width: 804px; margin:0 auto; padding: 15px 20px 60px; background: url("../../images/landings/kr-account-guide/bg-display.jpg") no-repeat top center; overflow: hidden; }
+.display-guide .guide-case p { font-size: 14px; font-weight: bold; color: #000; letter-spacing: -0.1em; }
+.display-guide .guide-case ul li { color: #000; }
+.display-guide .guide-case .button { margin-top: 20px; text-align: center; }
+
+
+/* Browser Upgrade Promotion - KR, CN */
+.browser-upgrade h1#logo { display:none; }
+.browser-upgrade div.search-bar { display:none; }
+.browser-upgrade #layout-middle .wrapper { width:1100px; }
+.browser-upgrade #layout-bottom { position:relative; }
+
+#browser-upgrade-header { height: 235px; padding: 0 100px 0px 0px; }
+#browser-upgrade-header h2 { color:#fff; font:normal 28px 'Malgun Gothic', Dotum, AppleGothic;}
+#browser-upgrade-header .header-top { background:url("../../images/landings/browser-upgrade/bg-sides.png") repeat-x center bottom; }
+
+#browser-upgrade-header .header-title { height: 63px; margin-top:10px; background:url("../../images/landings/browser-upgrade/en-us/header-title.png") no-repeat; }
+#browser-upgrade-header .header-warning { height: 68px; margin-top:25px; background:url("../../images/landings/browser-upgrade/en-us/btn-warning.png") no-repeat;}
+#browser-upgrade-header .header-good { height: 68px; margin-top:25px; background:url("../../images/landings/browser-upgrade/en-us/btn-good.png") no-repeat;}
+#browser-upgrade-header .header-subscript{ height: 68px; margin-left:270px; background:url("../../images/landings/browser-upgrade/en-us/header-subscript.png") no-repeat; }
+
+.browser-container { position:relative; width:100%; padding-bottom:50px; overflow:hidden; font-size:12px; }
+.browser-container .newest-browser-title { padding-left:35px; font:normal 28px 'Malgun Gothic', Dotum, AppleGothic; color:#393939; }
+
+.newest-browser { position:relative; width:100%; height:81px; margin-top:33px; background-color:#e4e2e1; overflow:hidden; }
+.newest-browser ul { float:left; padding-left:20px; }
+.newest-browser ul li { list-style-type:none; float:left; }
+.newest-browser ul li span { display:block; width:78px; display:block; height:81px; background:url("../../images/landings/browser-upgrade/icon.jpg") no-repeat; text-indent:-1000em; overflow:hidden; cursor:pointer; }
+.newest-browser ul .explore span { background-position:0px -78px; }
+.newest-browser ul .explore span.on { background-position:0px 11px; }
+.newest-browser ul .firefox span { background-position:-85px -78px; }
+.newest-browser ul .firefox span.on { background-position:-85px 11px; }
+.newest-browser ul .chrome span { background-position:-170px -78px; }
+.newest-browser ul .chrome span.on { background-position:-170px 11px; }
+.newest-browser ul .safari span { background-position:-250px -78px; }
+.newest-browser ul .safari span.on { background-position:-250px 11px; }
+.newest-browser ul .opera span { background-position:-330px -78px; }
+.newest-browser ul .opera span.on { background-position:-330px 11px; }
+.newest-browser .download-browser { float:left; display:inline; margin-left:20px; padding:15px 0 0; text-align:left; }
+.newest-browser .download-browser .link { display:none; font-size:14px; font-weight:bold; color:#0072a3; }
+.newest-browser .download-browser .link .go-download { display:inline-block; width:93px; height:24px; margin-left:7px; }
+.newest-browser .download-browser .link .go-download span { display:inline-block; width:93px; height:24px; padding:0; background:url("../../images/landings/browser-upgrade/download-bg.gif") no-repeat; line-height:23px; text-align:center; vertical-align:middle; }
+.newest-browser .download-browser .link .go-download:hover span { padding:0; background-position:0 -24px; }
+.newest-browser .download-browser .link .go-download span span { padding:0; background:none; color:#fff; }
+.newest-browser .download-browser .link .go-download:hover span span { background:none; color:#fff; }
+.newest-browser .download-browser .link .desc { display:block; margin:10px 0 0; font-size:12px; font-weight:normal; color:#4a4a4a; }
+
+#browser-contents { position:relative; width:100%; margin-top:27px; background-color:#e4e2e1; overflow:hidden; }
+#browser-contents .content-tab { width:100%; background-color:#d3d1ce; overflow:hidden; }
+#browser-contents .content-tab li { list-style-type:none; float:left; }
+#browser-contents .content-tab li a { display:block; height:34px; padding-top:28px; cursor:pointer; font:bold 20px 'Malgun Gothic', Dotum, AppleGothic; color:#00649e; vertical-align:middle; }
+#browser-contents .content-tab li a.tap1 { width:465px; margin-left:-1px; background:url("../../images/landings/browser-upgrade/tap1bg_on.jpg") no-repeat; }
+#browser-contents .content-tab li a.tap2 { width:637px; margin-left:-5px; background:url("../../images/landings/browser-upgrade/tap2bg_off.jpg") no-repeat; font-size:15px; color:#787878; }
+#browser-contents .content-tab li a.tap3 { width:419px; margin-left:-1px; background:url("../../images/landings/browser-upgrade/tap1bg_off.jpg") no-repeat; font-size:15px; color:#787878; }
+#browser-contents .content-tab li a.tap4 { width:683px; margin-left:-5px; background:url("../../images/landings/browser-upgrade/tap2bg_on.jpg") no-repeat; }
+
+#browser-contents .tap1-text1 { padding-left:95px; }
+#browser-contents .tap1-text2 { font-size:16px; }
+#browser-contents .tap2-text1 { padding-left:130px; }
+
+.browser-article { display:none; position:relative; width:100%; }
+.browser-article .browser-info-box { position:relative; padding:30px 27px 30px 70px; }
+
+.browser-article .desc-indent { margin-top:-40px; margin-left:100px; font-weight:normal; font-size:12px; color:#2e2e2e; width:520px; }
+.browser-article .desc-indent strong { font-weight:bold; color:#007ca5; }
+.browser-article .desc-indent p { padding-left:20px; background:url("../../images/landings/browser-upgrade/point.gif") no-repeat; }
+.browser-article .desc-indent p span { font-weight:normal; color:#007ca5; }
+.browser-article .desc-indent-2 { margin-top:-40px; margin-left:100px; font-weight:normal; font-size:12px; color:#2e2e2e; width:350px; }
+
+.browser-article h4 { height:78px; padding-left:85px; font:bold 20px 'Malgun Gothic', Dotum, AppleGothic; color:#4a4a4a; }
+.browser-article h4 span { color:#007ca5; }
+
+.browser-article .problem-1 { height:254px; background:url("../../images/landings/browser-upgrade/tap1_img1.jpg") right no-repeat; }
+.browser-article .problem-1 h4 { padding-top:60px; background:url("../../images/landings/browser-upgrade/num.gif") 0 60px no-repeat; }
+.browser-article .problem-2 { padding-left:125px; height:280px; background:url("../../images/landings/browser-upgrade/en-us/tap1_img2.jpg") right no-repeat; }
+.browser-article .problem-2 h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 -70px no-repeat; }
+
+.browser-article .problem-3 { margin-top:-40px; height:350px; background:url("../../images/landings/browser-upgrade/tap1_img3.jpg") right no-repeat; }
+.browser-article .problem-3 h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 -140px no-repeat; }
+
+.browser-article h3.title { padding-top:30px; font:bold 27px 'Malgun Gothic', Dotum, AppleGothic; color:#333; text-align: center; }
+.browser-article .performance { height:190px; padding-top:50px; background:url("../../images/landings/browser-upgrade/tap2_img1.jpg") right top no-repeat; }
+.browser-article .performance h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 0 no-repeat; }
+.browser-article .security { padding-left:125px; height:170px; background:url("../../images/landings/browser-upgrade/tap2_img2.jpg") right top no-repeat; }
+.browser-article .security h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 -70px no-repeat; }
+.browser-article .interface { height:190px; background:url("../../images/landings/browser-upgrade/tap2_img3.jpg") right top no-repeat; }
+.browser-article .interface h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 -140px no-repeat; }
+.browser-article .experience { padding-left:125px; height:170px; background:url("../../images/landings/browser-upgrade/tap2_img4.jpg") right top no-repeat; }
+.browser-article .experience h4 { background:url("../../images/landings/browser-upgrade/num.gif") 0 -210px no-repeat; }
+
+.browser-article .explore-source { padding:5px 5px 30px; background-color:#d3d1ce; text-align:right; }
+.browser-article .explore-source a { font-size:11px; color:#2e2e2e; }
+
+.browser-article .report-forums { width:100%; background-color:#e4e2e1; padding:12px 0 20px 30px; }
+.browser-article .report-forums h3 { padding-left:50px; padding-top:5px; height:40px; font-weight:bold; background:url("../../images/landings/browser-upgrade/tap2_icon1.jpg") no-repeat; font-size:16px; text-align:left; }
+.browser-article .report-forums p { display:inline; }
+.browser-article .report-forums p a { margin-left:50px; padding:3px 0 5px 25px; font-size:12px; color:#007ca5; font-weight:bold; text-decoration:underline; }
+.browser-article .report-forums p a.wow { background:url("../../images/landings/browser-upgrade/tap2_icon2.jpg") no-repeat; }
+.browser-article .report-forums p a.sc2 { background:url("../../images/landings/browser-upgrade/tap2_icon3.jpg") no-repeat; }
+
+/* IE7 Retirement - KR */
+.ie7-retirement { background-color:#01080d; }
+.ie7-retirement #info-header { position:relative; background:#01080d url("../../images/landings/ie7-retirement/header-bg.jpg") center top no-repeat; }
+.ie7-retirement .header { position:relative; width:1002px; height:302px; margin:0 auto; background:#01080d url("../../images/landings/ie7-retirement/header-bg.jpg") center top no-repeat; }
+.ie7-retirement .header .status { position:absolute; left:25px; top:192px; width:244px; height:68px; }
+.ie7-retirement .header .status .good { background:url("../../images/landings/ie7-retirement/msg-good.html") no-repeat; }
+.ie7-retirement .header .status .bad { background:url("../../images/landings/ie7-retirement/msg-warning.html") no-repeat; }
+.ie7-retirement #info-content { background:#01080d url("../../images/landings/ie7-retirement/content-bg.jpg") center top no-repeat; }
+.ie7-retirement #info-content .content { width:1002px; margin:0 auto; padding:24px 0 60px; background:#01080d url("../../images/landings/ie7-retirement/content-bg.jpg") center top no-repeat; }
+.ie7-retirement #info-footer { background:url("../../images/landings/ie7-retirement/footer-bg.jpg") center top no-repeat; }
+.ie7-retirement .footer { width:1002px; height:130px; margin:0 auto; padding-top:30px; background:url("../../images/landings/ie7-retirement/footer-bg.jpg") center top no-repeat; }
+.ie7-retirement .footer .blizzard { display:block; width:142px; height:74px; margin:0 auto; background:url("../../images/landings/ie7-retirement/logo-blizzard.gif") no-repeat; }
+
+.ie7-retirement .title { width:233px; height:26px; margin:0 0 5px 19px; background:url("../../images/landings/ie7-retirement/tit-browser.png") no-repeat; }
+.ie7-retirement .browsers { width:963px; height:85px; margin:0 auto 8px; background:url("../../images/landings/ie7-retirement/box-browsers-bg.jpg") no-repeat; }
+.ie7-retirement .forum { width:963px; height:85px; margin:0 auto 30px; background:url("../../images/landings/ie7-retirement/box-forum-bg.jpg") no-repeat; }
+.ie7-retirement .forum ul { padding:50px 0 0 213px; }
+.ie7-retirement .forum ul li { float:left; }
+.ie7-retirement .forum ul li a { display:block; padding:0 0 0 32px; background-position:8px 2px; background-repeat:no-repeat; font:bold 12px/2.1em 'Dotum'; color:#007ca5; text-decoration:underline; }
+.ie7-retirement .forum ul li.wow a { background-image:url("../../images/landings/ie7-retirement/icon-wow.gif"); }
+.ie7-retirement .forum ul li.sc2 a { background-image:url("../../images/landings/ie7-retirement/icon-sc2.gif"); }
+
+.ie7-retirement .browsers ul { float:left; padding:1px 0 1px 15px; }
+.ie7-retirement .browsers ul li { list-style-type:none; float:left; }
+.ie7-retirement .browsers ul li span { display:block; width:82px; height:83px; background:url("../../images/landings/ie7-retirement/icon-browser.jpg") no-repeat; text-indent:-1000em; overflow:hidden; cursor:pointer; }
+.ie7-retirement .browsers ul .explore span { background-position:0px -83px; }
+.ie7-retirement .browsers ul .explore span.on { background-position:0px 0px; }
+.ie7-retirement .browsers ul .firefox span { background-position:-82px -83px; }
+.ie7-retirement .browsers ul .firefox span.on { background-position:-82px 0px; }
+.ie7-retirement .browsers ul .chrome span { background-position:-164px -83px; }
+.ie7-retirement .browsers ul .chrome span.on { background-position:-164px 0px; }
+.ie7-retirement .browsers ul .safari span { background-position:-246px -83px; }
+.ie7-retirement .browsers ul .safari span.on { background-position:-246px 0px; }
+.ie7-retirement .browsers .download { float:left; display:inline; margin-left:15px; padding:22px 0 0; text-align:left; }
+.ie7-retirement .browsers .download .link { display:none; font-size:14px; font-weight:bold; color:#fff; }
+.ie7-retirement .browsers .download .link .go-download { display:inline-block; width:93px; height:24px; margin:-3px 0 0 7px; overflow:hidden; }
+.ie7-retirement .browsers .download .link .go-download span { display:inline-block; width:93px; height:24px; padding:0; background:url("../../images/landings/ie7-retirement/btn-download.gif") no-repeat; line-height:23px; text-align:center; vertical-align:middle; }
+.ie7-retirement .browsers .download .link .go-download:hover span { padding:0; background-position:0 -24px; }
+.ie7-retirement .browsers .download .link .go-download span span { padding:0; background:none; font:bold 12px/2.3em 'Dotum'; color:#fff; }
+.ie7-retirement .browsers .download .link .go-download:hover span span { background:none; color:#fff; }
+.ie7-retirement .browsers .download .link .desc { display:block; margin:7px 0 0; font-size:12px; font-weight:normal; color:#7eadcc; }
+.ie7-retirement .hate-ie7 { height:286px; background:url("../../images/landings/ie7-retirement/hate-ie7.jpg") center top no-repeat; }

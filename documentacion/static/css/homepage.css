@@ -1,0 +1,69 @@
+
+/* game boxes */
+.homepage #content { padding: 15px 0 }
+#homepage .game-column { position: relative; float: left; width: 247px; padding-top: 355px; color: #787878; font-size: 11px; }
+#homepage .game-column ul { text-transform: uppercase; }
+#homepage .game-column li { padding: 15px 0; border-top: 1px solid #b3b0ac; }
+#homepage .game-column li:first-child { border: none; }
+#homepage .game-column li span { color: #505050; font-size: 18px; font-weight: bold; }
+#homepage .game-column li span.text-green { color: #4a8432; }
+#homepage .game-column li span.text-red { color: #944a4a; }
+
+#homepage .game-promo { left: 6px; top: -95px; width: 239px; height: 392px; display: block; position: absolute; outline: none; border: none; text-align: right; padding: 0; font-size: 16px; -moz-box-shadow: 0 0 20px #000; -webkit-box-shadow: 0 0 10px #1e2023;  -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px; }
+#homepage .game-promo:hover,
+#homepage .game-promo:focus { text-decoration: none; }
+#homepage .game-promo span { padding-right: 35px; background: transparent url("../images/homepage/promo-arrow.gif") 100% -3px no-repeat; }
+#homepage .game-promo .game-tip { position:absolute; top:7px; padding: 5px 25px 5px 5px; width:195px; right: 7px; color:#B2BAC7; }
+#homepage .game-promo:hover .game-tip,
+#homepage .game-promo:focus .game-tip { color: #fff; border-color: #007db0; background-position: 100% -41px }
+#homepage #home-game-sc2 .game-promo { background: url("../images/homepage/starcraft2.png") 0 0 no-repeat; }
+#homepage #home-game-sc2 .game-promo:hover,
+#homepage #home-game-sc2 .game-promo:focus { background-position: -248px 0; }
+#homepage #home-game-wow .game-promo { background: url("../images/homepage/wow.png") 0 0 no-repeat; }
+#homepage #home-game-wow .game-promo:hover,
+#homepage #home-game-wow .game-promo:focus { background-position: -248px 0; }
+#homepage #home-game-d3 .game-promo { background: url("../images/homepage/diablo3.png") 0 0 no-repeat; }
+#homepage #home-game-d3 .game-promo:hover,
+#homepage #home-game-d3 .game-promo:focus { background-position: -248px 0; }
+#homepage #home-game-hs .game-promo { background: url("../images/homepage/hearthstone.png") 0 0 no-repeat; }
+#homepage #home-game-hs .game-promo:hover,
+#homepage #home-game-hs .game-promo:focus { background-position: -248px 0; }
+
+#welcome-intro { padding: 40px 100px 10px; }
+#welcome-intro h2 #learn-more { font-weight: normal; color: #a2b9c2; padding-right: 16px; }
+#welcome-intro h2 #learn-more:hover { color: #fff; }
+#welcome-intro h2 #learn-more span { color: #566b73; font-size: 14px; border: 1px solid #3a4c53; position: relative; top: -5px; padding: 2px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#welcome-intro h2 #learn-more:hover span { background: #3a4c53; border-color: #3a4c53; color: #93bdce; }
+#welcome-intro #welcome-right { float: right; width: 200px; color: #a2b9c2; text-align: center; padding-top: 10px; }
+#welcome-intro #welcome-right .ui-button { margin-bottom: 5px; }
+#welcome-intro #welcome-right .ui-button span { text-transform: uppercase; font-size: 18px; text-shadow: #00678f 1px 1px 1px; }
+
+.homepage.logged-in #welcome-intro { padding: 0 5px; text-align: right; }
+.homepage.logged-in #welcome-intro .welcome-action { text-align: left; display: inline-block; height: 72px; margin-left: 60px; color: #b2bac7; }
+.homepage.logged-in #welcome-intro .welcome-action:hover,
+.homepage.logged-in #welcome-intro .welcome-action:focus { color: #fff; }
+.homepage.logged-in #welcome-intro .welcome-icon { display: inline-block; vertical-align: top; height: 72px; width: 60px; overflow: hidden; background: url("../images/homepage/welcome-sprite.png") no-repeat 0 0; }
+.homepage.logged-in #welcome-intro #manage-games .welcome-icon { background-position: 0 0; }
+.homepage.logged-in #welcome-intro #buy-games .welcome-icon { background-position: -60px 0; }
+.homepage.logged-in #welcome-intro .welcome-label { display: inline-block; vertical-align: top; padding-top: 8px; }
+.homepage.logged-in #welcome-intro .welcome-headline { display: block; font: 16px/24px "Trebuchet MS", Arial, sans-serif; }
+.homepage.logged-in #welcome-intro .welcome-title { display: inline-block; vertical-align: top; height: 24px; padding: 0 8px 0 0; }
+.homepage.logged-in #welcome-intro .welcome-arrow { display: inline-block; vertical-align: top; width: 24px; height: 24px; background: url("../images/homepage/promo-arrow.gif") no-repeat 0 -7px; }
+.homepage.logged-in #welcome-intro .welcome-action:hover .welcome-arrow,
+.homepage.logged-in #welcome-intro .welcome-action:focus .welcome-arrow { background-position: 0 -45px; }
+.homepage.logged-in #welcome-intro .welcome-description { display: block; font-size: 12px; line-height: 16px; height: 16px; }
+
+/* Transition game images on mouseover/focus */
+#homepage #home-game-sc2 .game-promo.hover,
+#homepage #home-game-wow .game-promo.hover,
+#homepage #home-game-d3 .game-promo.hover,
+#homepage #home-game-hs .game-promo.hover { background-position:-248px 0; opacity:0; transition:opacity 400ms ease; -webkit-transition:opacity 400ms ease; -moz-transition:opacity 400ms ease; }
+#homepage #home-game-sc2 .game-promo.hover:hover,
+#homepage #home-game-wow .game-promo.hover:hover,
+#homepage #home-game-d3 .game-promo.hover:hover,
+#homepage #home-game-hs .game-promo.hover:hover,
+#homepage #home-game-sc2 .game-promo.hover:focus,
+#homepage #home-game-wow .game-promo.hover:focus,
+#homepage #home-game-d3 .game-promo.hover:focus,
+#homepage #home-game-hs .game-promo.hover:focus { opacity:1; }
+
