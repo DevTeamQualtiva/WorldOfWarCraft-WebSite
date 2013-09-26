@@ -34,13 +34,145 @@ Class WoW {
         // Database revision check
         $database_revision = DB::WoW()->selectCell("SELECT `version` FROM `DBPREFIX_db_version` LIMIT 1");
         if($database_revision != DB_VERSION) {
-            $errorMessage .= '<li>You have outdated DB (current version: ' . DB_VERSION . ', your version: ' . ($database_revision != null ? $database_revision : '<none>') . '). Please, update project DB with SQL updates from "sql/updates" folder.</li>';
+            $errorMessage .= '<li>You have outdated DB (current version: ' . DB_VERSION . ', your version: ' . ($database_revision != null ? $database_revision : '<none>') . '). Please, update project DB with SQL updates from <strong style="color:#0097cc">"sql/updates"</strong> folder.</li>';
         }
         if(CONFIG_VERSION != WoWConfig::$ConfigVersion) {
             $errorMessage .= '<li>You have outdated configuration file (current version: ' . CONFIG_VERSION . ', your version: ' . WoWConfig::$ConfigVersion . '). Please, update WoWConfig.php from WoWConfig.php.default.</li>';
         }
         if($errorMessage != '') {
-            die('<em><strong style="color:#ff0000">Some error(s) appeared during core self testing:</strong></em><ul>' . $errorMessage . '</ul>Please, solve this problem(s) and <a href="">refresh</a> this page again.');
+            die('
+		<head>
+
+			<title>BattleCMS</title>
+
+			<!--[if IE]>
+			<meta content="false" http-equiv="imagetoolbar" />
+			<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+			<![endif]-->
+
+			<meta name="robots" content="none" />
+			<meta http-equiv="refresh" content="120" />
+
+			<link rel="icon" type="image/png" href="' . WoW::GetWoWPath() . '/static/local-common/images/favicons/root.png" />
+			<!--[if IE]>
+			<link rel="shortcut icon" type="image/x-icon" href="' . WoW::GetWoWPath() . '/static/local-common/images/favicons/root.ico" />
+			<![endif]-->
+
+			<style>
+			html, body, div, span, object, iframe, h1, p, img { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; }
+			html, body { background: #000 url("' . WoW::GetWoWPath() . '/estatico/acdev/bg-top.jpg") 50% 0 no-repeat; color: #aaafb8; font: normal 12px/1.5 "Trebuchet MS", "Arial", sans-serif; }
+
+			a { color:#007ca5; text-decoration: none; }
+			a:hover,
+			a:focus { color: #0c536a; }
+
+			::-moz-selection { color: #eee;  background: #006a9b; }
+			::selection { color: #eee;  background: #006a9b; }
+
+			.wrapper { width: 960px; margin: 0 auto; }
+
+			.notice { width: 500px; margin: 0 auto; }
+			.notice .logo { padding: 48px 0; margin: 0 auto; width: 402px; height: 92px; overflow: hidden; overflow: hidden; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+			.notice .logo span { text-indent: -9999px; display: block; width: 402px; height: 92px; overflow: hidden; background: url("' .  WoW::GetWoWPath() . '/estatico/acdev/bnet-cms.png"); }
+
+			.info { padding: 32px; background: #07090b; background: rgba(0,0,0,.42); -moz-border-radius: 16px; -webkit-border-radius: 16px; border-radius: 16px; }
+			.info .title { text-align: center; font-size: 44px; line-height: 1.25; letter-spacing: -.05em; color: #fff; font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif; }
+			.info .short { font-size: 16px; line-height: 1.5; margin: 1.5em 0; color: #aaafb8; }
+			.info .twitter { color: #7499b2; font-size: 20px; font-family: "Georgia", "Times New Roman", "Times", serif; padding: 16px 100px 16px 16px; background: #2a3035 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAArCAMAAAAXBMteAAAAM1BMVEUqMDVPZXRLXmx0mbI9SlRYcYNmhZprjKIvNz1BUVxhf5M4RE1vkqozPUVdeItGWGRTa3sDgm/dAAAAAXRSTlMAQObYZgAAATxJREFUeF6dldeOhDAMRV3SK///tbujjBBDTArnFR079g0Ay0SEt7iAlm3F+srOhhvlVe+vbci90ZttD8oDAYuX7YNPTH3WPw2E+oqvhAwyvi3Hy0c/SRFkbHtufxdUmdd8fzZAdy3a+W62o6Sz1HySPjHfT2BYQIm2U/o6o29rFwiizjc0gGYRMT3T+ZllSE7+TmqCvLxItyE0LxMsM8cuug1SH0DWaVE26KDXj7BmF1T/3Cr4xDsc8EvckU0/e11UNVIUs7dLk8MjHstUrzDAsIz8xu/Pr2EATfU80t1sewhDHIZRBXud3Ev5qTTQfwVNnY0boTlj1MbN0cIP1J5XMJKdZSb4zCl84AkkRlV4ieRBBlfskOGJOL/oBCMoDWV0MMbhY2K2yTN8kRprD8soDJcpTKEI26hGngp/RZwUt0YqVl8AAAAASUVORK5CYII=) no-repeat 350px center; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; line-height: 1.25; }
+
+			.footer { border-top: 1px solid #414a56; font-size: 10px; text-transform: uppercase; padding: 12px 0; margin: 32px 0; -moz-user-select: none; -webkit-user-select: none; user-select: none; font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif; }
+			.footer .copyright { color: #2a2c2f; display: inline-block; vertical-align: top; margin: 0 1em 0 0; }
+			.footer .legal { display: inline-block; vertical-align: top; }
+			.footer .legal a { display: inline-block; vertical-align: top; color: #b2bac7; margin: 0 .5em 0 0; }
+			.footer .legal a:hover,
+			.footer .legal a:focus { color: #dcdcdc; }
+			.footer .language { color: #697489; float: right; display: inline-block; vertical-align: top; text-align: right; white-space: nowrap; }
+			.footer .privacy { margin: 32px 0 0 0; text-align: right; }
+			.footer .privacy a { display: inline-block; vertical-align: top; }
+			.footer .privacy img { border: 0; }
+			.footer .contact { margin: 32px 0 0 0; text-align: center; color: #9b9898; text-transform: none; }
+
+			body.ko-kr { font-family: "Dotum", "돋움", "Helvetica", "AppleGothic", sans-serif; }
+			body.ko-kr .info .title,
+			body.ko-kr .info .twitter,
+			body.ko-kr .footer { font-family: "Malgun Gothic", "맑은 고딕", "AppleGothic", "Dotum", "돋움", "Trebuchet MS", "Arial", sans-serif; }
+			body.ko-kr .footer { font-size: 11px; }
+
+			body.zh-cn,
+			body.zh-cn .info .title,
+			body.zh-cn .info .twitter,
+			body.zh-cn .footer { font-family: "微软雅黑", "Microsoft YaHei", "Helvetica", "Tahoma", "StSun", "宋体", "SimSun", sans-serif; }
+			body.zh-cn .info .twitter { font-size: 16px; }
+			body.zh-cn .footer { font-size: 12px; }
+			body.zh-cn .notice .logo span { background: url("' . WoW::GetWoWPath() . '/estatico/acdev/bnet-cms.png"); }
+			body.zh-cn .info .twitter { line-height: 1.5; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA7CAMAAAAU0snFAAADAFBMVEUqMDXZDTfXCzfqBQXfIUP1//9ZJCnhK0rdBgrjAQHeAwXrUl2XFBjWCjbwdmnsS1vUABrYDDfkME1LKC3x///lLEbtCgrkNVBkIifeGT27CibaETrZCzLVBTPgHkDbDzfbFDv////+/v7iJ0cxLjP6gGzdDC3HCjH6dlmHFxrxa2L6///ptbv5eW3s7e7dHEH0amnvWGHTCQ/kOlL4c23oIj31WlVzGyH4+PjhHDzuISGnFReYFCo6LDL29varCxX2fWzbBC36+vrrXmFEKjFmHSb6c2OrHCnECQ3pQVbUACLbCA3xXmPXASvxTU7wQkPfFjnbACXnPFPrRVjVBAfy8vTXaHndETnUBwvGBwtbIi/aDDD8/PzYBS/OCi64CRktLzXpKD/3fHHt///5+fn9/v79/f2yDSv7+/vjJUTx8PH19PWUKy/uOkfjPUvuFxf0c2m6DjTXlJ3yembtxcv0tLzZCzf2hWrySFPZRlWDGSrlDhncyc/UrLbZWmi0EBT8hXHl8/P8//+0SVjvKyvbPVXsP03mY3jzY2WtMjTPdoX0gWfl7u70iW/yvsnl2uHkRFbWtLyqDTT4i230Z2eSEzbpbV31bFPOBgjcDi/xcWTl5eb6p5t3GzH+i3XbFj3x8vLjESTZDSPsl6foMkvnWnfojJ3KGjP++vrfDifuM0L+iGjlSGLFJzHZOEPx9vXq///zgnLDChXs9fSQDyvcFz7GDCfMBgfPCjV+Gx7uZGC7Cw3ao67b09f8+/z+///+/f3MCg7y/fz1iIz7/Pz9e2LnytDPKT3ufY/vPEvnb4Dw3N+hETH6jYDbKDznSFjhTln3bGrYfo3vorLXDDLn09biioTpRUteUlbj/vzsgoDUCzDsX079zs3lQ1rPMk3+/v9tHTDTEi+GGjT5+/v48vPfDzT1+PjxzdTsL0D8l4X+yb37ZmPUDjbwn5voSFPxMzPk7/HwqLj///7/8e/JgpD54+TVjJjSBzr//f7eHR2bT1GAaGs/NzvyQEru+vkpiOp2AAAAAXRSTlMAQObYZgAABehJREFUeF6dllN0JFsUhrvatq3Ytm3b9tC2bdu2bRvXtm3uU90zc9e6naRmvofOysO3///sqpMOiQiJnRMnfhBFelmilLsTGC7lpJdGMnxXSZXkBQRrooReXl4uSbTi+XsUBkMkUZU+ImX3nT7Xr3ftkN3ZmjKinJ4i0+ca+xMrGrn7lRP82P376/n9fBdlcgo21YW16cNUh/vXEpBvyRJiZ88eOnTozNhY8Kdl+nEEaeI2vUpVbe3VHhHGGTgTGIpwupzsvgh8QUH+JoteZVjd2xNqkSXwBw5E9sKdrkuX8Pn8E8HZfn6CtHxxW1gu9l6PduIRRYL7CqQv3Ll0yRPPx95F7Tc9X88exinIVzCoKqM2srYH20XMsekLXZcMmEs7a8KhDUroEqQFiC36Eg3Wv9uXr1ZteZtzwn0Ff+BM1ydzPUw/frHq89u3V71lMrXf+KwgX2yh5hoMX7V0l784V3EX0kF3enOU6edV4y5fhtUFB1/cZrowtS5fDO0NBoNosWNborUEgI7iY5Nf/zrWdeeaNeOcvAJ9cwK3mdrn1SmQjmEYz/G7f8vIsOv9+sUmL3UaB4ANb07XxQkTroTJGNTDSBe5OKofVe2DdD/c53vVOzk51dd7eQXeXzTNb8dgD+mDXIt+LegiEc/R41v9iMoImCfgZPq63+/nZScQ2Zl+Uwo+oq3U632MSCeTWxx1L9EzFGl3/b65s6dPn1eyg5NxGbc5nLprNzeG6VUaDNd1Dm5uf6MPQ5Ev6LN1xuj5owfMGHMPRnxpswUFabJNQW1Ula07Wevg5XUx+ljEAQXv//SalEaTNnw36tSD4ntTuv4eNkwAusJiaQsz4uE8XkWkA12jojIU4qunPc79YEJ4SMefHv1L8ZjJsqCgIJkYXRm7vrzFQXnNYYhve2elR+ilZvO7JhwP2r5Zp+cPKB5OdXZWoXAMbO1ytYPVYUYfqsVy9TEtOr6yyWzT7TMaxo8aMDkvTgM2mUd2qK/mQTyVUXGK1tEI+nPffpLXHuRpYXEQXrHdgS75FUP+x8MbLkA8qv8Ms/mc+bcJ+4qFtsU5rx9L+j8LRJgR/Lwt0r3R8c3NZijwTG8+0xhNu1JVRcbD13Md6MpfMcy41qckzhP8D880m5vMZ3EZ7MrWxg7pTU0WDw8fmURyGC/CNEZVXJWn9EJHY/yZSqjQ1GRuaq681Boa3d4wKEuH7O3rM6wgODo9GrA2C/pL98KA1tZKRGt8Y2hHkbf0hhCqgz0S7+5o+cjHNFXCtwehAdGhjYjQ6Ogi71kNc7J0ZDg4hHf3ZXmLLEK+ARPmTYUB0n8OrisqWrfO2/tgA22wNl2krUDhIaTuWEDGyOCjAnm7tny6lya18cmczelP7QhSt1gX8ERDYIAIM1QJhXGKzdc2Pvz+4Zap4nShTqR1RvZYUk8cOkYeAgMATJSVLhQK0/EPHR6N7F6+595T4wMAEUDm6XQ6HpmsxYujpfdG4iH1sWNgADwbz+QDShIByg+pXWAChA4BkIvL592sJGKEtKjVR1yqq99441FFxfLlGzZs8I8JiSIRJSmmpqZGDRwBDtTEcEMkBM0oelISt+Y/xCQRj43iLitcVlaWesAO2CEkwkiOspnMjNLzT0lNTT3pRti2LmMD4Pv7P/fLCMe7sVisk9wyKJDhD9hnHOUS21ttIYvFhfOnIj+jFDoApUAhoQNI+lLYVlSCyWSWhkiU5zNw4Dc2l4CuzO5bhgKOw/5QXgioCNgHi07gqeWE49fxJJvJTgSdjtyYCDbSicS/+sdfKBTSbC2YeAtJGRs2SiKIEtZvO2sMm4mPkbyATqcgnY7OUshm21Z+lEUZS8yWhIdT7FlucAilLZ1C4RLTU7InySkUFE5HLfDbkkqRy5XE9M7MnHDKcdwGUpHAlcvlGVZieu30nN9xmwLglZXhfeVy4vcmERWWTAqnUOQU9PSvZof3ZeLhxOkMzoHM40iY7vutnE56MV6dlj2JYmts7YyQkF6UP6dHELnn/wKagPx6Gion/QAAAABJRU5ErkJggg==); }
+			body.zh-cn .short { text-align: center; }
+
+			body.zh-tw,
+			body.zh-tw .info .title,
+			body.zh-tw .info .twitter,
+			body.zh-tw .footer { font-family: "微軟正黑", "Microsoft JhengHei", "Helvetica", "Tahoma", "新明細體", "PMingLiU", "SimSun", sans-serif; }
+			body.zh-tw .info .twitter { line-height: 1.5; }
+			body.zh-tw .footer { font-size: 12px; }
+			</style>
+
+			<!--[if LT IE 9]>
+			<style>
+			.notice .logo span { background-image: url("' . WoW::GetWoWPath() . '/estatico/acdev/bnet-cms.png"); }
+			.info .twitter { background-image: url("' . WoW::GetWoWPath() . '/static/maintenance/bnet/images/twitter.png"); }
+			.footer .copyright { zoom: 1; float: left; }
+			.footer .legal { zoom: 1; float: left; }
+			.footer .legal a { zoom: 1; float: left; }
+			.footer .language { zoom: 1; white-space: normal; }
+			.footer .privacy a { zoom: 1; }
+
+			body.zh-cn .notice .logo span { background-image: url("' . WoW::GetWoWPath() . '/estatico/acdev/bnet-cms.png"); }
+			body.zh-cn .info .twitter { background-image: url("' . WoW::GetWoWPath() . '/static/maintenance/bnet/images/twitter-cn.png"); }
+			</style>
+
+		</head>
+		<body class="' .  WoW_Locale::GetLocale(LOCALE_DOUBLE) . '">
+
+			<div class="wrapper">
+
+				<!-- Contenido de la pagina-->
+
+				<div class="notice" id="' .  WoW_Locale::GetLocale(LOCALE_DOUBLE) . ':notice">
+					<h1 class="logo"><span>Battle.net</span></h1>
+					<div class="info">
+						<div class="title">Some error(s) appeared during core self testing:</div>
+						<p class="short"><ul>' . $errorMessage . '</ul>Please, solve this problem(s) and <a href="">refresh</a> this page again.</p>
+						<br />
+						<div class="twitter">
+							<li>For updates, follow <a tabindex="1" target="_blank" href="http://www.twitter.com/ApocalypseTeamDev">@ApocalypseTeamDev</a> on Twitter.
+							<br />
+							<a tabindex="1" target="_blank" href="https://www.facebook.com/Apocalypsecore">@Apocalypsecore</a> on Facebook.</li>
+							<li>Contact Us: <a href="mailto:info@Apocalypsecore.tk">info@Apocalypsecore.tk</a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+        <div class="footer" id="' .  WoW_Locale::GetLocale(LOCALE_DOUBLE) . ':footer">
+
+            <span class="copyright">©2013 Blizzard Entertainment, Inc. All rights reserved</span>
+
+            <span class="sitemap">
+                <a target="_blank" href="http://us.blizzard.com/company/about/termsofuse.html" tabindex="2">Terms of Use</a>
+                <a target="_blank" href="http://us.blizzard.com/company/legal/" tabindex="2">Legal</a>
+                <a target="_blank" href="http://us.blizzard.com/company/about/privacy.html" tabindex="2">Privacy Policy</a>
+                <a target="_blank" href="http://us.blizzard.com/company/about/infringementnotice.html" tabindex="2">Copyright Infringement</a>
+            </span>
+
+            <span class="language">Americas – English (US) </span>
+
+			<div id="blizzard" class="png-fix">
+				<a href="http://apocalypsecore.tk" tabindex="100">
+					<img src="' . WoW::GetWoWPath() . '/wow/static/local-common/images/logos/blizz-wow.png" alt="" />
+				</a>
+			</div>
+
+        </div>
+		</body>');
         }
         return true;
     }
