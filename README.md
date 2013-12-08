@@ -14,7 +14,7 @@ ApocalypseCore Teams es un grupo encargado de desarrollar Emuladores y Web´s pa
 <br/>
 [Foros](http://apocalypsecore.tk/foro) Soon - Pronto
 
-## Version actual: v2
+## Version: v2
 Use of this CMS is at your own risk.
 Since it is in development.
 
@@ -37,7 +37,7 @@ PHP version 5.2.4 or newer.
 
 		= Apocalypse Core Team -- General information =
 
-	Copyright (C) 2013 (http://apocalypsecore.tk/) ApocalypseCore Team
+	Copyright (C) 2014 (http://apocalypsecore.tk/) ApocalypseCore Team
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -52,4 +52,4 @@ PHP version 5.2.4 or newer.
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-+ &copy; 2013 Blizzard Entertainment, Inc. All rights reserved
++ &copy; 2014 Blizzard Entertainment, Inc. All rights reserved
