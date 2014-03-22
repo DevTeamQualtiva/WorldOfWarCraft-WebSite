@@ -1,7 +1,6 @@
 <?php
-
 /**
- * Copyright (C) 2011 - 2013 Apocalypsecore <https://Apocalypsecore.tk>
+ * Copyright (C) 2011 - 2014 Apocalypsecore <https://Apocalypsecore.tk>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
